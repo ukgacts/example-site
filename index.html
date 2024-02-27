@@ -1504,7 +1504,7 @@ limitations under the License.
       .gallery-inner-3d-row-img-left:hover,
       .gallery-inner-3d-row-img-right:hover {
         transition: transform 0.25s, box-shadow 0.25s;
-      }
+       }
       .gallery-inner-3d-row-img-center:hover,
       .gallery-inner-3d-row-img-left:hover,
       .gallery-inner-3d-row-img-right:hover {
@@ -1837,7 +1837,18 @@ limitations under the License.
         animation-timing-function: ease-in-out;
         animation-fill-mode: both;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        filter: grayscale(100%);
       }
+
+      .gallery-landing-image-wrapped:hover {
+       
+       filter:none;
+     }
+     
+
+
+
+
       .amp-mode-mouse .gallery-landing-image-link {
         position: absolute;
         width: 100%;
@@ -1855,9 +1866,10 @@ limitations under the License.
         box-shadow: 1vh 6vh 5vh rgba(6, 7, 22, 0.15);
         transition: transform 0.3s;
         pointer-events: none;
-        filter: grayscale(100%);
+       
       }
-      .gallery-landing-image-wrap:first-child amp-img {
+
+          .gallery-landing-image-wrap:first-child amp-img {
         background: #d97b7f;
       }
       .gallery-landing-image-wrap:nth-child(2) amp-img {
@@ -2916,7 +2928,7 @@ limitations under the License.
   <body>
     <!-- Start Navbar -->
     <header
-      class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
+      class="ampstart-headerbar fixed flex justify-between items-center top-0 left-0 right-0 pl2 pr4"
     >
       <div
         role="button"
@@ -2931,12 +2943,33 @@ limitations under the License.
           width="36"
           height="36"
         >
-          <path fill="currentColor" d="M9 12h18v1H9z"></path>
-          <path fill="currentColor" d="M9 17h18v1H9z"></path>
-          <path fill="currentColor" d="M9 22h18v1H9z"></path>
+          <path fill="#c68f2e" d="M9 12h18v1H9z"></path>
+          <path fill="#c68f2e" d="M9 17h18v1H9z"></path>
+          <path fill="#c68f2e" d="M9 22h18v1H9z"></path>
         </svg>
        
       </div>
+
+      <div
+      role="button"
+      class="ampstart-navbar-trigger pr2"
+      tabindex="0"
+      class=""
+    >
+    <amp-img
+    width="1"
+    height="1"
+    layout="responsive"
+    noloading=""
+    src="img/logo.png"
+    srcset="
+img/logo.png 1x,
+img/logo.png 2x
+"
+    alt="colourful hallway" style="width:60px;"
+  ></amp-img>
+     
+    </div>
     </header>
 
     <!-- Start Sidebar -->
@@ -2961,18 +2994,7 @@ limitations under the License.
           <li role="heading" class="ampstart-sidebar-nav-title">
             Agency DJ or Art
 
-            <amp-img
-            width="1"
-            height="1"
-            layout="responsive"
-            noloading=""
-            src="img/logo.png"
-            srcset="
-      img/logo.png 1x,
-      img/logo.png 2x
-      "
-            alt="colourful hallway" style="width:80px;"
-          ></amp-img>
+      
       
 
           </li>
@@ -2999,8 +3021,8 @@ limitations under the License.
                 width="1"
                 height="1"
                 layout="responsive"
-                src="img/gallery/smoke.jpg"
-                srcset="img/gallery/smoke.jpg 1x, img/gallery/smoke@2x.jpg 2x"
+                src="img/logo-bl.jpg"
+                srcset="img/logo-bl.jpg 1x, img/logo-bl.jpg 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3022,8 +3044,8 @@ limitations under the License.
                 width="1"
                 height="1"
                 layout="responsive"
-                src="/img/gallery/court.jpg"
-                srcset="img/gallery/court.jpg 1x, img/gallery/court@2x.jpg 2x"
+                src="/img/logo-blue.jpg"
+                srcset="img/logo-blue.jpg 1x, img/logo-blue.jpg 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3045,8 +3067,8 @@ limitations under the License.
                 width="1"
                 height="1"
                 layout="responsive"
-                src="img/gallery/orange.jpg"
-                srcset="img/gallery/orange.jpg 1x, img/gallery/orange@2x.jpg 2x"
+                src="img/logo-pink.jpg"
+                srcset="img/logo-pink.jpg 1x, img/logo-pink.jpg 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3145,19 +3167,7 @@ limitations under the License.
     
     
 
-      <amp-img
-      width="1"
-      height="1"
-      layout="responsive"
-      noloading=""
-      src="img/logo.png"
-      srcset="
-img/logo.png 1x,
-img/logo.png 2x
-"
-      alt="colourful hallway"
-    ></amp-img>
-
+ 
 
 
 
