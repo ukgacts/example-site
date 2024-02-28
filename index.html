@@ -2861,7 +2861,7 @@ limitations under the License.
         width: 3.125rem;
         height: 3.125rem;
         margin: -1rem 0;
-        border-radius: 50%;
+        border-radius: none;
         z-index: 1;
         transition: transform 0.1s, box-shadow 0.1s;
         box-shadow: 0 0 0 rgba(6, 7, 22, 0.2);
@@ -2871,6 +2871,8 @@ limitations under the License.
         -o-object-fit: cover;
         object-fit: cover;
       }
+
+      /** 
       .ampstart-nav-item:nth-child(3) .gallery-sidebar-nav-item-image {
         background: #fe95a6;
       }
@@ -2889,6 +2891,7 @@ limitations under the License.
       .ampstart-nav-item:nth-child(8) .gallery-sidebar-nav-item-image {
         background: #e4bf0b;
       }
+      **/
       .gallery-sidebar-nav-item-icon {
         -ms-flex: none;
         flex: none;
@@ -2923,6 +2926,37 @@ limitations under the License.
           transform-origin: top left;
         }
       }
+
+      .navbar-logo {
+      right: 10px;
+    margin-top: 10px;
+    position: absolute;
+      }
+      .navbar-logo > amp-img {
+        width:80px;   z-index: 9;
+
+      }
+
+
+      @media (min-width: 40.06rem) {
+        .navbar-logo {
+          right: 20px;
+    margin-top: 20px;
+      }
+      .navbar-logo > amp-img {
+      width:120px;  
+      }
+
+
+
+      }
+
+
+
+
+
+
+
     </style>
   </head>
   <body>
@@ -2950,26 +2984,7 @@ limitations under the License.
        
       </div>
 
-      <div
-      role="button"
-      class="ampstart-navbar-trigger pr2"
-      tabindex="0"
-      class=""
-    >
-    <amp-img
-    width="1"
-    height="1"
-    layout="responsive"
-    noloading=""
-    src="img/logo.png"
-    srcset="
-img/logo.png 1x,
-img/logo.png 2x
-"
-    alt="colourful hallway" style="width:60px;"
-  ></amp-img>
-     
-    </div>
+      
     </header>
 
     <!-- Start Sidebar -->
@@ -3021,8 +3036,8 @@ img/logo.png 2x
                 width="1"
                 height="1"
                 layout="responsive"
-                src="img/logo-bl.jpg"
-                srcset="img/logo-bl.jpg 1x, img/logo-bl.jpg 2x"
+                src="img/logo-green.png"
+                srcset="img/logo-green.png 1x, img/logo-green.png 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3044,8 +3059,8 @@ img/logo.png 2x
                 width="1"
                 height="1"
                 layout="responsive"
-                src="/img/logo-blue.jpg"
-                srcset="img/logo-blue.jpg 1x, img/logo-blue.jpg 2x"
+                src="/img/logo-blue.png"
+                srcset="img/logo-blue.png 1x, img/logo-blue.png 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3067,8 +3082,8 @@ img/logo.png 2x
                 width="1"
                 height="1"
                 layout="responsive"
-                src="img/logo-pink.jpg"
-                srcset="img/logo-pink.jpg 1x, img/logo-pink.jpg 2x"
+                src="img/logo-pink.png"
+                srcset="img/logo-pink.png 1x, img/logo-pink.png 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3090,8 +3105,8 @@ img/logo.png 2x
                 width="1"
                 height="1"
                 layout="responsive"
-                src="img/gallery/lamp.jpg"
-                srcset="img/gallery/lamp.jpg 1x, img/gallery/lamp@2x.jpg 2x"
+                src="img/logo-grey.png"
+                srcset="img/logo-grey.png 1x, img/logo-grey.png 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3113,8 +3128,8 @@ img/logo.png 2x
                 width="1"
                 height="1"
                 layout="responsive"
-                src="img/gallery/balloon.jpg"
-                srcset="img/gallery/balloon.jpg 1x, img/gallery/balloon@2x.jpg 2x"
+                src="img/logo-purple.png"
+                srcset="img/logo-purple.png 1x, img/logo-purple.png 2x"
               ></amp-img>
               <div class="gallery-sidebar-nav-item-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -3156,27 +3171,39 @@ img/logo.png 2x
     <!-- End Navbar -->
 
     <div class="gallery-component-tagline xs-hide">
-      <div>Agency of Modern Art
+      <div>Agency of Modern Art 
 
-      
-
-
-
-      </div>
-
-    
-    
-
- 
-
-
-
-
-
-
-
-
+      </div>  
     </div>
+    <a href="/"
+    >
+    <div class="navbar-logo" 
+     role="button"
+     tabindex="0"
+      
+    >
+    
+        <amp-img
+        width="1"
+        height="1"
+        layout="responsive"
+        noloading=""
+        src="img/logo.png"
+        srcset="
+    img/logo.png 1x,
+    img/logo.png 2x
+    "
+        alt="logo" 
+      ></amp-img>
+         
+      </div>  
+
+      </a>
+    </div>
+
+
+
+
     <main id="content" class="gallery-base-content fit" role="main">
       <h1
         class="gallery-landing-title flex justify-center items-center center absolute top-0 left-0 right-0 z1 mx-auto gallery-base-invert"
