@@ -2120,7 +2120,78 @@ limitations under the License.
           transform-origin: top left;
         }
       }
+
+
+
+
+
     </style>
+
+
+<style amp-custom="xen">
+
+  
+
+.navbar-logo {
+      right: 10px;
+    margin-top: 10px;
+    position: absolute;
+      }
+      .navbar-logo > amp-img {
+        width:80px;   z-index: 9;
+
+      }
+
+
+      @media (min-width: 40.06rem) {
+        .navbar-logo {
+          right: 20px;
+    margin-top: 20px;
+      }
+      .navbar-logo > amp-img {
+      width:120px;  
+      }
+
+      }
+
+
+.tagline-header-xen {
+  margin-top: 20px;
+    line-height: 1.2;
+   
+    letter-spacing: -0.05rem;
+    font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+    font-weight: 400;
+    color: #fcb319;
+    left: calc(1rem + 36px + 0.65rem);
+  pointer-events: none;
+
+      font-size:2rem;
+
+}
+
+
+@media (min-width: 40.06rem) {
+  .tagline-header-xen {
+    font-size: 4.75rem;
+      }
+    }
+
+  .carousel-heading-xen {
+    font-size: 2rem;
+  
+
+  }
+
+
+  @media (min-width: 40.06rem) {
+    .carousel-heading-xen  {
+    font-size: 4.75rem;
+      }
+    }
+
+</style>
+
   </head>
   <body>
     <!-- Start Navbar -->
@@ -2145,6 +2216,81 @@ limitations under the License.
           <path fill="currentColor" d="M9 22h18v1H9z"></path>
         </svg>
       </div>
+
+
+
+      <h1
+           class="tagline-header-xen text-decoration-none inline-block   mb1 md-mb0"
+           style=""
+    >Our Artists
+
+    </h1>
+    <!--
+    TODO: currently "fixeditems" is an array, therefore it's not possible to
+    add additional classes to it. An alternative solution would be to make it
+    an oject, with a "classes" and "items" sub-properties:
+   "fixeditems": {
+     "classes": "col-3",
+     "items": [{
+       "link": {
+         "url": "mailto:contact@lune.com",
+         "text": "—contact@lune.com",
+         "classes": "xs-small sm-hide h6 bold"
+       }
+     }]
+   }
+   -->
+    <div
+      class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap absolute top-0 right-0 pt2 pr3"
+    >
+      <div class="mr2"></div>
+      <a
+        href="cart.amp.html"
+        class="text-decoration-none mr2  ampstart-headerbar-home-link"
+      >
+        <div class="ampstart-headerbar-icon-wrapper relative">
+
+   <!-- Logo -->
+        
+   <div class="navbar-logo" role="button" tabindex="0">
+      
+    <amp-img
+    width="1"
+    height="1"
+    layout="responsive"
+    noloading=""
+    src="img/logo.png"
+    srcset="
+img/logo.png 1x,
+img/logo.png 2x
+"
+    alt="logo" 
+  ></amp-img>
+     
+  </div> 
+  
+  <!-- End Logo -->
+
+         
+        </div>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
     </header>
 
     <!-- Start Sidebar -->
@@ -2325,12 +2471,20 @@ limitations under the License.
     </amp-sidebar>
     <!-- End Sidebar -->
     <!-- End Navbar -->
+  
 
-    <div class="gallery-component-tagline">
-      <div>Gallery of Modern Art</div>
-    </div>
+
+
+   
+
+
+
+
+
+
     <main id="content" class="gallery-base-content fit" role="main">
-      <svg
+
+       <svg
         class="gallery-inner-background-1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 388 809"
@@ -2353,25 +2507,113 @@ limitations under the License.
         ></path>
       </svg>
 
+
+      
+
       <header class="gallery-component-hero clearfix">
+
         <div class="gallery-base-container mx-auto">
+
+
+
+
+          
           <div
-            class="gallery-component-hero-content absolute left-0 right-0 z1"
+            class="gallery-component-hero-content  left-0 right-0 z1"
           >
-            <h1 class="gallery-component-hero-heading">Roaster</h1>
-            <div class="gallery-component-hero-subheading">
-             Music Production
-            </div>
-            <div class="gallery-component-hero-action">
-              <button
-                class="ampstart-btn gallery-component-button items-center justify-center"
-              >
-            Sound Cloud
-              </button>
+
+       
+
+           
+         
+
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="gallery-component-hero-carousel">
+
+          <h1 class="carousel-heading-xen gallery-component-hero-heading pr4 pl2">     Super Style Deluxe</h1>
+          <div class="gallery-component-hero-subheading pl2">
+       jk
+          </div>
+       
+          <amp-carousel
+            height="316"
+            layout="fixed-height"
+            type="carousel"
+            autoplay=""
+            loop=""
+          >
+            <amp-img
+              src="img/gallery/corner.jpg"
+              srcset="img/gallery/corner.jpg 1x, img/gallery/corner@2x.jpg 2x"
+              width="361"
+              height="316"
+            ></amp-img>
+            <amp-img
+              src="img/gallery/lamp.jpg"
+              srcset="img/gallery/lamp.jpg 1x, img/gallery/lamp@2x.jpg 2x"
+              width="211"
+              height="316"
+            ></amp-img>
+            <amp-img
+              src="img/gallery/spectrum.jpg"
+              srcset="img/gallery/spectrum.jpg 1x, img/gallery/spectrum@2x.jpg 2x"
+              width="316"
+              height="316"
+            ></amp-img>
+            <amp-img
+              src="img/gallery/stripe.jpg"
+              srcset="img/gallery/stripe.jpg 1x, img/gallery/stripe@2x.jpg 2x"
+              width="517"
+              height="316"
+            ></amp-img>
+            <amp-img
+              src="img/gallery/hall.jpg"
+              srcset="img/gallery/hall.jpg 1x, img/gallery/hall@2x.jpg 2x"
+              width="473"
+              height="316"
+            ></amp-img>
+            <amp-img
+              src="img/gallery/smoke.jpg"
+              srcset="img/gallery/smoke.jpg 1x, img/gallery/smoke@2x.jpg 2x"
+              width="364"
+              height="316"
+            ></amp-img>
+          </amp-carousel>
+        </div>
+        <div class="gallery-base-container gallery-base-rich-text mx-auto">
+          <div class="flex flex-wrap">
+            <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div>
+            <div class="md-col-8 lg-col-7">
+              <blockquote>
+                Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu
+                in. Tellus at ut. Ac mi varius ut.
+              </blockquote>
             </div>
           </div>
         </div>
+      </header>
+
+
+
+      <header class="gallery-component-hero clearfix">
+        <div class="gallery-base-container mx-auto">
+
+        </div>
         <div class="gallery-component-hero-carousel">
+
+          <h1 class="gallery-component-hero-heading pr4 ">     Super Style Deluxe</h1>
+          <div class="gallery-component-hero-subheading">
+       jk
+          </div>
+          
+
+
           <amp-carousel
             height="316"
             layout="fixed-height"
@@ -2417,10 +2659,25 @@ limitations under the License.
             ></amp-img>
           </amp-carousel>
         </div>
+
+
+
+        
         <div class="gallery-base-container gallery-base-rich-text mx-auto">
           <div class="flex flex-wrap">
             <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div>
             <div class="md-col-8 lg-col-7">
+
+              <div
+              class="left-0 right-0 z1"
+            >
+            
+        
+            </div>
+
+
+
+
               <blockquote>
                 The SuperStyleDeluxe concept emerged where a young budding DJ rising through the ranks
                  in the West Midlands making mixtapes and peddling 
@@ -2440,27 +2697,7 @@ limitations under the License.
           <div class="flex flex-wrap">
             <div class="col-12 md-col-9">
 
-                <amp-accordion class="sample">
-                    <section expanded>
-                      <h4>Read more</h4>
-                      <p>Music production soon started, becoming signed to Hamburgs Lounge Records, Producing a succession of singles and popular remixes on BMG & Sony  for the likes Bent, Pink,  Dido to name but a few. To having number one chartings on releases and receiving various music nominations  awards. Releasing on the Supercharged and Against the Grain labels in the Early 2000’s
-
-                        The Payback Project was soon born, a pioneering label under the SuperStyle Deluxe brand, emerged and swiftly gained recognition as one of the most respected labels in its field. With a relentless pursuit of innovation and a commitment to pushing boundaries, The Payback Project helped strengthen the scene it was involved in.
-                        
-                        SuperStyleDeluxe has decent DJ skills too! With weekly adventures up and down the UK club circuit as well as journeying on regular world tours to Australia, New Zealand, Asia, North America, Russia & Europe and was also on support duty for Pendluam. Renowned for the ability to incorporate the art of Turntabilism & connecting the dots into mixing into uptempo Bass driven DJ sets,  With the ability to scratch,  saw the involvement in development of the Ecler range mixers, NUO and HAK scratch mixers and was part of the Ecler Pro Team.
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        </p>
-                    </section>
-                   
-                  </amp-accordion>
+       
                   
               <p class="gallery-base-invert relative z1 mb2">
                 Music production soon started, becoming signed to Hamburgs Lounge Records, Producing a succession of singles and popular remixes on BMG & Sony  for the likes Bent, Pink,  Dido to name but a few. To having number one chartings on releases and receiving various music nominations  awards. Releasing on the Supercharged and Against the Grain labels in the Early 2000’s
