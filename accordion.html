@@ -93,6 +93,9 @@ limitations under the License.
       </style></noscript
     >
 
+
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+
     <script
       custom-element="amp-iframe"
       src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
@@ -2127,24 +2130,18 @@ limitations under the License.
 
 <style amp-custom="xen">
 
-  .i-amphtml-accordion-header {
-    width: -moz-fit-content;
-  width: fit-content;
-
-  display: table;
-  cursor: pointer;
-  font-weight: 600;
-  line-height: 1.125rem;
-  margin-top: 0.5rem;
-    border: 1px solid #ccc;
-  font-size: 1rem;
-  background-color: #ccc;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 0.3rem 1rem rgba(6, 7, 22, 0.1);
-  margin-bottom: 1rem;
-}
-
+    amp-accordion section[expanded] .show-more { 
+      display: none; 
+    } 
   
+    amp-accordion.hidden-header section[expanded] h4 { 
+      border: none; 
+    } 
+  
+
+
+
+
 
 
   .gallery-component-hero-subheading {
@@ -2235,6 +2232,9 @@ limitations under the License.
 
   </head>
   <body>
+
+  
+
     <!-- Start Navbar -->
     <header
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
@@ -2264,21 +2264,7 @@ limitations under the License.
 
 
     
-    <!--
-    TODO: currently "fixeditems" is an array, therefore it's not possible to
-    add additional classes to it. An alternative solution would be to make it
-    an oject, with a "classes" and "items" sub-properties:
-   "fixeditems": {
-     "classes": "col-3",
-     "items": [{
-       "link": {
-         "url": "mailto:contact@lune.com",
-         "text": "—contact@lune.com",
-         "classes": "xs-small sm-hide h6 bold"
-       }
-     }]
-   }
-   -->
+   
     <div
       class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap absolute top-0 right-0 pt2 pr3"
     >
@@ -2502,7 +2488,7 @@ limitations under the License.
       <div >  <h1
            class="tagline-header-xen text-decoration-none inline-block   mb1 md-mb0"
            style=""
-    >Roaster
+    >Our Artists
 
     </h1></div>
 
@@ -2649,32 +2635,64 @@ limitations under the License.
             <div class="md-col-8 lg-col-7">
               <blockquote>
                 Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu
-                in. Tellus at ut. Ac mi varius ut.
+                in. Tellus at ut. Ac mi varius ut. 
+
+
+ 
               </blockquote>
 
-
-
-              <amp-accordion class="accordion-button">
+              <amp-accordion class="sample">
   <section expanded>
-    <h4>FULL BIO</h4>
-    <div>
-      <p>The SuperStyleDeluxe concept emerged where a young budding DJ rising through the ranks in the West Midlands making mixtapes and peddling them where he held residency at the Legendary Stump Juice night club in Wolverhampton. Titled “SuperStyle Deluxe” The name stuck!
-</p> <br>
-  <p>Music production soon started, becoming signed to Hamburgs Lounge Records, Producing a succession of singles and popular remixes on BMG & Sony  for the likes Bent, Pink,  Dido to name but a few. To having number one chartings on releases and receiving various music nominations  awards. Releasing on the Supercharged and Against the Grain labels in the Early 2000’s
-</p> <br>   
-<p>The Payback Project was soon born, a pioneering label under the SuperStyle Deluxe brand, emerged and swiftly gained recognition as one of the most respected labels in its field. With a relentless pursuit of innovation and a commitment to pushing boundaries, The Payback Project helped strengthen the scene it was involved in.
-</p> <br>
-<p>SuperStyleDeluxe has decent DJ skills too! With weekly adventures up and down the UK club circuit as well as journeying on regular world tours to Australia, New Zealand, Asia, North America, Russia & Europe and was also on support duty for Pendluam. Renowned for the ability to incorporate the art of Turntabilism & connecting the dots into mixing into uptempo Bass driven DJ sets,  With the ability to scratch,  saw the involvement in development of the Ecler range mixers, NUO and HAK scratch mixers and was part of the Ecler Pro Team.
-</p>    
-      
-      
-      </div>
+    <h4>Section 1</h4>
+    <p>Bunch of awesome content.</p>
   </section>
-  
+  <section>
+    <h4>Section 2</h4>
+    <div>Bunch of even more awesome content. This time in a <code>&lt;div&gt;</code>.</div>
+  </section>
+  <section>
+    <h4>Section 3</h4>
+    <figure>
+      <amp-img src="/static/samples/img/clean-1.jpg" layout="responsive" width="400" height="710"></amp-img>
+      <figcaption>Images work as well.</figcaption>
+    </figure>
+  </section>
 </amp-accordion>
 
 
 
+
+
+
+
+              <button on="tap:AMP.setState({expandAc1: true})">Expand item 1</button>
+              <amp-accordion id="ac1" animate class="sample hidden-header" disable-session-states>
+            <section id="item1" on="AMP.setState({expandAc1: true});collapse:AMP.setState({expandAc1: false})" [data-expand]="expandAc1">
+             
+             
+                <h1 [class]="myClass">oses Item 2)</h1>
+              <div>
+                <p>1A</p>
+                <p>1B</p>
+              </div>
+            </section>
+          </amp-accordion>
+
+          <amp-accordion class="sample hidden-header"
+    disable-session-states> 
+    <section> 
+      <h4><span class="show-more">Click it Geek!!</span></h4> 
+      <p>GeeksforGeeks is a Computer Science portal for geeks.  
+It contains well written, well thought and well explained  
+computer science and programming articles, quizzes etc.</p> 
+    </section> 
+  </amp-accordion> 
+
+
+
+        </li>
+        <li>
+        
 
 
 
@@ -2696,6 +2714,42 @@ limitations under the License.
             </div>
           </div>
      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
      
@@ -2729,16 +2783,32 @@ limitations under the License.
 
 
 
-      <!--NIXON-->
 
       <header class="gallery-component-hero clearfix">
 
+<div class="gallery-base-container mx-auto">
 
 
 
 
+  
+  <div
+    class="gallery-component-hero-content  left-0 right-0 z1"
+  >
 
-<div class="gallery-component-hero-carousel carousel-second" style="margin-top:0;" >
+
+
+   
+ 
+
+  </div>
+</div>
+
+
+<!--NIXON-->
+
+
+<div class="gallery-component-hero-carousel" >
 
   <h1 class="carousel-heading-xen gallery-component-hero-heading ">NIXON</h1>
   <div class="gallery-component-hero-subheading pl2">
@@ -2802,30 +2872,6 @@ limitations under the License.
         Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu
         in. Tellus at ut. Ac mi varius ut.
       </blockquote>
-
-
-      <amp-accordion class="accordion-button">
-  <section expanded>
-    <h4>FULL BIO</h4>
-    <div>
-      <p>The SuperStyleDeluxe concept emerged where a young budding DJ rising through the ranks in the West Midlands making mixtapes and peddling them where he held residency at the Legendary Stump Juice night club in Wolverhampton. Titled “SuperStyle Deluxe” The name stuck!
-</p> <br>
-  <p>Music production soon started, becoming signed to Hamburgs Lounge Records, Producing a succession of singles and popular remixes on BMG & Sony  for the likes Bent, Pink,  Dido to name but a few. To having number one chartings on releases and receiving various music nominations  awards. Releasing on the Supercharged and Against the Grain labels in the Early 2000’s
-</p> <br>   
-<p>The Payback Project was soon born, a pioneering label under the SuperStyle Deluxe brand, emerged and swiftly gained recognition as one of the most respected labels in its field. With a relentless pursuit of innovation and a commitment to pushing boundaries, The Payback Project helped strengthen the scene it was involved in.
-</p> <br>
-<p>SuperStyleDeluxe has decent DJ skills too! With weekly adventures up and down the UK club circuit as well as journeying on regular world tours to Australia, New Zealand, Asia, North America, Russia & Europe and was also on support duty for Pendluam. Renowned for the ability to incorporate the art of Turntabilism & connecting the dots into mixing into uptempo Bass driven DJ sets,  With the ability to scratch,  saw the involvement in development of the Ecler range mixers, NUO and HAK scratch mixers and was part of the Ecler Pro Team.
-</p>    
-      
-      
-      </div>
-  </section>
-  
-</amp-accordion>
-
-
-
-
     </div>
   </div>
 </div>
