@@ -2262,7 +2262,10 @@ limitations under the License.
 
       .my-accordion section:not([expanded]) {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='40px' viewBox='0 0 24 24' width='40px' fill='%23000000'%3E%3Cpath d='M24 24H0V0h24v24z' fill='none' opacity='.87'/%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z'/%3E%3C/svg%3E%0A");
-      }
+        background-position: right center;
+    
+    
+    }
 
 /***Accordion--end***/
 
@@ -2281,6 +2284,18 @@ limitations under the License.
         border: none;
         background: none;
       }
+
+      .xen-accordion section[expanded] {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='40px' viewBox='0 0 24 24' width='40px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z'/%3E%3C/svg%3E%0A");
+      }
+
+      .xen-accordion section:not([expanded]) {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='40px' viewBox='0 0 24 24' width='40px' fill='%23000000'%3E%3Cpath d='M24 24H0V0h24v24z' fill='none' opacity='.87'/%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z'/%3E%3C/svg%3E%0A");
+        background-position: right center;
+        margin:1rem;
+    
+    
+    }
 
  
 </style>
@@ -2652,14 +2667,21 @@ limitations under the License.
           <div class="flex flex-wrap">
             <div class="col-12 md-col-8">
               <h2 class="gallery-base-invert relative z1 mb2">
-                STORIES for Music Creators
+                Google and Music Creators
               </h2>
               <p class="gallery-base-invert relative z1 mb2">
-                The Payback Project was soon born, a pioneering label under the SuperStyle Deluxe brand, emerged and swiftly gained recognition as one of the most respected labels in its field. With a relentless pursuit of innovation and a commitment to pushing boundaries, The Payback Project helped strengthen the scene it was involved in.
-              </p>
+                
+                People love stories. They create positive user experiences and allow to integrate  information naturally instead of simply listing facts. Web stories can drive  traffic to your site or any other media channel including YouTube. With this new Google format  you can share your  brand story and  even monetize and generate revenue.
+             
+             
+                </p>
+
+                <p>Since Google announced the arrival of web stories in google search, a lot of opportunities were opened up to them. Many famous brands are using and exploring web stories format at the moment: Washington Post, BBS, CNN, Mashable, People, Guardian.</p>
 
 
-
+<p>The main thing about web stories is that they  appear on search engines and can be found anywhere on the internet whereas social media stories have a short lifespan and are limited to a specific platform.
+Currently, over 2,000 websites have  published their web stories that have been indexed by Google. 
+</p>
 
 
 
@@ -2667,16 +2689,61 @@ limitations under the License.
 <amp-accordion expand-single-section id="my-accordion" class="my-accordion">
   <section>
     <h2>The key differences between web stories and  social media stories </h2>
-    <div> <p>Content in section 1.</p></div>
+    <div> <ul>
+      <li> 1) Web stories appear directly on Google search results. They can be indexed and  can be found. While social media stories can only be available to the users of the network that allow them to create stories. 
+
+
+
+</li>
+<li>2) There is no expiration date for web stories. Only the owners of web stories decide how long they will last and be stored. Instagram, for example, has a limit: the duration of stories is 60 seconds and their lifespan is only 24 hours. 
+</li>
+<li>3) Links and CTA buttons can be used in web stories. On Instagram, including links is only available to the users who have more than ten thousand subscribers.
+</li>
+<li>
+4) Unlike social media stories, when you include ads in your Web Stories, 100% of ads revenue goes to you. 
+</li>
+</ul></div>
    
   </section>
   <section>
     <h2>What is the technology behind web stories?</h2>
-    <div>Content in section 2.</div>
+    <div>The technology of web stories is supported by Google and is based on the  AMP  Framework. AMP technology has gained its fame as a solution that allows you to make websites as fast as possible. Search engines reward fast sites. The faster the site, the higher its ranking on Google.
+Google search results contain much more than just a list of links. They are made from different panels (SERP): snippets, carousels, knowledge graphs, cards etc. 
+Most of the web pages that get clicks from SERP panels are AMP pages. Why? Because a regular site starts loading when it is visited, but an AMP page, due to pre-rendering, is loaded from the Google cache, i.e. before it was visited. Google has been severely criticized for prerendering AMP pages  and the discussion about whether the  sites based on AMP technology are really so fast or the whole point is that Google simply prioritizes pages based on its technology ensuring  their instant display when clicked still continues. 
+
+
+
+<p>How do the web stories look like in search results?
+Web stories occupy a dedicated block, called Carousel on Google Discover (SERP). However since the format is still under development, currently, the carousel is only available in three countries: the United States, India, and Brazil. 
+</p>
+</div>
   </section>
   <section>
     <h2>How does AMP work? </h2>
     <div>
+
+      There are currently three approaches to work with the AMP technology:
+ 1) Automatic Approach 
+Many website builders offer automatic AMP conversions to their clients.  The disadvantage of this approach is that, automatic conversion in order to improve SEO performance can easily break things. For example, a photo gallery might not work correctly or the AMP version of a page might not have a comments section. 
+ 2) Coding AMP components 
+The easiest way to code all AMP features correctly is to use the AMP component catalog. From small things to complex ones like web stories, AMP built-in components are the building blocks for AMP pages. The page can be made entirely from the components or only partially. 
+Here is a real-world example:
+{{< img class="img-small" src="images/2.gif"    >}}
+In the below image, we see how ebay is using AMP component: a horizontally scrolling carousel.
+3) Duplicating Approach content in AMP 
+Not all website builders allow automatic AMP conversion, and even if they do, not everyone wants to solve possible design problems. 
+Pages with particularly important  SEO  content  are often  duplicated in AMP. 
+So, your search traffic will be particularly relevant to the best that your site has to offer. 
+This technique is classified as a best practice.
+To sum up, web stories can be a powerful tool for showcasing products or services. By combining text, images, videos they can provide a more engaging users experience. It's no coincidence that the first adapters of web stories are media companies. Scrollytelling can  revolutionize the way news and journalism are presented online. 
+To work with web-stories, the following skills and experience are required: 
+•	AMP technology skills 
+•	Video editing skills
+•	Experience in graphic and motion design 
+•	Web copywriting
+•	Knowledge of the niche industry
+
+
     <amp-img
       src="/static/inline-examples/images/squirrel.jpg"
       width="320"
@@ -2732,15 +2799,16 @@ limitations under the License.
 
 
               <amp-img
-                width="8"
-                height="12"
+                width="180"
+                height="384"
                 layout="responsive"
-                src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Player.gif"
+                src="img/stories/music-story.png"
                 srcset="
-                  https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Player.gif 1x,
-                  https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Player.gif 2x
+                img/stories/music-story.png 1x,
+                img/stories/music-story.png 2x
                 "
-                alt="mountain at sunset"
+
+                alt="music webstory" style="margin-left: 1rem;"
               ></amp-img>
 
               
