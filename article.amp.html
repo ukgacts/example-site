@@ -32,6 +32,10 @@ limitations under the License.
 
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+
 
 
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
@@ -93,8 +97,7 @@ limitations under the License.
           -ms-animation: none;
           animation: none;
         }
-      </style></noscript
-    >
+      </style></noscript>
 
     <script
       custom-element="amp-iframe"
@@ -1401,7 +1404,7 @@ limitations under the License.
         font-weight: 500;
       }
       .gallery-base-section:not(:last-child) {
-        margin-bottom: 8rem;
+        margin-bottom: 1rem;
       }
       .gallery-base-rich-text h2 {
         font-size: 2rem;
@@ -1421,14 +1424,12 @@ limitations under the License.
       }
       .gallery-base-rich-text blockquote {
         margin: 0;
-        font-size: 1.12rem;
-        color: #fcb319;
-        font-weight: 600;
-        font-style: italic;
+        font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
       }
       .gallery-base-section {
         font-size: 1.12rem;
-        border-bottom: 5px solid #4a4a4a;
         position:relative;
       }
       .gallery-inner-offset-img {
@@ -1740,12 +1741,13 @@ limitations under the License.
         outline: none;
       }
       .gallery-component-hero-carousel .amp-carousel-button-next {
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M9 3L7.94 4.06l4.19 4.19H3v1.5h9.13l-4.19 4.19L9 15l6-6z'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7v-3.4z'%3E%3C/path%3E%3C/svg%3E");
+        
         right: 0;
       }
       .gallery-component-hero-carousel .amp-carousel-button-prev {
         left: 0;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M10.4 14.3 26.5 31h-6.4L5.5 16 20.1 1h6.4L10.4 17.7v-3.4z'%3E%3C/path%3E%3C/svg%3E");
       }
       @media (max-width: 40rem) {
         .gallery-component-hero-carousel .amp-carousel-button {
@@ -2133,7 +2135,15 @@ limitations under the License.
           left: 1rem;
           top: calc(20px + 36px + 0.65rem);
         }
-        
+        .gallery-component-tagline > div {
+          transform: rotate(-90deg) translate(-100%);
+          transform-origin: top left;
+          margin-top: 2rem;
+          background-color: #f6b117;
+    border: solid 3px black;
+    padding: 0 3px;
+        }
+      }
 
 
 
@@ -2230,6 +2240,25 @@ limitations under the License.
   .ampstart-social-follow{margin:0 0 2rem;}
 
 
+
+
+/***Article***/
+
+  .title-article {
+    margin-bottom: 3.75rem;
+
+  }
+
+  .ampstart-image-with-caption amp-img {
+    border: 6px solid #f5f6fd;
+}
+ 
+ 
+
+/***Article--end***/
+
+
+
 /***Accordion***/
 
   .my-accordion > section {
@@ -2267,19 +2296,19 @@ limitations under the License.
     
     }
 
-/***Accordion--end***/
+
 
 .xen-accordion > section {
         border-radius: 0.5rem;
-        margin: 1rem;
+        
         background: #fcb319;
 
         background-repeat: no-repeat;
-        background-position: right 1rem top 1rem;
+        background-position: 0.3rem 2rem;
       }
 
       .xen-accordion h2 {
-        background: white;
+        margin-left: 1rem;
         padding: 2rem;
         border: none;
         background: none;
@@ -2291,13 +2320,64 @@ limitations under the License.
 
       .xen-accordion section:not([expanded]) {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='40px' viewBox='0 0 24 24' width='40px' fill='%23000000'%3E%3Cpath d='M24 24H0V0h24v24z' fill='none' opacity='.87'/%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z'/%3E%3C/svg%3E%0A");
-        background-position: right center;
-        margin:1rem;
-    
+        background-position: 0.3rem 2rem;
+        margin:1rem 0;
+          
     
     }
 
+
+
+
+
+
+  .xen-accordion  li {
+
+
+  font-weight: 100;
+}
+
+/***Accordion--end***/
+
+.ampstart-nav-item .ampstart-nav-link::before {
+  width: 1.125rem;
+  margin-right: 1rem;
+  text-align: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  color: #000;
+  font-size: 0.9375rem;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.71875rem;
+  counter-increment: a;
+  content: counter(a);
+  -ms-flex: none;
+  flex: none;
+}
+
+/***Carousel***/
+
+
+.carousel-wrapper.gallery-component-hero-carousel {
+  margin-top: 0;
+  margin-left: 1rem;
  
+}
+
+.carousel-wrapper .amp-carousel-button {
+  background-color: #fcb319;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.12);
+  border-radius: 0;
+  width: 35px;
+  height: 45px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  top: 40%;
+}
+
+
+/***Carousel--end***/
 </style>
 
   </head>
@@ -2314,18 +2394,11 @@ limitations under the License.
         class="ampstart-navbar-trigger pr2"
       >
 
-
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 36 36"
-          width="46"
-          height="46"
-        >
-          <path fill="currentColor" d="M9 12h18v1H9z"></path>
-          <path fill="currentColor" d="M9 17h18v1H9z"></path>
-          <path fill="currentColor" d="M9 22h18v1H9z"></path>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg"      viewBox="0 0 36 36"
+      width="46"
+      height="46">
+        <path d="M1 7.5h30V1.9H1v5.6zm0 22.6h30v-5.6H1v5.6zm0-11.3h30v-5.6H1v5.6z"></path>
+      </svg>        
       </div>
 
 
@@ -2544,20 +2617,16 @@ limitations under the License.
     <!-- End Sidebar -->
     <!-- End Navbar -->
   
-
+ 
    
     <div class="gallery-component-tagline-xen right-0 left-0 top-0" style="display: flex; left: calc(1rem + 36px + 0.65rem);
   pointer-events: none;
   position: absolute; margin-top: 20px;justify-content: space-between;
 
   z-index: 9;">
-      <div >  <h1
-           class="tagline-header-xen text-decoration-none inline-block   mb1 md-mb0"
-           style=""
-    >STORIES
-
-    </h1></div>
-
+      <div > 
+        </div>
+       
 
       <!-- Logo -->
         
@@ -2583,7 +2652,9 @@ limitations under the License.
 
     </div>
 
-
+    <div class="gallery-component-tagline">
+      <div>Gallery of Modern Art</div>
+    </div>
 
 
 
@@ -2615,50 +2686,142 @@ limitations under the License.
 
       
 
-      <header class="gallery-component-hero clearfix">
-
-        <div class="gallery-base-container mx-auto">
+      <header class="gallery-component-hero clearfix" style="margin-bottom: 3.75rem;">
 
 
 
+          <div class="gallery-base-container gallery-base-rich-text mx-auto" style="margin-top: calc(0.055 * 100vmin + 7.9375 * 1rem);">
 
-          
-          <div
-            class="gallery-component-hero-content  left-0 right-0 z1"
-          >
 
+            <div class="title-article right-0 z1">
+            <h1 class="gallery-component-hero-heading">Living Tree</h1>
+            <div class="gallery-component-hero-subheading">
+              <time datetime="2017-08-24">Sept 24</time>-<time datetime="2017-08-29">29</time>
+              / Anna Moss
+            </div>
+           
+          </div>
+
+
+          <div class="flex flex-wrap" style="left: calc(1rem + 36px + 0.65rem); position: relative;">
        
+            <div class="md-col-8 lg-col-7" >
+              <blockquote>
+               Social media stories continue to grow in popularity, and Google isn’t one to miss an opportunity.  
+                </p>
 
+                Google Web Stories are a visual content format that enables creators to easily make short videos, images, or animations. 
+                
+               
+                </blockquote>
+            </div>
           </div>
         </div>
+      </header>
 
+    
 
-
-
-
-
-
-
-
-
-
+      <section class="text-single gallery-base-section gallery-base-rich-text">
+        <div class="gallery-base-container mx-auto">
+          <div class="flex flex-wrap " style="margin-bottom: 3.75rem;">
+            <div class="col-12 md-col-9">
+              <p>Since Google announced the arrival of web stories in google search, a lot of opportunities were opened up to them. 
+              <p class="gallery-base-invert relative z1 mb2">
+                Many famous brands are using and experiemnting with this new format at the moment: Washington Post, BBS, CNN, Mashable, People, Guardian. 
+             
+             
+                  
+              
+                </p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
 
  
-        <div class="gallery-base-container gallery-base-rich-text mx-auto">
+  
+
+
+      <section class="gallery-base-section gallery-base-rich-text">
+        <div class="gallery-base-container mx-auto">
           <div class="flex flex-wrap">
-            <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div>
-            <div class="md-col-8 lg-col-7">
-   
-</section>
+            <div class="col-12">
+              <h2 class="gallery-base-invert relative z1 mb2">
+                About the Artist
+              </h2>
+            </div>
+            <div class="col-12 md-col-6">
+              <p class="gallery-base-invert relative z1 mb2">
+                Velit sed quis. Tempus in sed integer morbi lacus ac luctus elit
+                phasellus elementum gravida. Dui at consectetuer. Est in
+                pellentesque. Consequat sapien consectetuer. Nam lacinia erat
+                mollis sodales in magna nec sapien ultrices scelerisque quam.
+              </p>
+              <p class="gallery-base-invert relative z1 mb2">
+                Ultrices nunc dolor voluptates euismod morbi amet in mi libero
+                elit malesuada. Fringilla potenti magna. Orci ipsum est ac nunc
+                eget maecenas ligula dui. Eu a suspendisse. Neque at volutpat.
+                Nam ut ligula. Cras turpis urna consequuntur varius tempus
+                aenean maecenas purus sem faucibus facilisis penatibus volutpat
+                proin. Wisi libero in. Venenatis tellus elementum.
+              </p>
+    
+            </div>
+            <div class="col-12 md-col-5">
+<div  class="carousel-wrapper gallery-component-hero-carousel">  
+              <amp-carousel  layout="responsive" height="400" width="205" type="slides" >
+  <div class="slide">
+    <amp-img src="img/stories/story-bbc.jpg" layout="responsive" width="385" height="641" alt="BBC "></amp-img>
+    <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3"> BBC  </amp-fit-text>
+  </div>
 
+  <div class="slide">
+    <amp-img src="img/stories/story-cnn.jpg" layout="responsive" width="385" height="641" alt="CNN "></amp-img>
+    <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3"> CNN 
+  </div>
 
-
+  <div class="slide">
+    <amp-img src="img/stories/story-wpost.jpg" layout="responsive" width="385" height="641" alt="The Washington Post "></amp-img>
+    <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3" style="font-size: 0.875rem;
+  line-height: 1.125rem;">
+      The Washington Post 
+    </amp-fit-text>
+  </div>
+</amp-carousel>
+</div>
 
 
             </div>
           </div>
         </div>
-      </header>
+      </section>
+
+
+
+
+
+
+      <section class="text-single gallery-base-section gallery-base-rich-text">
+        <div class="gallery-base-container mx-auto">
+          <div class="flex flex-wrap " style="margin-bottom: 3.75rem;">
+            <div class="col-12 md-col-9">
+              <p>Since Google announced the arrival of web stories in google search, a lot of opportunities were opened up to them. 
+              <p class="gallery-base-invert relative z1 mb2">
+                Many famous brands are using and experiemnting with this new format at the moment: Washington Post, BBS, CNN, Mashable, People, Guardian. 
+             
+             
+                  
+              
+                </p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+
 
 
 
@@ -2666,102 +2829,133 @@ limitations under the License.
         <div class="gallery-base-container mx-auto">
           <div class="flex flex-wrap">
             <div class="col-12 md-col-8">
+            
+ 
+  <p>It is not a coincidence that the first adapters of web stories are media companies. Web stories can revolutionize the way news and journalism can be presented online.</p>
+
+<p>
+
+                Google demonstrates a big ambition to widely distribute this format.     </p>
+
+<p>   Web stories occupy a dedicated block, called Carousel on Google Discover (SERP). Web stories can also be referenced directly in google image. It opens up a gigantic traffic to them. However since the format is  under development,  the carousel is only available in: the United States, India, and Brazil.
+</p>
+
+<figure class="ampstart-image-with-caption m0 relative mb4 pt2 mt1" style="width: calc(0.46 * 100vw + 9.375 * 1.025rem);
+  max-width: 80rem;
+  left: -20%;">  
+     
+<amp-img
+         width="1694"
+         height="978"
+         layout="responsive"
+         noloading=""
+         src="img/stories/stories-carousel.png"
+         srcset="
+         img/stories/stories-carousel.png 1x,
+         img/stories/stories-carousel.png 2x
+     "
+         alt="logo" 
+       ></amp-img>
+       <figcaption class="h5 mt1 px3"> Top Stories Carousel — Google Search Results </figcaption>
+
+      </figure>
+
+
+
+
+<p>Unlike closed ecosystems Web Stories are freely available and can be shared and embedded across various platforms. </p>
+
+
+<p>Currently, over 2,000 websites have published their web stories that have been indexed by Google.</p>
+
+
+
+
+
+
+
+
+
+
+            </div>
+ 
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section-single-photo gallery-base-section gallery-base-rich-text">
+        <div class="gallery-base-container mx-auto">
+          <div class="flex flex-wrap">
+            <div class="col-12 md-col-8">
               <h2 class="gallery-base-invert relative z1 mb2">
-                Google and Music Creators
+                About the Exhibit
               </h2>
               <p class="gallery-base-invert relative z1 mb2">
-                
-                People love stories. They create positive user experiences and allow to integrate  information naturally instead of simply listing facts. Web stories can drive  traffic to your site or any other media channel including YouTube. With this new Google format  you can share your  brand story and  even monetize and generate revenue.
-             
-             
-                </p>
+                Suspendisse quisque suscipit mauris ac culpa. Duis etiam mauris.
+                Lacinia volutpat ut. Congue etiam lobortis. Ultrices aliquam
+                rutrum. Dignissim fermentum odio amet id tellus. At taciti
+                imperdiet. Consequat ut blandit. Amet justo posuere. Metus
+                ligula amet. Vehicula libero enim. Lectus sed elit ante dui quis
+                leo nobis.
+              </p>
+            </div>
+            <div class="col-12 md-col-4">
+              <amp-img
+         width="1694"
+         height="978"
+         layout="responsive"
+         noloading=""
+         src="img/stories/stories-carousel.png"
+         srcset="
+         img/stories/stories-carousel.png 1x,
+         img/stories/stories-carousel.png 2x
+     "
+         alt="logo" 
+       ></amp-img>
+       <figcaption class="h5 mt1 px3"> Top Stories Carousel — Google Search Results </figcaption>
 
-                <p>Since Google announced the arrival of web stories in google search, a lot of opportunities were opened up to them. Many famous brands are using and exploring web stories format at the moment: Washington Post, BBS, CNN, Mashable, People, Guardian.</p>
+      </figure>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
-<p>The main thing about web stories is that they  appear on search engines and can be found anywhere on the internet whereas social media stories have a short lifespan and are limited to a specific platform.
-Currently, over 2,000 websites have  published their web stories that have been indexed by Google. 
-</p>
 
 
 
 
-<amp-accordion expand-single-section id="my-accordion" class="my-accordion">
+      <section
+        class="gallery-component-map gallery-base-section gallery-base-rich-text"
+      >
+        <div class="gallery-component-map-details left-0 right-0 z1">
+          <div class="gallery-base-container mx-auto">
+
+
+            <amp-accordion expand-single-section  class="xen-accordion">
   <section>
     <h2>The key differences between web stories and  social media stories </h2>
-    <div> <ul>
-      <li> 1) Web stories appear directly on Google search results. They can be indexed and  can be found. While social media stories can only be available to the users of the network that allow them to create stories. 
-
-
-
-</li>
-<li>2) There is no expiration date for web stories. Only the owners of web stories decide how long they will last and be stored. Instagram, for example, has a limit: the duration of stories is 60 seconds and their lifespan is only 24 hours. 
-</li>
-<li>3) Links and CTA buttons can be used in web stories. On Instagram, including links is only available to the users who have more than ten thousand subscribers.
-</li>
-<li>
-4) Unlike social media stories, when you include ads in your Web Stories, 100% of ads revenue goes to you. 
-</li>
-</ul></div>
-   
-  </section>
-  <section>
-    <h2>What is the technology behind web stories?</h2>
-    <div>The technology of web stories is supported by Google and is based on the  AMP  Framework. AMP technology has gained its fame as a solution that allows you to make websites as fast as possible. Search engines reward fast sites. The faster the site, the higher its ranking on Google.
-Google search results contain much more than just a list of links. They are made from different panels (SERP): snippets, carousels, knowledge graphs, cards etc. 
-Most of the web pages that get clicks from SERP panels are AMP pages. Why? Because a regular site starts loading when it is visited, but an AMP page, due to pre-rendering, is loaded from the Google cache, i.e. before it was visited. Google has been severely criticized for prerendering AMP pages  and the discussion about whether the  sites based on AMP technology are really so fast or the whole point is that Google simply prioritizes pages based on its technology ensuring  their instant display when clicked still continues. 
-
-
-
-<p>How do the web stories look like in search results?
-Web stories occupy a dedicated block, called Carousel on Google Discover (SERP). However since the format is still under development, currently, the carousel is only available in three countries: the United States, India, and Brazil. 
-</p>
-</div>
-  </section>
-  <section>
-    <h2>How does AMP work? </h2>
-    <div>
-
-      There are currently three approaches to work with the AMP technology:
- 1) Automatic Approach 
-Many website builders offer automatic AMP conversions to their clients.  The disadvantage of this approach is that, automatic conversion in order to improve SEO performance can easily break things. For example, a photo gallery might not work correctly or the AMP version of a page might not have a comments section. 
- 2) Coding AMP components 
-The easiest way to code all AMP features correctly is to use the AMP component catalog. From small things to complex ones like web stories, AMP built-in components are the building blocks for AMP pages. The page can be made entirely from the components or only partially. 
-Here is a real-world example:
-{{< img class="img-small" src="images/2.gif"    >}}
-In the below image, we see how ebay is using AMP component: a horizontally scrolling carousel.
-3) Duplicating Approach content in AMP 
-Not all website builders allow automatic AMP conversion, and even if they do, not everyone wants to solve possible design problems. 
-Pages with particularly important  SEO  content  are often  duplicated in AMP. 
-So, your search traffic will be particularly relevant to the best that your site has to offer. 
-This technique is classified as a best practice.
-To sum up, web stories can be a powerful tool for showcasing products or services. By combining text, images, videos they can provide a more engaging users experience. It's no coincidence that the first adapters of web stories are media companies. Scrollytelling can  revolutionize the way news and journalism are presented online. 
-To work with web-stories, the following skills and experience are required: 
-•	AMP technology skills 
-•	Video editing skills
-•	Experience in graphic and motion design 
-•	Web copywriting
-•	Knowledge of the niche industry
-
-
-    <amp-img
-      src="/static/inline-examples/images/squirrel.jpg"
-      width="320"
-      height="256"
-    ></amp-img>
-</div>
-  </section>
-</amp-accordion>
-
-
-
-<p>Style2</p>
-
-
-<amp-accordion expand-single-section  class="xen-accordion">
-  <section>
-    <h2>The key differences between web stories and  social media stories </h2>
-    <div> <p>Content in section 1.</p></div>
+    <div> 
+      
+      <ul style="list-style: none; padding-left: 2.5rem;
+  padding-right: 2.5rem; margin-left: 1rem; ">
+        <li>
+          Web stories appear directly on Google search results. They can be indexed and can be found. While social media stories can only be available to the users of the network that allow them to create stories. 
+          </li>
+          
+          <li>There is no expiration date for web stories. Only the owners of web stories decide how long they will last and be stored. Instagram, for example, has a limit: the duration of stories is 60 seconds and their lifespan is only 24 hours. </li>
+          
+          <li>Links and CTA buttons can be used in web stories. On Instagram, including links is only available to the users who have more than ten thousand subscribers. </li>
+          
+        <li>Unlike social media stories, when you include ads in your Web Stories, 100% of ads revenue goes to you.</li>
+        
+        
+          </ul>
+      
+      
+      
+      </div>
    
   </section>
   <section>
@@ -2777,174 +2971,12 @@ To work with web-stories, the following skills and experience are required:
       height="256"
     ></amp-img>
 </div>
-  </section>
+ 
 </amp-accordion>
-
-
-
-
-
-
-
-
-            </div>
-            <div class="col-12 md-col-4">
-
-
-
-
-
-
-
-
-
-              <amp-img
-                width="180"
-                height="384"
-                layout="responsive"
-                src="img/stories/music-story.png"
-                srcset="
-                img/stories/music-story.png 1x,
-                img/stories/music-story.png 2x
-                "
-
-                alt="music webstory" style="margin-left: 1rem;"
-              ></amp-img>
-
-              
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="gallery-base-section gallery-base-rich-text">
-        <div class="gallery-base-container mx-auto">
-          <div class="flex flex-wrap">
-            <div class="col-12">
-              <h2 class="gallery-base-invert relative z1 mb2">
-                About the Artist
-              </h2>
-            </div>
-            <div class="col-12 md-col-7">
-              <p class="gallery-base-invert relative z1 mb2">
-                SuperStyleDeluxe has decent DJ skills too! With weekly adventures up and down the UK club circuit as well 
-                as journeying on regular world tours to Australia, New Zealand, Asia, North America, Russia & Europe and
-                 was also on support duty for Pendluam. 
-              </p>
-              <p class="gallery-base-invert relative z1 mb2">
-                Renowned for the ability to incorporate the art of Turntabilism &
-                  connecting the dots into mixing into uptempo Bass driven DJ sets,  With the ability to scratch,  saw the
-                   involvement in development of the Ecler range mixers, NUO and HAK scratch mixers and was part of the Ecler Pro Team.
-              </p>
-            </div>
-            <div class="col-12 md-col-5">
-              <amp-img
-                width="400"
-                height="579"
-                class="gallery-inner-offset-img"
-                layout="responsive"
-                src="img/gallery/lake.jpg"
-                srcset="
-                  img/gallery/pineapple.jpg 1x,
-                  img/gallery/pineapple@2x.jpg 2x
-                "
-                alt="blue lake against skyline"
-              ></amp-img>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery-base-section gallery-base-rich-text">
-        <div class="gallery-base-container mx-auto">
-          <h2 class="gallery-base-invert relative z1 pb2 mb2">Other Exibits</h2>
-          <ul
-            class="gallery-related-section-items list-reset flex flex-wrap m0"
-          >
-            <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
-              <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img
-                  width="233"
-                  height="202"
-                  src="img/gallery/jellyfish.jpg"
-                  srcset="
-                      img/gallery/jellyfish.jpg 1x,
-                      img/gallery/jellyfish@2x.jpg 2x
-                    "
-                  alt="swimming jellyfish"
-                  layout="responsive"
-                  class="gallery-recommended-image"
-                ></amp-img>
-                <figcaption class="h5 mt1 px3">
-                  Untitled &mdash; Evan Ondre
-                </figcaption>
-              </figure>
-            </li>
-            <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
-              <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img
-                  width="233"
-                  height="202"
-                  src="img/gallery/balloon.jpg"
-                  srcset="
-                      img/gallery/balloon.jpg 1x,
-                      img/gallery/balloon@2x.jpg 2x
-                    "
-                  alt="colourful hot air balloon"
-                  layout="responsive"
-                  class="gallery-recommended-image"
-                ></amp-img>
-                <figcaption class="h5 mt1 px3">
-                  Cage &mdash; Ellen Doe
-                </figcaption>
-              </figure>
-            </li>
-            <li class="sm-col-4 md-col-4 lg-col-4 pr2 py2 mx-auto">
-              <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img
-                  width="233"
-                  height="202"
-                  src="img/gallery/orange.jpg"
-                  srcset="
-                      img/gallery/orange.jpg 1x,
-                      img/gallery/orange@2x.jpg 2x
-                    "
-                  alt="sliced orange covered in blue paint"
-                  layout="responsive"
-                  class="gallery-recommended-image"
-                ></amp-img>
-                <figcaption class="h5 mt1 px3">
-                  Short Circuit &mdash; Anna Moss
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section
-        class="gallery-component-map gallery-base-section gallery-base-rich-text"
-      >
-        <div class="gallery-component-map-details left-0 right-0 z1">
-          <div class="gallery-base-container mx-auto">
-            <h2 class="gallery-component-map-heading mb2">
-              Visit the exhibition from
-              <time datetime="Music Production">Sept 24</time>-<time
-                datetime="2017-08-29"
-                >29</time
-              >
-            </h2>
-            <div class="flex items-center">
-              <address class="m0">
-                <div>123 St Name</div>
-                City, State 12345
-              </address>
-
-              <button
-                class="ampstart-btn gallery-component-button items-center justify-center"
-              >
-               SoundCloud
-              </button>
-            </div>
+</section>
+          
+            
+          
           </div>
         </div>
         <div class="gallery-component-map-frame">
@@ -2959,6 +2991,8 @@ To work with web-stories, the following skills and experience are required:
           ></amp-iframe>
         </div>
       </section>
+
+      
     </main>
   </body>
 </html>
