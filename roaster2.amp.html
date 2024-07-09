@@ -1766,6 +1766,8 @@ limitations under the License.
       .gallery-component-hero-carousel .amp-carousel-button-prev {
         left: 0;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M10.4 14.3 26.5 31h-6.4L5.5 16 20.1 1h6.4L10.4 17.7v-3.4z'%3E%3C/path%3E%3C/svg%3E");
+    
+    
       }
       @media (max-width: 40rem) {
         .gallery-component-hero-carousel .amp-carousel-button {
@@ -2173,22 +2175,202 @@ limitations under the License.
 <style amp-custom="xen">
 
 
-  .gallery-component-hero-subheading {
-        margin: 0;
-        font-size: 1.375rem;
-       
- 
+/*** STRUCTURE ***/
+
+/* Footer */
+.post-body__author-title {
+  color: #555;
+  line-height: 140%;
+  font-weight: bolder;
+}
+
+.post-body__author-name {
+  color: #555;
+  line-height: 140%;
+
+}
+
+
+.footer {
+  padding: 4.5rem 0;
+  background-color: black;
+  color: white;
   position: relative;
-      }
+}
 
 
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer__row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4rem;
+  }
+}
+
+
+.footer__column {
+  display: flex;
+
+}
+
+@media (min-width: 768px) {
+  .footer__column--menus {
+    max-width: calc(8.5rem * 3);
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__column {
+    row-gap: 2.5rem;
+    padding: 0;
+  }
+}
+
+.footer__column--menus {
+  width: 100%;
+  justify-content: space-around;
+ 
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .footer__column--contents {
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .footer__column--contents {
+    align-items: start;
+    order: -1;
+  }
+}
+
+
+.footer-menu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-20);
+}
+@media (min-width: 768px) {
+  .footer__column--menus {
+    text-align: left;
+  }
+}
+
+
+.footer-menu ul li {
+  list-style-type: none;
+  
+}
+
+footer a {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.footer__column--contents {
+  flex-direction: column;
+  flex-direction: column;
+  max-width: calc(12.5rem * 3);
+}
+
+
+
+.footer__divider {
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 1px;
+}
+
+@media (min-width: 768px) {
+  .footer__divider {
+    display: none;
+  }
+}
+
+
+
+
+}
+
+/* Footer--end */
+
+/*** STRUCTURE--end ***/
+
+
+.gallery-component-hero-subheading.h1 {
+              font-size: 2rem;
+          font-weight: 800;
+            }
+
+.gallery-component-hero-subheading.h2 {
+  margin: 0;
+  font-size: 1.375rem;
+  position: relative;
+  text-transform: uppercase;
+  padding-top: 1.1rem;
+  margin-bottom: 3.75rem;
+  font-weight: 600;
+}
+
+
+.small-text { 
+  font-size: 0.75rem;
+  }
+
+
+
+
+amp-soundcloud {
+
+margin-bottom: 3.75rem;
+
+
+}
+
+            
       @media (min-width: 40.06rem) {
   .gallery-component-hero-subheading{
     padding-left: 0;
+    margin-bottom: 3.75rem;
     
   }}  
 
-
+  .section-related__subheading {text-transform: uppercase;
+    
+    font-weight: 600; padding-top: 1.2rem;}
   
 
 .navbar-logo {
@@ -2361,6 +2543,15 @@ limitations under the License.
   
 }
 /* Blockquote--end */
+
+
+
+/* Blockquote--end */
+
+
+
+
+
 /***Article--end***/
 
 
@@ -2568,139 +2759,7 @@ amp-accordion p {
 
 
 
-/*** Footer ***/
 
-.footer {
-  padding: 4.5rem 0;
-  background-color: black;
-  color: white;
-  position: relative;
-}
-
-
-.footer__row {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .footer__row {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 4rem;
-  }
-}
-
-
-.footer__column {
-  display: flex;
-
-}
-
-@media (min-width: 768px) {
-  .footer__column--menus {
-    max-width: calc(8.5rem * 3);
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer__column {
-    row-gap: 2.5rem;
-    padding: 0;
-  }
-}
-
-.footer__column--menus {
-  width: 100%;
-  justify-content: space-around;
- 
-}
-
-
-
-
-
-
-
-
-@media (max-width: 767px) {
-  .footer__column--contents {
-    max-width: 100%;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
-
-
-
-
-@media (min-width: 768px) {
-  .footer__column--contents {
-    align-items: start;
-    order: -1;
-  }
-}
-
-
-.footer-menu ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--space-20);
-}
-@media (min-width: 768px) {
-  .footer__column--menus {
-    text-align: left;
-  }
-}
-
-
-.footer-menu ul li {
-  list-style-type: none;
-  
-}
-
-footer a {
-  margin: 0;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-
-
-
-.footer__column--contents {
-  flex-direction: column;
-  flex-direction: column;
-  max-width: calc(12.5rem * 3);
-}
-
-
-
-.footer__divider {
-  display: block;
-  background-color: white;
-  width: 100%;
-  height: 1px;
-}
-
-@media (min-width: 768px) {
-  .footer__divider {
-    display: none;
-  }
-}
-
-
-/*** Footer--end ***/
 
 </style>
 
@@ -3024,6 +3083,72 @@ footer a {
 
 
 
+      <header class="gallery-component-hero clearfix">
+
+
+        <div class="gallery-component-hero-carousel carousel-second" style="margin-top:0;" >
+        
+       
+        
+        <amp-carousel
+        height="316"
+        layout="fixed-height"
+        type="carousel"
+        autoplay=""
+        loop=""
+        >
+        <amp-img
+        src="img/gallery/stripe.jpg"
+        srcset="img/gallery/stripe.jpg 1x, img/gallery/stripe.jpg 2x"
+        width="361"
+        height="316"
+        ></amp-img>
+        <amp-img
+        src="img/roaster/nixon2.jpg"
+        srcset="img/roaster/nixon2.jpg 1x, img/roaster/nixon2.jpg 2x"
+        width="211"
+        height="316"
+        ></amp-img>
+        <amp-img
+        src="img/roaster/tony5.jpg"
+        srcset="img/roaster/tony5.jpg 1x, img/roaster/tony5.jpg 2x"
+        width="316"
+        height="316"
+        ></amp-img>
+        <amp-img
+        src="img/roaster/nixon3.jpg"
+        srcset="img/roaster/nixon3.png 1x, img/roaster/nixon3.png 2x"
+        width="517"
+        height="316"
+        ></amp-img>
+        <amp-img
+        src="img/gallery/hall.jpg"
+        srcset="img/gallery/hall.jpg 1x, img/gallery/hall@2x.jpg 2x"
+        width="473"
+        height="316"
+        ></amp-img>
+        <amp-img
+        src="img/gallery/smoke.jpg"
+        srcset="img/gallery/smoke.jpg 1x, img/gallery/smoke@2x.jpg 2x"
+        width="364"
+        height="316"
+        ></amp-img>
+        </amp-carousel>
+        </div>
+        <div class="gallery-base-container gallery-base-rich-text mx-auto">
+        <div class="flex flex-wrap">
+        <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div>
+        <div class="md-col-8 lg-col-7">
+       
+        
+
+        
+        
+        
+        </div>
+        </div>
+        </div>
+        </header>
 
 
 
@@ -3044,29 +3169,17 @@ footer a {
 
 
           <div class="title-article right-0 z1" style="margin-bottom: 0;">
+
+
         
-          <div class="gallery-component-hero-subheading" >
-            <time datetime="2017-08-24">Sept 24</time>-<time datetime="2017-08-29">29</time>
+          <div class="gallery-component-hero-subheading h1"  >
+          DJ
             / Super Style Deluxe
           </div>
          
         </div>
 
-        <div class="gallery-component-hero-subheading" style="margin-bottom: 3.75rem;">
-            <span style="color: #fcb319;">AGENT: </span> SUPER AGENT
-            
-            <a href="#" target="_blank" class="inline-block " aria-label="Link to AMP HTML E-mail">
-           
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" ><path d="M1 27.9h30V4.1H1v23.8zm2.6-2.6V6.6h24.8v18.7H3.6zM16 19.8 29.4 7.2l-1.5-1.5L16 15.8 4.1 5.7 2.6 7.2 16 19.8z"></path></svg>
-           
-          
-          </a>
-            
 
-
-          
-          
-          </div>
 
         <div class="flex flex-wrap"> <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div> 
         <div class="md-col-10 lg-col-9">
@@ -3158,6 +3271,22 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
                 <p>After a string of massive hits & remixes on the   <a href="url"> Stanton Warriors Punks</a> label  , Nixon has forged an original sounding and solid path through todays music scene. His signature sound could be described as a modern take on the 90/00’s classic D&B scene. 130bpm classic breaks with basslines to make you shudder!! Now he’s on Board with The Payback Project may the Nixon saga long continue!</p>
                 
                 
+
+                <div class="gallery-component-hero-subheading" style="margin-bottom: 3.75rem;">
+                  <span style="color: #fcb319;">AGENT: </span> SUPER AGENT
+                  
+                  <a href="#" target="_blank" class="inline-block " aria-label="Link to AMP HTML E-mail">
+                 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" ><path d="M1 27.9h30V4.1H1v23.8zm2.6-2.6V6.6h24.8v18.7H3.6zM16 19.8 29.4 7.2l-1.5-1.5L16 15.8 4.1 5.7 2.6 7.2 16 19.8z"></path></svg>
+                 
+                
+                </a>
+                  
+      
+      
+                
+                
+                </div>
                 
                 </div>
                 </section>
@@ -3169,20 +3298,6 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
 
 
 
-            <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
-                <li>
-                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="42.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="43.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
-                </li>
-            
-            
-            </ul>
-
         </div>
       </div>
     </section>
@@ -3193,11 +3308,19 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
     
 
     <section class="gallery-base-section gallery-base-rich-text">
+
+
+  
+
       <div class="gallery-base-container mx-auto" style="border-bottom: 5px solid #4a4a4a;">
 
+        <div class="gallery-component-hero-subheading h2">
+          Current Release
+        </div>
 
-        <amp-soundcloud height="450" layout="fixed-height" data-playlistid="331919427" data-color="ff0000" data-secret-token="yoursecrettoken" data-visual="true"></amp-soundcloud>
 
+        <amp-soundcloud height="450" layout="fixed-height" data-playlistid="331919427" data-color="ff0000" data-secret-token="yoursecrettoken" data-visual="true"
+       ></amp-soundcloud>
 
 
 
@@ -3210,24 +3333,22 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
 
 
 
+<span class="small-text" >Social media</span>
 
 
-
-              <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
-                  </li>
-              
-              
-              </ul>
-              
-              
+            <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
+              <li>
+                  <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="42.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
+              </li>
+              <li>
+                  <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="43.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
+              </li>
+              <li>
+                  <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
+              </li>
+          
+          
+          </ul>
 
 
 
@@ -3271,23 +3392,15 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
 
           <div class="title-article right-0 z1" style="margin-bottom: 0;">
         
-          <div class="gallery-component-hero-subheading" >
-            <time datetime="2017-08-24">Sept 24</time>-<time datetime="2017-08-29">29</time>
-            / Nixon
-          </div>
+            <div class="gallery-component-hero-subheading h1"  >
+              DJ
+                / Nixon
+              </div>
+             
          
         </div>
 
-        <div class="gallery-component-hero-subheading " style="margin-bottom: 3.75rem;">
-            <span style="color: #fcb319;">AGENT: </span> SUPER AGENT
-            
-            <a href="#" target="_blank" class="inline-block " aria-label="Link to AMP HTML E-mail">
-           
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" ><path d="M1 27.9h30V4.1H1v23.8zm2.6-2.6V6.6h24.8v18.7H3.6zM16 19.8 29.4 7.2l-1.5-1.5L16 15.8 4.1 5.7 2.6 7.2 16 19.8z"></path></svg>
-           
-          
-          </a>
-            </div>
+
 
         <div class="flex flex-wrap"> <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div> 
         <div class="md-col-10 lg-col-9">
@@ -3389,21 +3502,8 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
               </div>
   
   
+          
   
-  
-              <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="42.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="43.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
-                  </li>
-              
-              
-              </ul>
   
           </div>
         </div>
@@ -3416,11 +3516,19 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
   
       <section class="gallery-base-section gallery-base-rich-text">
         <div class="gallery-base-container mx-auto" style="border-bottom: 5px solid #4a4a4a;">
+
+          <div class="gallery-component-hero-subheading h2">
+            Current Release
+          </div>
   
   
           <amp-soundcloud height="450" layout="fixed-height" data-playlistid="331919427" data-color="ff0000" data-secret-token="yoursecrettoken" data-visual="true"></amp-soundcloud>
   
   
+
+
+
+
   
   
           <div class="flex flex-wrap">
@@ -3434,24 +3542,24 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
   
   
   
-  
-                <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
-                    <li>
-                        <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
-                    </li>
-                
-                
-                </ul>
-                
-                
-  
-  
+
+
+              <span class="small-text" >Social media</span>
+
+
+              <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
+                <li>
+                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="42.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="43.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
+                </li>
+            
+            
+            </ul>
   
   
   
@@ -3489,23 +3597,15 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
 
           <div class="title-article right-0 z1" style="margin-bottom: 0;">
         
-          <div class="gallery-component-hero-subheading" >
-            <time datetime="2017-08-24">Sept 24</time>-<time datetime="2017-08-29">29</time>
-            / Nixon
-          </div>
+            <div class="gallery-component-hero-subheading h1"  >
+              DJ
+                / Crucial Todd
+              </div>
+             
          
         </div>
 
-        <div class="gallery-component-hero-subheading" style="margin-bottom: 3.75rem;">
-            <span style="color: #fcb319;">AGENT: </span> SUPER AGENT
-            
-            <a href="#" target="_blank" class="inline-block " aria-label="Link to AMP HTML E-mail">
-           
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" ><path d="M1 27.9h30V4.1H1v23.8zm2.6-2.6V6.6h24.8v18.7H3.6zM16 19.8 29.4 7.2l-1.5-1.5L16 15.8 4.1 5.7 2.6 7.2 16 19.8z"></path></svg>
-           
-          
-          </a>
-            </div>
+
 
         <div class="flex flex-wrap"> <div class="md-col-1 lg-col-2 xs-hide sm-hide">&nbsp;</div> 
         <div class="md-col-10 lg-col-9">
@@ -3603,20 +3703,7 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
   
   
   
-  
-              <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="42.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="43.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
-                  </li>
-              
-              
-              </ul>
+
   
           </div>
         </div>
@@ -3629,6 +3716,10 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
   
       <section class="gallery-base-section gallery-base-rich-text">
         <div class="gallery-base-container mx-auto" style="border-bottom: 5px solid #4a4a4a;">
+
+          <div class="gallery-component-hero-subheading h2">
+            Current Release
+          </div>
   
   
           <amp-soundcloud height="450" layout="fixed-height" data-playlistid="331919427" data-color="ff0000" data-secret-token="yoursecrettoken" data-visual="true"></amp-soundcloud>
@@ -3647,22 +3738,24 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
   
   
   
+              <span class="small-text" >Social media</span>
+
+
+              <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
+                <li>
+                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="42.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="43.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
+                </li>
+            
+            
+            </ul>
   
-                <ul class="ampstart-social-follow list-reset flex  items-center flex-wrap m0 mb4">
-                    <li>
-                        <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewBox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
-                    </li>
-                
-                
-                </ul>
-                
-                
+  
   
   
   
@@ -3695,7 +3788,8 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
 
       
 
-    <section class="left-0 right-0 z1 gallery-base-container mx-auto" style="padding-bottom: 3.75rem;">
+    <section class="left-0 right-0 z1 gallery-base-container mx-auto" style="padding-bottom: 3.75rem; margin-top: 2.5rem;
+    padding: 0.938rem 0 3.75rem;">
       <div class="post-body__author" style="align-items: flex-end;
       column-gap: 1rem;
       display: flex; margin-top: 2.5rem;">
@@ -3710,12 +3804,7 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
         </div>
       </div>
 
-      <div class="post-body__published" style="background-color: #f3f0ed;
-      color: #616060;
-      margin-top: 2.5rem;
-      padding: 0.938rem 2rem;">
-        <b>Article updated on:</b> 06 May 2024
-      </div>
+    
       </section>
 
 
@@ -3767,7 +3856,13 @@ more visual entry point when they are searching for our coverage.</p><p> </p></b
               </a>
               
               <div class="richtext paragraph paragraph--p2">
-                <div id="hs_cos_wrapper_footer_text" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-content widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_text_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p>Hyper Island designs learning experiences that challenge companies and individuals to grow and stay competitive in an increasingly digitized world.</p></span></div>
+                <div  class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-content widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_text_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                  <p>
+                    
+                    Yo Deejay is a UK-based agency specializing in DJ bookings, featuring some of the hottest talents in bass music, EDM, and UK garage. 
+                    
+                    The agency plays a pivotal role in promoting these genres by showcasing emerging acts, spotlighting new music, and contributing to the vibrancy and sustainability of the dance music culture. 
+                  </p></span></div>
               </div>
               
               <div id="hs_cos_wrapper_footer_social" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-social" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
