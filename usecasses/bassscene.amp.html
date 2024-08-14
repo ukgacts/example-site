@@ -1389,6 +1389,8 @@ limitations under the License.
         position: relative;
         width: calc(0.46 * 100vw + 9.375 * 1.025rem);
         max-width: 50rem;
+        margin-bottom: 100px;
+        margin-top: 100px;
       }
       .gallery-base-invert {
         color: #fff;
@@ -1445,7 +1447,7 @@ limitations under the License.
         position: absolute;
         width: calc(20vmin + 12.5 * 1rem);
         left: calc(20vw - 10 * 1rem);
-        top: 140vh;
+        
         overflow: hidden;
       }
       .gallery-inner-background-2 {
@@ -1883,15 +1885,18 @@ limitations under the License.
       }
 
 
-
 /**xen**/
-      .ampstart-headerbar {
-  background: #fa7688;
+.ampstart-headerbar {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
 /**xen--end**/
+
+
+
 
       .gallery-sidebar .ampstart-navbar-trigger {
         height: 2.35rem;
@@ -2550,7 +2555,7 @@ footer a {
   <body>
     <!-- Start Navbar -->
     <header
-      class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
+      class="ampstart-headerbar  flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
     >
       <div
         role="button"
@@ -2563,23 +2568,22 @@ footer a {
       <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>       
       </div>
 
+    <div class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap  top-0  pt2 pr3"
+     style="
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     flex-grow: 1;
+     margin: 0;
+     display: inline-flex;
+     align-items: center;">
+     
 
 
 
-    <div
-      class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap absolute top-0 right-0 pt2 pr3"
-    >
-      <div class="mr2"></div>
-      <a
-        href="cart.amp.html"
-        class="text-decoration-none mr2  ampstart-headerbar-home-link"
-      >
-        <div class="ampstart-headerbar-icon-wrapper relative">
-
-
-
-         
-        </div>
+      <a class="logo" href="https://www.hyperisland.com/?hsLang=en&amp;_gl=1*4bojxp*_gcl_au*MTUyNTI1NDkyLjE3MTg1Mzc0MzI.*_ga*MjA0MjQ5OTI2OS4xNzE4NTM3NDg0*_ga_S2W3BWJ5VS*MTcyMzU0MjQ1OC4xMy4xLjE3MjM1NDI1NjUuNjAuMC4w">
+        <img class="logo__img" src="https://hyperisland.com/hubfs/raw_assets/public/hi-theme/images/logo.svg" alt="Hyper Island logo" style="max-width: 300px;">
+     
       </a>
     </div>
 
@@ -2812,9 +2816,7 @@ footer a {
 
     </div>
 
-    <div class="gallery-component-tagline">
-      <div>Bassscene Magazine</div>
-    </div>
+
 
 
 
@@ -2846,14 +2848,18 @@ footer a {
 
       
 
-      <header class="gallery-component-hero clearfix" style="margin-bottom: 3.75rem;">
+      <header class="gallery-component-hero clearfix" style="background-image: url('https://hyperisland.com/hubfs/Content%20Developer.webp');
+      background-position: center center;
+      background-size: cover ;
+      background-repeat: no-repeat;
+      position: relative;">
 
 
 
           <div class="gallery-base-container gallery-base-rich-text mx-auto" style="margin-top: calc(0.055 * 100vmin + 7.9375 * 1rem);">
 
 
-            <div class="title-article right-0 z1">
+            <div class="title-article right-0 z1" style="color:white;">
             <h1 class="gallery-component-hero-heading">Web Stories</h1>
             <div class="gallery-component-hero-subheading">
               <time datetime="2017-08-29"></time>
@@ -2866,14 +2872,7 @@ footer a {
           
 
          
-          <div class="md-col-8 lg-col-7">  <div class="richtext-container" style="color: #000000;
-            margin-bottom: 20px;
-            font-weight: 600;
-            line-height: 100%;"> 
-            Social media stories continue to grow in popularity, and Google isn’t one to miss an opportunity. 
-          </div>
-          
-          </div> 
+    
         </div>
   
         </div>
@@ -2881,60 +2880,42 @@ footer a {
 
     
 
-      <section class="gallery-base-section gallery-base-rich-text" style="margin-bottom: 0;">
+      <section class="gallery-base-section gallery-base-rich-text" style="margin-bottom: 0; border-top: solid 0.188rem black;">
+
+
+
+
+
         <div class="gallery-base-container mx-auto">
-          <div class="flex flex-wrap">
-            <div class="col-12">
-        
-            </div>
-            <div class="col-12 md-col-6">
+          <div class="flex flex-wrap" style="column-gap: 8rem;">
 
-              <p>
-                Since Google announced the arrival of web stories in google search, a lot of opportunities were opened up to them.
+            <div class="col-12 md-col-4" style="display: flex;
+            justify-content: center;
+            align-self: center;">
+<div class="heading-container" style="margin-bottom: 20px;">
+                <h6 style="font-size: 2.5rem;  line-height: 100%; font-weight:700; margin-bottom: 20px;">Experience Demo</h6>
 
-              </p>
-                <p class="gallery-base-invert relative z1 mb2">
-                  Many famous brands are using and experiemnting with this new format at the moment: Washington Post, BBS, CNN, Mashable, People, Guardian.
+                <p>
+                    Web stories shines for open web. But they can also power music industry. <br> <br>
 
+To learn more, we built a simple yet fully functional music web story  of our very own! Check out the story, and learn about the best practices we discovered to build it.
+    
+                  </p>
+
+                  <a href="vascript:void"  class="cta-trigger-button " style="font-size: 1.25rem;
+                  line-height: 100%;
+                  font-weight: 700; display: block;"> Have a look <span class="icon material-symbols-outlined"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></span></a>
+                    
+</div>
              
-                  
-              
-                </p>
-        
-                <p class="gallery-base-invert relative z1 mb2">
-                  It is not a coincidence that the first adapters of web stories are big media companies. Web stories can revolutionize the way news and journalism can be presented online.
-  
-                </p>
 
-                <p class="gallery-base-invert relative z1 mb2">
-                  In today's fast-paced digital landscape, attention spans are shorter than ever and Web Stories content is designed to capture the viewer's attention quickly with short and easy-to-digest information. 
-                  
-                 
-                </p>
   
             </div>
             <div class="col-12 md-col-5">
-<div  class="carousel-wrapper gallery-component-hero-carousel">  
-              <amp-carousel  layout="responsive" height="400" width="205" type="slides" >
-  <div class="slide">
-    <amp-img src="img/stories/story-bbc.jpg" layout="responsive" width="385" height="641" alt="BBC "></amp-img>
-    <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3"> BBC  </amp-fit-text>
-  </div>
-
-  <div class="slide">
-    <amp-img src="img/stories/story-cnn.jpg" layout="responsive" width="385" height="641" alt="CNN "></amp-img>
-    <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3"> CNN 
-  </div>
-
-  <div class="slide">
-    <amp-img src="img/stories/story-wpost.jpg" layout="responsive" width="385" height="641" alt="The Washington Post "></amp-img>
-    <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3" style="font-size: 0.875rem;
-  line-height: 1.125rem;">
-      The Washington Post 
-    </amp-fit-text>
-  </div>
-</amp-carousel>
-</div>
+                <div class="slide">
+                    <amp-img src="/img/stories/story-bbc.jpg" layout="responsive" width="385" height="641" alt="BBC "></amp-img>
+                   
+                  </div>
 
 
             </div>
@@ -2945,280 +2926,11 @@ footer a {
     
       
 
-      <section class="gallery-base-section gallery-base-rich-text">
-        <div class="gallery-base-container mx-auto">
-          <div class="flex flex-wrap">
-            <div class="col-12 md-col-8">
-            
- 
-  
-<p>
-
-  Instead of simply listing facts web stories allow to integrate  information naturally. However, the main thing about web stories is that they can play a leading role in SEO. Unlike closed ecosystems or platforms web stories  appear on search engines and and can be found anywhere on the Internet.
-
-</p>
-
-
-
-<figure class="ampstart-image-with-caption m0 relative mb4 pt2 mt1" >  
-     
-<amp-img
-         width="1694"
-         height="978"
-         layout="responsive"
-         noloading=""
-         src="img/stories/stories-carousel.png"
-         srcset="
-         img/stories/stories-carousel.png 1x,
-         img/stories/stories-carousel.png 2x
-     "
-         alt="logo" 
-       ></amp-img>
-       <figcaption class="h5 mt1 px3"> Top Stories Carousel — Google Search Results </figcaption>
-
-      </figure>
-
-
-
-<p>Web stories occupy a dedicated block, called Carousel on Google Discover (SERP). They can also be referenced directly in google image. It is a gigantic traffic that opens up to them. And this demonstrates Google's desire to widely distribute this format.
-</p>
-
-<p>Currently, over 2,000 websites have published their web stories that have been indexed by Google.
-</p>
-
-
-
-
-
-
-
-
-
-
-            </div>
- 
-          </div>
-        </div>
-      </section>
-
-
-
-      <section class="gallery-component-map gallery-base-section gallery-base-rich-text"
-      >
-       
-          <div class="gallery-base-container mx-auto">
-
-
-            <amp-accordion expand-single-section  class="xen-accordion">
-  <section>
-    <h2>What is the technology behind web stories?
-    </h2>
-    <div> 
-      
-
-      <p class="pb3">The technology of web stories is supported by Google and is based on the AMP Framework. AMP technology has gained its fame as a solution that allows you to make websites as fast as possible. Search engines reward fast sites. The faster the site, the higher its ranking on Google.
-        Google search results contain much more than just a list of links. They are made from different panels (SERP): snippets, carousels, knowledge graphs, cards etc.
-        </p>
-
-<ul> 
-
-<figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3 pr3 pl3 mt1" >  
- 
-<amp-img
-       width="709"
-       height="501"
-       layout="responsive"
-       noloading=""
-       src="img/stories/serp.png"
-      
-     
-     ></amp-img>
-     <figcaption class="h5 mt1 px3">  SERP Panels: Knowledge Graph, Cards, Carousel
-    </figcaption>
-
-    </figure>
-
-  </ul>
-
-    <p class="pt3">  
-Whenever mobile search results include AMP pages, Google starts loading resources for these pages  before you visit them and by the time you choose a page to visit, if this page is AMP, then it's already loaded and shows instantly. But if the page is non-AMP, then it starts to load only when you visit it. As you can imagine, there is a striking speed difference between AMP and non-AMP pages.As a result, the web pages that get most clicks from SERP panels, particularly news Panels are  AMP pages.
-        </p>
-
-             <p class="pb3"> Being a part of AMP technology web stories  can also be pre-cached and therefore due to their speed prioritized by Google.
-        </p>
-    
-      
-      
-      
-      </div>
-   
-  </section>
-  <section>
-    <h2>The key differences between web stories and social media stories
-    </h2>
-    <div>
-      <ul class="pb3" >
-            <li>
-              1 ) Web stories appear directly on Google search results. They can be indexed and can be found. While social media stories can only be available to the users of the network that allow them to create stories.
-
-            </li>
-              
-              <li>
-                2) There is no expiration date for web stories. Only the owners of web stories decide how long they will last and be stored. Instagram, for example, has a limit: the duration of stories is 60 seconds and their lifespan is only 24 hours.
-
-              </li>
-              
-              <li>
-                3) Links and CTA buttons can be used in web stories. On Instagram, including links is only available to the users who have more than ten thousand subscribers.
-
-              </li>
-              
-            <li>
-              4) Unlike social media stories, when you include ads in your Web Stories, 100% of ads revenue goes to you.
-
-            
-            </li>
-            
-            
-              </ul>
-    </div>
-  </section>
-  <section>
-    <h2>How does AMP work?
-    </h2>
-    <div>
-
-      <p>There are currently three approaches to work with the AMP technology:</p>
-
-      <ul class="pb3">
-        <li> <b>1)	Automatic Approach  </b> <br>
-
-          Many website builders offer automatic AMP conversions to their clients. The disadvantage of this approach is that, automatic conversion in order to improve SEO performance can easily break things. For example, a photo gallery might not work correctly or the AMP version of a page might not have a comments section.
-          </li>
-
-          <li>    <b>     2) Coding AMP components </b> <br>
-
-            The easiest way to code all AMP features correctly is to use the AMP component catalog. From small things to complex ones like web stories, AMP built-in components are the building blocks for AMP pages.
-            
-            The page can be made entirely from the components or only partially. Here is a real-world example:
-
-            <figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3 pr3 pl3  mt1" >  
-   
-              <amp-img
-                     width="877"
-                     height="466"
-                     layout="responsive"
-                     noloading=""
-                     src="img/stories/ebay.png"
-                    
-                     alt="logo" 
-                   ></amp-img>
-                   <figcaption class="h5 mt1 px3">  SERP Panels: Knowledge Graph, Cards, Carousel
-                  </figcaption>
-              
-                  </figure>
-            </li>
-
-            <li><b> 3)	Duplicating Approach </b> <br>
-
-              Not all website builders allow automatic AMP conversion, and even if they do, not everyone wants to solve possible design problems. To strengthen the core content pages  particularly important  for SEO are often duplicated in AMP. So, the search traffic becomes particularly relevant to the best that the site has to offer.
-              
-              This technique can be classified as a best practice.
-              </li>
-      </ul>
-
-</div>
-</section>
-</amp-accordion>
-
-       <p>To work with web-stories, the following skills and experience are required:
-      </p> 
-          
-      <ul class="list-article">
-        <li class="list-item">
-          <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
-       
-          <span class="paragraph--p2"> AMP technology skills</span>
-        
-         
-
-
-        </li>
-
-        <li class="list-item">
-          <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
-       
-          <span class="paragraph--p2">  Video editing skills</span>
-         
-         </li>
-
-         <li class="list-item"> 
-          <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
-       
-          
-          <span class="paragraph--p2">  Experience in graphic and motion design</span>
-          
-         
-    </li>
-
-    <li class="list-item"> 
-      <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
-        
-      <span class="paragraph--p2">  Modern English Web copywriting</span>
-     
-    </li>
-
-    <li class="list-item">
-      <span class="paragraph--p2">  
-
-        <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
-      </span>
-        <span class="paragraph--p2">     Knowledge of the niche industry</span>
-
-   
-    
-    </li>
-      </ul>
-
-      <p>Do you want to be the first in your niche? Let us know…we are good at creating things 😊
-      </p>
-        </div>
-
-      </section>
 
 
 
       
 
-
-
-
-
-
-      
-
-    <section class="left-0 right-0 z1 gallery-base-container mx-auto" style="padding-bottom: 3.75rem;">
-      <div class="post-body__author" style="align-items: flex-end;
-      column-gap: 1rem;
-      display: flex; margin-top: 2.5rem;">
-        <img class="post-body__author-image" src="img/logo/black.svg" alt="Hyper Island" style= "border: 1px solid black;
-        height: 150px;
-        width: 150px;">
-        <div class="post-body__author-content" style="display: flex;
-        flex-direction: column;
-        justify-content: space-around;">
-          <span class="post-body__author-title">Yodeejay</span>
-          <span class="post-body__author-name">Shape Your Future</span>
-        </div>
-      </div>
-
-      <div class="post-body__published" style="background-color: #f3f0ed;
-      color: #616060;
-      margin-top: 2.5rem;
-      padding: 0.938rem 2rem;">
-        <b>Article updated on:</b> 06 May 2024
-      </div>
-      </section>
 
 
       <footer class="footer">
