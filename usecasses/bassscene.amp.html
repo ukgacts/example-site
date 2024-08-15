@@ -1885,7 +1885,7 @@ limitations under the License.
       }
 
 
-/**xen**/
+/**header--xen**/
 .ampstart-headerbar {
     border-top: solid 3px black;
     border-bottom: solid 3px black;
@@ -1893,7 +1893,36 @@ limitations under the License.
   padding-bottom: 0.75rem;
 }
 
-/**xen--end**/
+
+.logo_wrapper {
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     flex-grow: 1;
+     margin: 0;
+     display: inline-flex;
+     align-items: center;"
+    }
+
+    @media (max-width: 991px) {
+  .logo_wrapper {
+    height:2rem;
+  }
+}
+
+@media (min-width: 992px) {
+    .logo_wrapper {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .logo_wrapper {
+    height: 2rem;
+  }
+}
+
+/**header--xen--end**/
 
 
 
@@ -2549,6 +2578,12 @@ footer a {
   background-color: #f3f0ed;
 }
 
+
+amp-img.contain img {
+    object-fit: contain;
+  }
+
+
 </style>
 
   </head>
@@ -2568,22 +2603,20 @@ footer a {
       <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>       
       </div>
 
-    <div class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap  top-0  pt2 pr3"
-     style="
-     justify-content: center;
-     align-items: center;
-     position: relative;
-     flex-grow: 1;
-     margin: 0;
-     display: inline-flex;
-     align-items: center;">
+    <div class="logo_wrapper ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap  top-0  pt2 pr3"
+   >
      
 
 
 
       <a class="logo" href="https://www.hyperisland.com/?hsLang=en&amp;_gl=1*4bojxp*_gcl_au*MTUyNTI1NDkyLjE3MTg1Mzc0MzI.*_ga*MjA0MjQ5OTI2OS4xNzE4NTM3NDg0*_ga_S2W3BWJ5VS*MTcyMzU0MjQ1OC4xMy4xLjE3MjM1NDI1NjUuNjAuMC4w">
-        <img class="logo__img" src="https://hyperisland.com/hubfs/raw_assets/public/hi-theme/images/logo.svg" alt="Hyper Island logo" style="max-width: 300px;">
-     
+        
+      
+        <amp-img src="/img/logo_top.svg" class="contain " style="    object-fit: contain;"   
+        width="725px"
+        height="79px"
+        layout="fill" 
+         title="HI_External_Logotype_White"></amp-img>
       </a>
     </div>
 
@@ -2914,7 +2947,7 @@ To learn more, we built a simple yet fully functional music web story  of our ve
             <div class="col-12 md-col-5">
                 <div class="slide">
                     <amp-img src="/img/stories/story-bbc.jpg" layout="responsive" width="385" height="641" alt="BBC "></amp-img>
-                   
+               
                   </div>
 
 
@@ -2941,45 +2974,28 @@ To learn more, we built a simple yet fully functional music web story  of our ve
             <div class="footer__column footer__column--menus">
               <div id="hs_cos_wrapper_footer_menu_left" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-menu widget-type-simple_menu" >
                 <span id="hs_cos_wrapper_footer_menu_left_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_footer_menu_left_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
-       <ul role="menu">
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/programs/diploma-programs" role="menuitem" target="_self">Programs</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.hyperisland.com/courses" role="menuitem" target="_self">Courses</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/business-solutions" role="menuitem" target="_self">Corporate Training</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/terms-and-conditions" role="menuitem" target="_self">Terms &amp; Conditions</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/privacy-policy" role="menuitem" target="_self">Privacy Policy</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.hyperisland.com/contact" role="menuitem" target="_self">Help</a></li>
-       </ul>
+      
       </div></span></div>
               
               <div id="hs_cos_wrapper_footer_menu_right" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-menu widget-type-simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_menu_right_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_footer_menu_right_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
-       <ul role="menu">
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com" role="menuitem" target="_self">About us</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.hyperisland.com/blog" role="menuitem" target="_self">Blog</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://toolbox.hyperisland.com/" role="menuitem" target="_self">Toolbox</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://jobs.hyperisland.com/" role="menuitem" target="_self">Job Board</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/contact" role="menuitem" target="_self">Contact us</a></li>
-       </ul>
+   
       </div></span></div>
             </div>
       
-            <div class="divider footer__divider"></div>
+         
       
-            <div class="footer__column footer__column--contents">
-              <a href="https://www.hyperisland.com/" class="footer-logo">
-                <div id="hs_cos_wrapper_footer_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-          
+            <div class="footer__column footer__column--contents" >
+                
+               
       
-      
-      
-      
-      
-      
+      <div class="wrapper_footer_logo" style="width: 170px; margin-bottom: 1rem;" >
+        <amp-img src="/img/logo_footer.png" class="contain footer-logo " layout="responsive"   width="720"
+        height="177"   ></amp-img>
+    
+      </div>
+
         
-      
-      
-      
-      <span id="hs_cos_wrapper_footer_logo_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><img src="https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=300&amp;height=44&amp;name=HI_External_Logotype_White.png" class="hs-image-widget " width="300" height="44" style="max-width: 100%; height: auto;" alt="HI_External_Logotype_White" title="HI_External_Logotype_White" srcset="https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=150&amp;height=22&amp;name=HI_External_Logotype_White.png 150w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=300&amp;height=44&amp;name=HI_External_Logotype_White.png 300w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=450&amp;height=66&amp;name=HI_External_Logotype_White.png 450w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=600&amp;height=88&amp;name=HI_External_Logotype_White.png 600w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=750&amp;height=110&amp;name=HI_External_Logotype_White.png 750w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=900&amp;height=132&amp;name=HI_External_Logotype_White.png 900w" sizes="(max-width: 300px) 100vw, 300px"></span></div>
-              </a>
+      <div class="divider footer__divider"></div>
               
               <div class="richtext paragraph paragraph--p2">
                 <div id="hs_cos_wrapper_footer_text" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-content widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_text_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
