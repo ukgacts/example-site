@@ -1412,8 +1412,7 @@ limitations under the License.
       }
       .gallery-base-rich-text address,
       .gallery-base-rich-text h2 {
-        font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-          sans-serif;
+        
         letter-spacing: 0.05rem;
       }
       .gallery-base-rich-text address {
@@ -1713,12 +1712,13 @@ limitations under the License.
       }
       .gallery-component-hero-heading {
         line-height: 1.2;
-        margin: -3.42rem 0 0;
-        font-size: 8.75rem;
+        margin-top: 2.5rem;
+        font-size: 2.375rem;
         letter-spacing: -0.05rem;
-        text-transform: uppercase;
-        line-height: 80%;
-        margin-bottom: 20px;
+       
+        line-height: 100%;
+        margin-bottom: 1.25rem;
+        font-weight:800;
       }
 
       @media (max-width: 767px) {
@@ -1730,12 +1730,6 @@ limitations under the License.
 
 
 
-      .gallery-component-hero-heading,
-      .gallery-component-hero-subheading {
-        font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-          sans-serif;
-        font-weight: 400;
-      }
 
       .gallery-component-hero-action {
         margin-top: 13rem;
@@ -1884,14 +1878,47 @@ limitations under the License.
 
 
 
-/**xen**/
-      .ampstart-headerbar {
-  background: #fa7688;
+/**header--xen**/
+.ampstart-headerbar {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  z-index: 1000;
+  position: relative;
 }
 
-/**xen--end**/
+
+.logo_wrapper {
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     flex-grow: 1;
+     margin: 0;
+     display: inline-flex;
+     align-items: center;"
+    }
+
+    @media (max-width: 991px) {
+  .logo_wrapper {
+    height:2rem;
+  }
+}
+
+@media (min-width: 992px) {
+    .logo_wrapper {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .logo_wrapper {
+    height: 2rem;
+  }
+}
+
+/**header--xen--end**/
+
 
       .gallery-sidebar .ampstart-navbar-trigger {
         height: 2.35rem;
@@ -1999,44 +2026,8 @@ limitations under the License.
   
 
 
-      .ampstart-nav-item:nth-child(2) .ampstart-nav-link:after {
-        background-color: #000;
-        top: -1px;
-        bottom: -1px;
-      }
-      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-        .ampstart-nav-item:nth-child(2) .ampstart-nav-link {
-          border: none;
-          background: linear-gradient(180deg, #000, #000 50%, #fff 0) 0 0/100%
-              1px no-repeat,
-            linear-gradient(180deg, #000, #000 50%, #fff 0) 0 100%/100% 1px
-              no-repeat;
-        }
-        .ampstart-nav-item:nth-child(2) .ampstart-nav-link:after {
-          top: 0;
-          bottom: 0;
-        }
-      }
- 
-      .ampstart-nav-item:nth-child(2) .ampstart-nav-link:before,
-      .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-icon,
-      .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
-        color: black;
-        z-index: 1;
-       
-        -webkit-font-smoothing: antialiased;
-        text-transform: uppercase;
-        
 
- 
-      }
-      @media (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
-          color: #000;
-          mix-blend-mode: normal;
-          
-        }
-      }
+
       .gallery-sidebar-nav-item-text {
         -ms-flex: auto;
         flex: auto;
@@ -2080,24 +2071,7 @@ limitations under the License.
         -o-object-fit: cover;
         object-fit: cover;
       }
-      .ampstart-nav-item:nth-child(3) .gallery-sidebar-nav-item-image {
-        background: #fe95a6;
-      }
-      .ampstart-nav-item:nth-child(4) .gallery-sidebar-nav-item-image {
-        background: #aeb197;
-      }
-      .ampstart-nav-item:nth-child(5) .gallery-sidebar-nav-item-image {
-        background: #127eb1;
-      }
-      .ampstart-nav-item:nth-child(6) .gallery-sidebar-nav-item-image {
-        background: #5870ed;
-      }
-      .ampstart-nav-item:nth-child(7) .gallery-sidebar-nav-item-image {
-        background: #774a4e;
-      }
-      .ampstart-nav-item:nth-child(8) .gallery-sidebar-nav-item-image {
-        background: #e4bf0b;
-      }
+     
       .gallery-sidebar-nav-item-icon {
         -ms-flex: none;
         flex: none;
@@ -2111,31 +2085,7 @@ limitations under the License.
       .gallery-sidebar-nav-item-icon svg * {
         stroke-width: 4.1px;
       }
-      .gallery-component-tagline {
-        left: calc(1rem + 36px + 0.65rem);
-        pointer-events: none;
-        position: absolute;
-        top: 20px;
-        z-index: 9;
-      }
-      .gallery-component-tagline > div {
-        font-size: 0.84375rem;
-        line-height: 36px;
-      }
-      @media (min-width: 40.06rem) {
-        .gallery-component-tagline {
-          left: 1rem;
-          top: calc(20px + 36px + 0.65rem);
-        }
-        .gallery-component-tagline > div {
-          transform: rotate(-90deg) translate(-100%);
-          transform-origin: top left;
-          margin-top: 2rem;
-          background-color: #f6b117;
-    border: solid 3px black;
-    padding: 0 10px;
-        }
-      }
+      
 
 
 
@@ -2159,7 +2109,8 @@ limitations under the License.
       @media (min-width: 40.06rem) {
   .gallery-component-hero-subheading{
     padding-left: 0;
-    left: calc(1rem + 36px + 0.65rem);
+    line-height: 125%;
+    font-size: 0.75rem;
   }}  
 
 
@@ -2193,7 +2144,7 @@ limitations under the License.
     line-height: 1.2;
    
     letter-spacing: -0.05rem;
-    font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+ 
     font-weight: 400;
     color: #fcb319;
     left: calc(1rem + 36px + 0.65rem);
@@ -2265,6 +2216,96 @@ limitations under the License.
   column-gap: 0.625rem;
 }
 
+/*post-hero*/
+
+.post-hero {
+  background-color: #f3f0ed;
+  border-bottom: solid 3px black;
+}
+
+
+
+
+
+.post-hero .container {
+  column-gap: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 350px;
+  padding-right: 0;
+  max-inline-size: calc((12.5rem*7) + 2.5rem);
+}
+
+@media (max-width: 767px) {
+  .post-hero .container {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    max-height: 100%;
+    padding-left: 0;
+  }
+}
+
+.post-hero__content {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  padding-bottom: 3.125rem;
+  padding-top: 3.125rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .post-hero__content {
+    flex-basis: 100%;
+    padding: 2.5rem 1.25rem;
+    margin-left: 0;
+  }
+}
+
+.post-hero__image {
+  flex-basis: 60%;
+}
+
+.post-hero__image > amp-img {
+  height: 100%;
+
+  width: 100%;
+}
+
+
+.post-hero__image > amp-img > img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+
+
+
+
+.post-hero__title {
+  margin-bottom: 3.125rem;
+  max-width: 28rem;
+}
+
+.post-hero__title h1 {
+  font-weight: 800;
+  font-size: 3.625rem;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 767px) {
+  .post-hero__title h1 {
+    font-size: 2.375rem;
+  }
+}
+/*post-hero--end*/
 /***Article--end***/
 
 
@@ -2550,7 +2591,7 @@ footer a {
   <body>
     <!-- Start Navbar -->
     <header
-      class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
+      class="ampstart-headerbar  flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
     >
       <div
         role="button"
@@ -2563,23 +2604,20 @@ footer a {
       <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>       
       </div>
 
+    <div class="logo_wrapper ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap  top-0  pt2 pr3"
+   >
+     
 
 
 
-    <div
-      class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap absolute top-0 right-0 pt2 pr3"
-    >
-      <div class="mr2"></div>
-      <a
-        href="cart.amp.html"
-        class="text-decoration-none mr2  ampstart-headerbar-home-link"
-      >
-        <div class="ampstart-headerbar-icon-wrapper relative">
-
-
-
-         
-        </div>
+      <a class="logo" href="https://www.hyperisland.com/?hsLang=en&amp;_gl=1*4bojxp*_gcl_au*MTUyNTI1NDkyLjE3MTg1Mzc0MzI.*_ga*MjA0MjQ5OTI2OS4xNzE4NTM3NDg0*_ga_S2W3BWJ5VS*MTcyMzU0MjQ1OC4xMy4xLjE3MjM1NDI1NjUuNjAuMC4w">
+        
+      
+        <amp-img src="/img/logo_top.svg" class="contain " style="    object-fit: contain;"   
+        width="725px"
+        height="79px"
+        layout="fill" 
+         title="HI_External_Logotype_White"></amp-img>
       </a>
     </div>
 
@@ -2790,75 +2828,68 @@ footer a {
         </div>
        
 
-      <!-- Logo -->
-        
-        <div class="navbar-logo" role="button" tabindex="0">
-           
-         <amp-img
-         width="1"
-         height="1"
-         layout="responsive"
-         noloading=""
-         src="img/logo.png
-     
-     "
-         alt="logo" 
-       ></amp-img>
-          
-       </div> 
-       
-       <!-- End Logo -->
+   
 
 
     </div>
 
-    <div class="gallery-component-tagline">
-      <div>Bassscene Magazine</div>
-    </div>
 
 
 
     <main id="content" class="gallery-base-content fit" role="main">
 
-       <svg
-        class="gallery-inner-background-1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 388 809"
-        aria-hidden="true"
-      >
-        <path
-          d="M7 142.5C7 245 124.5 286 124.5 373s-77 206.367-77 306c0 99.633 93 123 150.5 123s140 1.5 140-130.5-16.5-111-16.5-227S381 274 381 134 268.5 8 203 8 7 40 7 142.5z"
-          fill="#f5f6fd"
-        ></path>
-      </svg>
-      <svg
-        class="gallery-inner-background-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1167 599"
-        aria-hidden="true"
-      >
-        <path
-          d="M8 359.5c0 143.5 56.5 179 177.5 179s150.054-30 286-30S737 594 879.5 594 1159 543.5 1159 299.5 1062.734 5 902 5C741.266 5 689 220 568 220s-333.383-72.5-425-72.5c-91.617 0-135 68.5-135 212z"
-          fill="#f5f6fd"
-        ></path>
-      </svg>
-
-
       
-
-      <header class="gallery-component-hero clearfix" style="margin-bottom: 3.75rem;">
-
+  
 
 
-          <div class="gallery-base-container gallery-base-rich-text mx-auto" style="margin-top: calc(0.055 * 100vmin + 7.9375 * 1rem);">
+      <div class="post-hero">
+        <div class="container">
+          <div class="post-hero__content">
+       
+    
+            <div class="post-hero__info">
+              
+              <span>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+              </span>
+
+              <span class="icon material-symbols-outlined">Technology</span>
+            </div>
+    
+            <div class="post-hero__title">
+              <h1>
+                <span>Looking for a new marketing channel?   </span></h1>
+            </div>
+    
+ 
+          
+ 
+        </div>
+
+        <div class="post-hero__image">
+          <amp-img src="img/heros/GoogleAMP.png" width="1241" height="576" layout="responsive" alt=""></amp-img>
+        </div>
+      </div>
+    </div>
+      <header class="gallery-component-hero clearfix" >
+
+
+
+          <div class="gallery-base-container gallery-base-rich-text mx-auto" style="margin-top:3.75rem;">
 
 
             <div class="title-article right-0 z1">
-            <h1 class="gallery-component-hero-heading">Web Stories</h1>
-            <div class="gallery-component-hero-subheading">
-              <time datetime="2017-08-29"></time>
-              STORYTELLING TECHNOLOGY AND MUSIC
-            </div>
+              <div class="gallery-component-hero-subheading">
+              
+                Visual storytelling for the open web
+              </div>
+              <hr>
+            <h1 class="gallery-component-hero-heading">
+
+             What is Web Stories By Google?
+            </h1>
+            
            
           </div>
 
@@ -2866,12 +2897,7 @@ footer a {
           
 
          
-          <div class="md-col-8 lg-col-7">  <div class="richtext-container" style="color: #000000;
-            margin-bottom: 20px;
-            font-weight: 600;
-            line-height: 100%;"> 
-            Social media stories continue to grow in popularity, and Google isn’t one to miss an opportunity. 
-          </div>
+          
           
           </div> 
         </div>
@@ -3201,9 +3227,9 @@ Whenever mobile search results include AMP pages, Google starts loading resource
       <div class="post-body__author" style="align-items: flex-end;
       column-gap: 1rem;
       display: flex; margin-top: 2.5rem;">
-        <img class="post-body__author-image" src="img/logo/black.svg" alt="Hyper Island" style= "border: 1px solid black;
-        height: 150px;
-        width: 150px;">
+        <img class="post-body__author-image" src="img/logo_square.svg" alt="Hyper Island" style= "
+        height: 120px;
+        width: 120px;">
         <div class="post-body__author-content" style="display: flex;
         flex-direction: column;
         justify-content: space-around;">
@@ -3229,45 +3255,30 @@ Whenever mobile search results include AMP pages, Google starts loading resource
             <div class="footer__column footer__column--menus">
               <div id="hs_cos_wrapper_footer_menu_left" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-menu widget-type-simple_menu" >
                 <span id="hs_cos_wrapper_footer_menu_left_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_footer_menu_left_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
-       <ul role="menu">
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/programs/diploma-programs" role="menuitem" target="_self">Programs</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.hyperisland.com/courses" role="menuitem" target="_self">Courses</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/business-solutions" role="menuitem" target="_self">Corporate Training</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/terms-and-conditions" role="menuitem" target="_self">Terms &amp; Conditions</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/privacy-policy" role="menuitem" target="_self">Privacy Policy</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.hyperisland.com/contact" role="menuitem" target="_self">Help</a></li>
-       </ul>
+       
+       <p> 👋 Coming Soon. 
+        
+      
+        We'are designing this site live.  
+        Sorry if you experience some turbulence.</p>
       </div></span></div>
               
-              <div id="hs_cos_wrapper_footer_menu_right" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-menu widget-type-simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_menu_right_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_footer_menu_right_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="" data-menu-id="" aria-label="Navigation Menu">
-       <ul role="menu">
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com" role="menuitem" target="_self">About us</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.hyperisland.com/blog" role="menuitem" target="_self">Blog</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://toolbox.hyperisland.com/" role="menuitem" target="_self">Toolbox</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://jobs.hyperisland.com/" role="menuitem" target="_self">Job Board</a></li>
-        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://hyperisland.com/contact" role="menuitem" target="_self">Contact us</a></li>
-       </ul>
-      </div></span></div>
+    
             </div>
       
             <div class="divider footer__divider"></div>
       
             <div class="footer__column footer__column--contents">
-              <a href="https://www.hyperisland.com/" class="footer-logo">
-                <div id="hs_cos_wrapper_footer_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-          
-      
-      
-      
-      
-      
-      
-        
-      
-      
-      
-      <span id="hs_cos_wrapper_footer_logo_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><img src="https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=300&amp;height=44&amp;name=HI_External_Logotype_White.png" class="hs-image-widget " width="300" height="44" style="max-width: 100%; height: auto;" alt="HI_External_Logotype_White" title="HI_External_Logotype_White" srcset="https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=150&amp;height=22&amp;name=HI_External_Logotype_White.png 150w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=300&amp;height=44&amp;name=HI_External_Logotype_White.png 300w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=450&amp;height=66&amp;name=HI_External_Logotype_White.png 450w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=600&amp;height=88&amp;name=HI_External_Logotype_White.png 600w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=750&amp;height=110&amp;name=HI_External_Logotype_White.png 750w, https://hyperisland.com/hs-fs/hubfs/HI_External_Logotype_White.png?width=900&amp;height=132&amp;name=HI_External_Logotype_White.png 900w" sizes="(max-width: 300px) 100vw, 300px"></span></div>
-              </a>
+     
+              <div class="wrapper_footer_logo" style="width: 170px; margin-bottom: 1rem;" >
+                <amp-img src="/img/logo_footer.png" class="contain footer-logo " layout="responsive"   width="720"
+                height="177"   ></amp-img>
+            
+              </div>
+
+
+
+
               
               <div class="richtext paragraph paragraph--p2">
                 <div id="hs_cos_wrapper_footer_text" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-content widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_text_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
@@ -3363,7 +3374,7 @@ Whenever mobile search results include AMP pages, Google starts loading resource
       
       </div></div>
       
-              <div id="hs_cos_wrapper_footer_copyright" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module footer-copy widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_footer_copyright_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p>© 2023 Hyper Island</p></span></div>
+              <div  class="footer-copyright" ><span class="footer_copyright"><p>© 2024 Bassscene </p></span></div>
             </div>
           </div>
         </div>
