@@ -1390,6 +1390,21 @@ limitations under the License.
         width: calc(0.46 * 100vw + 9.375 * 1.025rem);
         max-width: 50rem;
       }
+
+      @media (max-width: 52.06rem) {
+        .gallery-base-container {
+      
+        width: calc(0.46 * 100vw + 11.375 * 1.025rem);
+      
+      }
+
+      }
+
+
+
+
+
+
       .gallery-base-invert {
         color: #fff;
         mix-blend-mode: difference;
@@ -1422,6 +1437,16 @@ limitations under the License.
       .gallery-base-rich-text p {
         line-height: 1.8;
       }
+
+      @media (max-width: 52.06rem) {
+        .gallery-base-rich-text p {
+        line-height: 16.8px;
+      }
+
+      }
+
+
+
       .gallery-base-rich-text blockquote {
         margin: 0;
         font-size: 1.5rem;
@@ -1723,7 +1748,7 @@ limitations under the License.
 
       @media (max-width: 767px) {
         .gallery-component-hero-heading {
-    font-size: 4.75rem;
+    font-size: 2.375rem;
     line-height: 88%;
   }
 }
@@ -2100,17 +2125,22 @@ limitations under the License.
   .gallery-component-hero-subheading {
         margin: 0;
         font-size: 1.375rem;
+        font-size: 1rem;
+  font-weight: 700;
+  line-height: 125%;
+  text-transform: uppercase;
        
  
   position: relative;
       }
 
 
-      @media (min-width: 40.06rem) {
+      @media (max-width: 40.06rem) {
   .gallery-component-hero-subheading{
     padding-left: 0;
     line-height: 125%;
     font-size: 0.75rem;
+    font-weight: 600;
   }}  
 
 
@@ -2192,6 +2222,15 @@ limitations under the License.
 
   }
 
+  @media (max-width: 40.06rem) {
+   
+      .title-article {
+    margin-bottom: 2.5rem;
+
+  }
+      }
+    
+
   .ampstart-image-with-caption amp-img {
     border: 6px solid #f5f6fd;
 }
@@ -2209,7 +2248,12 @@ limitations under the License.
 
 }
 
-
+@media (max-width: 40.06rem) {
+  .list-article li {
+ 
+    margin-bottom: 0.625rem;
+}
+    }
 
 .list-item {
     display: flex;
@@ -2233,7 +2277,7 @@ limitations under the License.
   justify-content: space-between;
   min-height: 350px;
   padding-right: 0;
-  max-inline-size: calc((12.5rem*7) + 2.5rem);
+  /*max-inline-size: calc((12.5rem*7) + 2.5rem);*/
 }
 
 @media (max-width: 767px) {
@@ -2265,8 +2309,20 @@ limitations under the License.
   }
 }
 
+
+
 .post-hero__image {
   flex-basis: 60%;
+  padding-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .post-hero__image {
+
+  padding-left: 0;
+  margin-right: 0;
+}
 }
 
 .post-hero__image > amp-img {
@@ -2292,6 +2348,12 @@ limitations under the License.
   max-width: 28rem;
 }
 
+@media (max-width: 767px) {
+  .post-hero__title {
+    margin-bottom: 0;
+  }
+}
+
 .post-hero__title h1 {
   font-weight: 800;
   font-size: 3.625rem;
@@ -2299,12 +2361,26 @@ limitations under the License.
   text-transform: uppercase;
 }
 
-
 @media (max-width: 767px) {
   .post-hero__title h1 {
     font-size: 2.375rem;
   }
 }
+
+
+.gallery-base-container {
+  margin-top:3.75rem;
+ } 
+
+
+ @media (max-width: 767px) {
+  .gallery-base-container  {
+    margin-top:2.5rem;
+  }
+}
+
+
+
 /*post-hero--end*/
 /***Article--end***/
 
@@ -2346,7 +2422,7 @@ limitations under the License.
         border: solid black 3px;
 
         background-repeat: no-repeat;
-        background-position: 0.3rem 2rem;
+        background-position: 0.3rem 1.5rem;
       }
 
       .xen-accordion h2 {
@@ -2355,17 +2431,14 @@ limitations under the License.
         border: none;
         background: none;
         font-size: calc(1rem + .9vw);
-  
+        font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 110%;
+  font-weight: 600;
   letter-spacing: 0.045rem;
       }
 
-      @media (min-width: 64.06rem)  {
-        .xen-accordion h2 {
-
-         
-    
-      }
-      }
+ 
 
 
 
@@ -2375,9 +2448,29 @@ limitations under the License.
 
       .xen-accordion section:not([expanded]) {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='40px' viewBox='0 0 24 24' width='40px' fill='%23000000'%3E%3Cpath d='M24 24H0V0h24v24z' fill='none' opacity='.87'/%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z'/%3E%3C/svg%3E%0A");
-        background-position: 0.3rem 2rem;
+        background-position: 0.3rem 1.5rem;
         margin:1rem 0;
     }
+
+
+    @media (max-width: 767px) {
+      .xen-accordion section[expanded] p {
+      padding-left: 0.5rem;
+  padding-right: 0.5rem;
+      
+      
+      }
+}
+
+@media (max-width: 767px) {
+      .xen-accordion section[expanded] ul {
+      padding-left: 0.5rem;
+  padding-right: 0.5rem;
+      
+      
+      }
+}
+
 
     .xen-accordion ul {
 list-style: none;
@@ -2406,7 +2499,7 @@ amp-accordion .ampstart-image-with-caption amp-img {
 amp-accordion p {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  margin-left: 1rem;
+ 
 }
 
 /***Carousel***/
@@ -2610,14 +2703,14 @@ footer a {
 
 
 
-      <a class="logo" href="https://www.hyperisland.com/?hsLang=en&amp;_gl=1*4bojxp*_gcl_au*MTUyNTI1NDkyLjE3MTg1Mzc0MzI.*_ga*MjA0MjQ5OTI2OS4xNzE4NTM3NDg0*_ga_S2W3BWJ5VS*MTcyMzU0MjQ1OC4xMy4xLjE3MjM1NDI1NjUuNjAuMC4w">
+      <a class="logo" href="#">
         
       
-        <amp-img src="/img/logo_top.svg" class="contain " style="    object-fit: contain;"   
+        <amp-img src="../img/logo_top.svg" class="contain " style="    object-fit: contain;"   
         width="725px"
         height="79px"
         layout="fill" 
-         title="HI_External_Logotype_White"></amp-img>
+        ></amp-img>
       </a>
     </div>
 
@@ -2660,12 +2753,22 @@ footer a {
       <nav class="ampstart-sidebar-nav ampstart-nav">
         <ul class="list-reset m0 p0 ampstart-label">
           <li role="heading" class="ampstart-sidebar-nav-title">
-            <div style="font-size: 1.375rem;
-            font-weight: 600;
-            text-transform: none;
-            line-height: 1.2;
-            letter-spacing: -0.03em;
-            white-space: nowrap;">BASS SCENE</div>
+            <a class="logho" href="#">
+        
+      
+              <amp-img src="../img/logo-pink.png" class="containh " style="    ;"   
+              width="225px"
+              height="79px"
+              layout="responsive" 
+              ></amp-img>
+            </a>
+             
+  
+
+       
+
+   
+          
           </li>
          
           <li class="ampstart-nav-item gallery-sidebar-nav-item">
@@ -2679,9 +2782,29 @@ footer a {
             </a>
           </li>
           <li class="ampstart-nav-item gallery-sidebar-nav-item">
+            <a class="ampstart-nav-link" href="./gallery-inner.amp.html">
+          
+             
+              <div class="gallery-sidebar-nav-item-text"  >
+                <p> Use Casses
+                  <span style="display:block; font-size: 0.75rem; text-transform: none;
+    font-weight: 400;"> Web story: Bass Scene 2024</span> 
+                
+                </p> 
+                 
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                 
+                  
+                </div>
+          
+          </a>
+          </li>
+
+
+          <li class="ampstart-nav-item gallery-sidebar-nav-item">
             <a class="ampstart-nav-link" href="./gallery-inner.amp.html"
               ><div class="gallery-sidebar-nav-item-text">
-              Use casses
+              Payback Project
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
                 
               </div>
@@ -2690,6 +2813,11 @@ footer a {
           
           </a>
           </li>
+
+
+
+
+
           <li class="ampstart-nav-item gallery-sidebar-nav-item">
             <a class="ampstart-nav-link" href="./gallery-inner.amp.html"
               ><div class="gallery-sidebar-nav-item-text">
@@ -2847,12 +2975,12 @@ footer a {
           <div class="post-hero__content">
        
     
-            <div class="post-hero__info">
+            <div class="post-hero__info" style="display: flex;
+  align-items: center; column-gap: 0.625rem; margin-bottom: 0.313rem;">
               
-              <span>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
-              </span>
+           
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+              
 
               <span class="icon material-symbols-outlined">Technology</span>
             </div>
@@ -2872,38 +3000,7 @@ footer a {
         </div>
       </div>
     </div>
-      <header class="gallery-component-hero clearfix" >
 
-
-
-          <div class="gallery-base-container gallery-base-rich-text mx-auto" style="margin-top:3.75rem;">
-
-
-            <div class="title-article right-0 z1">
-              <div class="gallery-component-hero-subheading">
-              
-                Visual storytelling for the open web
-              </div>
-              <hr>
-            <h1 class="gallery-component-hero-heading">
-
-             What is Web Stories By Google?
-            </h1>
-            
-           
-          </div>
-
-
-          
-
-         
-          
-          
-          </div> 
-        </div>
-  
-        </div>
-      </header>
 
     
 
@@ -2912,6 +3009,19 @@ footer a {
           <div class="flex flex-wrap">
             <div class="col-12">
         
+              <div class="title-article right-0 z1">
+                <div class="gallery-component-hero-subheading">
+                
+                  Visual storytelling for the open web
+                </div>
+                <hr>
+              <h1 class="gallery-component-hero-heading">
+  
+               What is Web Stories By Google?
+              </h1>
+              
+             
+            </div>
             </div>
             <div class="col-12 md-col-6">
 
@@ -2972,9 +3082,9 @@ footer a {
       
 
       <section class="gallery-base-section gallery-base-rich-text">
-        <div class="gallery-base-container mx-auto">
+        <div class="gallery-base-container mx-auto mt0" style="margin-top: 0">
           <div class="flex flex-wrap">
-            <div class="col-12 md-col-8">
+            <div class="col-12 md-col-10">
             
  
   
@@ -3000,7 +3110,7 @@ footer a {
      "
          alt="logo" 
        ></amp-img>
-       <figcaption class="h5 mt1 px3"> Top Stories Carousel — Google Search Results </figcaption>
+       <figcaption class="h5 mt1 px3 pt1"> Top Stories Carousel — Google Search Results </figcaption>
 
       </figure>
 
@@ -3048,7 +3158,7 @@ footer a {
 
 <ul> 
 
-<figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3 pr3 pl3 mt1" >  
+<figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3 mt1" >  
  
 <amp-img
        width="709"
@@ -3059,7 +3169,7 @@ footer a {
       
      
      ></amp-img>
-     <figcaption class="h5 mt1 px3">  SERP Panels: Knowledge Graph, Cards, Carousel
+     <figcaption class="h5 mt1 px3 pt1">  SERP Panels: Knowledge Graph, Cards, Carousel
     </figcaption>
 
     </figure>
@@ -3128,7 +3238,7 @@ Whenever mobile search results include AMP pages, Google starts loading resource
             
             The page can be made entirely from the components or only partially. Here is a real-world example:
 
-            <figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3 pr3 pl3  mt1" >  
+            <figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3  mt1" >  
    
               <amp-img
                      width="877"
@@ -3139,7 +3249,7 @@ Whenever mobile search results include AMP pages, Google starts loading resource
                     
                      alt="logo" 
                    ></amp-img>
-                   <figcaption class="h5 mt1 px3">  SERP Panels: Knowledge Graph, Cards, Carousel
+                   <figcaption class="h5 mt1 px3 pt1">  SERP Panels: Knowledge Graph, Cards, Carousel
                   </figcaption>
               
                   </figure>
@@ -3260,7 +3370,8 @@ Whenever mobile search results include AMP pages, Google starts loading resource
         
       
         We'are designing this site live.  
-        Sorry if you experience some turbulence.</p>
+        Sorry if you experience some turbulence.</p> <br>
+       <p> Of course, this site is made with AMP! </p>
       </div></span></div>
               
     
