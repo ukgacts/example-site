@@ -1410,9 +1410,7 @@ limitations under the License.
         mix-blend-mode: difference;
         -webkit-font-smoothing: antialiased;
       }
-      .ampstart-headerbar {
-        z-index: 1;
-      }
+     
       .gallery-base-callout {
         margin: 0 0 3.5rem;
         font-size: 1.25rem;
@@ -1902,17 +1900,28 @@ limitations under the License.
        
       }
 
-
+    
 
 /**header--xen**/
 .ampstart-headerbar {
     border-top: solid 3px black;
-    border-bottom: solid 3px black;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  
+ 
+  padding: 2rem 0;
   z-index: 1000;
   position: relative;
 }
+
+
+
+      @media screen and (max-width: 767px) {
+        .ampstart-headerbar {
+          padding: 0.75rem 0;
+      
+      }
+}
+
+
 
 
 .logo_wrapper {
@@ -2122,6 +2131,42 @@ limitations under the License.
 
 <style amp-custom="xen">
 
+/*** Video-header ***/
+.gallery-component-hero {
+
+background-image: url('httpsg://hyperisland.com/hubfs/Content%20Developer.webp');
+        background-position: center center;
+        background-size: cover ;
+        background-repeat: no-repeat;
+        position: relative; border-bottom: min(0.82vw, 14px) solid #000;
+
+}
+
+
+
+.wrapper_video {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+}
+
+.wrapper_video::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(transparent, transparent 30%, black);
+  z-index:10; 
+
+
+  
+  border-bottom: min(0.82vw, 14px) solid #000;
+}
+
+
+/*** Video-header--end ***/
 
   .gallery-component-hero-subheading {
         margin: 0;
@@ -2920,28 +2965,6 @@ amp-sidebar {
       class="ampstart-headerbar  flex justify-start items-center top-0 left-0 right-0 pl2 pr4" >
 
 
-
-      <div >
-           
-        <amp-video autoplay
-        width="854px"
-        height="488px"
-        layout="responsive"
-        poster="/static/inline-examples/images/kitten-playing.png"
-      >
-       
-        <source src="vids/hero.mp4"
-          type="video/mp4" />
-       
-      </amp-video> 
-
-</div>
-
-
-
-
-
-
       <div
         role="button"
         aria-label="open sidebar"
@@ -3233,16 +3256,14 @@ amp-sidebar {
       
   
 
-        <header class="gallery-component-hero clearfix" style="background-image: url('httpsg://hyperisland.com/hubfs/Content%20Developer.webp');
-        background-position: center center;
-        background-size: cover ;
-        background-repeat: no-repeat;
-        position: relative; border-bottom: solid 0.188rem black;">
+        <header class="gallery-component-hero clearfix">
 
 
-<div >
+<div class="wrapper_video" style=" position: relative;
+  width: 100%;">
            
-    <amp-video autoplay
+    <amp-video autoplay   class="hero-video" 
+  
     width="854px"
     height="488px"
     layout="responsive"
@@ -3259,34 +3280,6 @@ amp-sidebar {
 
   
 
-  
-
-            <div class="gallery-base-container gallery-base-rich-text mx-auto" 
-            style="margin-top: calc(0.055 * 100vmin + 7.9375 * 1rem); padding-top:100px ;
-            padding-bottom: 100px;
-            padding-left: 40px;
-            padding-right: 40px;">
-  
-  
-              <div class="title-article right-0 z1" style="color:white;">
-
- 
-              <h1 class="gallery-component-hero-heading">
-               Where music meet technology
-              </h1>
-              <div class="gallery-component-hero-subheading">
-                <time datetime="2017-08-29"></time>
-                We are content creators specializing in social media, both in graphics and video. in modern trends for web application development and software design and architecture.
-              </div>
-             
-            </div>
-
-  
-            
-  
-           
-      
-          </div>
     
           </div>
         </header>

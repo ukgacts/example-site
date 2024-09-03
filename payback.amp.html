@@ -2122,6 +2122,41 @@ limitations under the License.
 
 <style amp-custom="xen">
 
+/*** Video-header ***/
+.gallery-component-hero {
+
+background-image: url('https://hyperisland.com/hubfs/Content%20Developer.webp');
+        background-position: center center;
+        background-size: cover ;
+        background-repeat: no-repeat;
+        position: relative; border-bottom: min(0.82vw, 14px) solid #000;
+
+}
+
+
+
+.wrapper_video {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper_video::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(transparent, transparent 30%, black);
+  z-index:10; 
+
+
+  
+  border-bottom: min(0.82vw, 14px) solid #000;
+}
+
+
+/*** Video-header--end ***/
 
   .gallery-component-hero-subheading {
         margin: 0;
@@ -2920,28 +2955,6 @@ amp-sidebar {
       class="ampstart-headerbar  flex justify-start items-center top-0 left-0 right-0 pl2 pr4" >
 
 
-
-      <div >
-           
-        <amp-video autoplay
-        width="854px"
-        height="488px"
-        layout="responsive"
-        poster="/static/inline-examples/images/kitten-playing.png"
-      >
-       
-        <source src="vids/hero.mp4"
-          type="video/mp4" />
-       
-      </amp-video> 
-
-</div>
-
-
-
-
-
-
       <div
         role="button"
         aria-label="open sidebar"
@@ -3233,63 +3246,37 @@ amp-sidebar {
       
   
 
-        <header class="gallery-component-hero clearfix" style="background-image: url('httpsg://hyperisland.com/hubfs/Content%20Developer.webp');
-        background-position: center center;
-        background-size: cover ;
-        background-repeat: no-repeat;
-        position: relative; border-bottom: solid 0.188rem black;">
-
-
-<div >
+  
+        <div class="post-hero">
+            <div class="container">
+              <div class="post-hero__content">
            
-    <amp-video autoplay
-    width="854px"
-    height="488px"
-    layout="responsive"
-    poster="/static/inline-examples/images/kitten-playing.png"
-  >
-   
-    <source src="vids/hero.mp4"
-      type="video/mp4" />
-   
-  </amp-video> 
-
-</div>
-
-
-  
-
-  
-
-            <div class="gallery-base-container gallery-base-rich-text mx-auto" 
-            style="margin-top: calc(0.055 * 100vmin + 7.9375 * 1rem); padding-top:100px ;
-            padding-bottom: 100px;
-            padding-left: 40px;
-            padding-right: 40px;">
-  
-  
-              <div class="title-article right-0 z1" style="color:white;">
-
- 
-              <h1 class="gallery-component-hero-heading">
-               Where music meet technology
-              </h1>
-              <div class="gallery-component-hero-subheading">
-                <time datetime="2017-08-29"></time>
-                We are content creators specializing in social media, both in graphics and video. in modern trends for web application development and software design and architecture.
-              </div>
-             
-            </div>
-
-  
-            
-  
-           
-      
-          </div>
+        
+                <div class="post-hero__info" style="display: flex;
+      align-items: center; column-gap: 0.625rem; margin-bottom: 0.313rem;">
+                  
+               
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+                  
     
+                  <span class="icon material-symbols-outlined">Technology</span>
+                </div>
+        
+                <div class="post-hero__title">
+                  <h1>
+                    <span>Looking for a new marketing channel?   </span></h1>
+                </div>
+        
+     
+              
+     
+            </div>
+    
+            <div class="post-hero__image">
+              <amp-img src="img/heros/GoogleAMP.png" width="1241" height="576" data-hero  layout="responsive" alt=""></amp-img>
+            </div>
           </div>
-        </header>
+        </div>
 
 
     
@@ -3491,178 +3478,114 @@ amp-sidebar {
             
         
             
-            <div class="grid-textbox-container">
-              <div class="grid" >
+            <div class="row-fluid-wrapper row-depth-1 row-number-13 home_page-row-4-padding dnd-section section section--video home_page-row-4-max-width-section-centering section--max-width-860 section--border-top">
+                <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
                 
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body" style="display: flex;
-                      flex-direction: column;
-                      row-gap: 1.25rem;">
-                        <h4 class="h4" style="font-size: 1rem;
-                        text-transform: uppercase;
-                        line-height: 110%;">publishing</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <p>We have been providing publishing assistance to other studios to help them release their games to the market – from influencer marketing to social media to managing online store presence.</p>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/diploma-programs?hsLang=en">
-                            <span class="link--underline link--bold">Diploma Programs</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
+                <div class="row-fluid-wrapper row-depth-1 row-number-14 dnd-row">
+                <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                <div id="hs_cos_wrapper_module_17013489398617" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="section-boxed-width-module_17013489398617"></div>
+                
+                
+                
+                
+                
+                
+                <div class="section-borders-module_17013489398617"></div>
+                
+                
+                </div>
+                
+                </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+                
+                <div class="row-fluid-wrapper row-depth-1 row-number-15 dnd-row">
+                <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                <div id="hs_cos_wrapper_module_17013489398618" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                
+                <div class="heading-container">
+                  
+                    
+                      <h2 class="h2">
+                        In Between 2023 Wrap-up
+                      </h2>
+                    
+                  
+                </div></div>
+                
+                </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+                
+                <div class="row-fluid-wrapper row-depth-1 row-number-16 dnd-row">
+                <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                <div id="hs_cos_wrapper_widget_1701424099502" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                
+                
+                <div class="paragraph-container">
+                  <div class="richtext paragraph paragraph--p2">
+                    <h1>Thank You: Everyone Who Engaged</h1>
+                <p><br>Our heartfelt thanks go to every community member who contributed their time and knowledge by hosting sessions. Your insights and experiences were the lifeblood of In Between. To our coworkers who supported us through every step, your collaborative spirit was indispensable. And to every community member who joined the sessions, your engagement and enthusiasm were the driving forces behind our success. This collective effort made In Between a truly enriching experience.</p>
+                <p>&nbsp;</p>
+                <h1><span style="text-decoration: underline;"><span style="color: #ff7300; text-decoration: underline;"><strong><a href="https://hello.hyperisland.com/navigating-the-in-between-notes-reflections?hsLang=en" rel="noopener" target="_blank" style="color: #ff7300; text-decoration: underline;">Read: Notes &amp; Reflection from a Community Director</a></strong></span></span></h1>
                   </div>
+                </div></div>
                 
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">SEO</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <p>We are excellent at getting people found in the main search engines for their local services.<strong> </strong><span>Study online while working or full-time onsite.</span></p>
-                        </div>
+                </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+                
+                <div class="row-fluid-wrapper row-depth-1 row-number-17 dnd-row">
+                <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-custom_widget module_17013489398619-hidden dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                <div id="hs_cos_wrapper_module_17013489398619" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                
+                
+                <div class="video-container">
+                
+                  
+                    
+                      <div class="oembed_container oembed_container--full-size" id="oembed_container-module_17013489398619">
+                
+                        
+                
+                        
+                        
+                        
+                
+                        
+                          <div class="iframe_wrapper" data-embed-response-html="<iframe width=&quot;200&quot; height=&quot;113&quot; src=&quot;https://www.youtube.com/embed/7iSv12RAvyU?feature=oembed&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen title=&quot;Let&amp;#39;s hear from the part-time Masters team in Singapore&quot;></iframe>" data-embed-response-width="200" data-embed-response-height="113" data-embed-url="https://www.youtube.com/watch?v=7iSv12RAvyU">
+                          <iframe width="200" height="113" src="https://www.youtube.com/embed/7iSv12RAvyU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" title="undefined" class="oembed_container_iframe"></iframe></div>
+                        
+                
                       </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/master-degree?hsLang=en">
-                            <span class="link--underline link--bold">Master's Degree Programs</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
+                    
+                  
                 
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">SOUND DESIGN</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div color="#f2a3c2">
-            <p>Get a digital-first mindset with our range of onsite and online courses. Apply new tools and methods directly to your workplace for real-time results and valued insights.</p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/courses?hsLang=en">
-                            <span class="link--underline link--bold">Courses</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
+                </div></div>
                 
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">GRAPHIC DESIGN</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div color="#f2a3c2">
-            <p><span>Stay ahead in a rapidly evolving digital and business landscape. Discover how our Upskill Courses can shape your growth and drive meaningful change.</span></p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/upskill-courses?hsLang=en">
-                            <span class="link--underline link--bold">Upskill Courses (Part-time)</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
+                </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
                 
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">VIDEO EDITING</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div color="#b9a9d2">
-            <p>A hand-on consultative approach that focuses on unlocking the full potential of your people and your organization.</p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/business-solutions?hsLang=en">
-                            <span class="link--underline link--bold">Corporate Training</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">PARTNER WITH OUR STUDENTS</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <p><span>Receive innovative and creative solutions from our students who will approach your business challenge from a fresh and diverse perspective.</span></p>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/partnerships?hsLang=en">
-                            <span class="link--underline link--bold">Learning Partnerships</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-              </div>
+                </div><!--end widget-span -->
+                </div><!--end row-->
+                </div>
          
         
    
