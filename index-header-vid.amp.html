@@ -2749,7 +2749,7 @@ padding-top: 100px;
 }
 
 .card.card--textbox {
- 
+ background-color: white;
   row-gap: 1.25rem;
   padding: 2.188rem 1.563rem;
   height: 100%;
@@ -2934,11 +2934,22 @@ max-width: 53.75rem ;
 }
 
     .heading-container .h2, h2 {
-
+color:white;
   font-size: 2.375rem;
-  font-weight: bold;
+  font-weight: 800;
   text-align: LEFT;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+    
+  .heading-container .h2, h2 {
+
+  font-size: 2.375rem;
+
+}
 }
 
 /*** video-section--end ***/
@@ -3436,43 +3447,59 @@ amp-sidebar {
     
       
 
-      <section class="cards-base-section" >
+      <section class="cards-base-section"  style="position: relative;
+      width: 100%;
+    ">
 
 
      
             <div class="width-wrapper" style="max-width: 53.75rem;
             margin-left: auto ;
-            margin-right: auto;">
+            margin-right: auto; ">
             
 
   
           
           
             
-            <!-- 
+
+
             
-              <div class="section-video-background">
-                <div class="section-video-wrapper">
-                  <video playsinline="" autoplay="" muted="" loop="">
-                    <source src="https://knowledge.hyperisland.com/hubfs/homepage%20background_lgow.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
+<div class="section-video-background">
+
+    
+
+  <div class="section-video-wrapper">
+fgdgd
+    
+    <amp-img src="img/hands-bg.jpeg" layout="responsive" width="644" height="429" 
+    style="object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;"
+    
+    
+    ></amp-img>
+
+  </div>
+</div>
             
-             -->
+            
             
             
                 <div class="section-overlay"></div>
             
   
-            
+            <div style="z-index: 5;
+            position: relative;">  
             
             <div class="heading-container" style="display: flex;
             align-items: center;
             justify-content: center;
             text-align: CENTER;
-            margin-bottom: 30px;">
+            margin-bottom: 30px;" >
               
                 <div class="richtext h2" >
                   Our Solution
@@ -3657,7 +3684,7 @@ amp-sidebar {
                 
               </div>
          
-        
+            </div>
    
       </section>
 
