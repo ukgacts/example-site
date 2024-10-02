@@ -37,7 +37,7 @@ limitations under the License.
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
 
@@ -105,11 +105,7 @@ limitations under the License.
       src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
       async=""
     ></script>
-    <script
-      custom-element="amp-carousel"
-      src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"
-      async=""
-    ></script>
+
     <script
       custom-element="amp-sidebar"
       src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"
@@ -2140,14 +2136,17 @@ padding-bottom: 100px;
  z-index: 7;
  width: 100%;
   word-wrap: break-word;
-  color: pink;
+  color: white;
+  max-width: 60%;
+  overflow: hidden;
 }
 
 
 @media (max-width: 767px) {
   header .title-container
-{
 
+{
+max-width: 100%;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -2160,12 +2159,11 @@ padding-bottom: 100px;
 
 header .title-container h1
 {
-
- 
-  font-size: 8.75rem;
+    font-size: 10.75vh;
   text-transform: uppercase;
   line-height: 80%;
   font-weight: 800;
+  max-height: 500px;
 }
 
 @media (max-width: 767px) {
@@ -2173,18 +2171,21 @@ header .title-container h1
 {
 
   color: pink;
-  font-size: 4.25rem;
+  font-size: 5.25vh;
 }
 }
 
 
 .gallery-component-hero {
 
-background-image: url('httpsg://hyperisland.com/hubfs/Content%20Developer.webp');
+background-image: url('https://hyperisland.com/hubfs/BT%20-%20Energizer%201920-1080%20-%20Presentation%20Background.png');
         background-position: center center;
         background-size: cover ;
         background-repeat: no-repeat;
-        position: relative; border-bottom: min(0.82vw, 14px) solid #000;
+        position: relative; 
+        border-bottom: min(0.82vw, 3px) solid #000;
+        border-top: min(0.82vw, 3px) solid #000;
+        min-height: 512px;
 
 }
 
@@ -2806,7 +2807,7 @@ padding-top: 100px;
 .grid {
 
  display: grid;
-              grid-template-columns: repeat(2,1fr);
+              grid-template-columns: repeat(3,1fr);
               grid-column-gap: 20px;
               grid-row-gap: 20px;
 }
@@ -2866,7 +2867,7 @@ padding-top: 100px;
 
 .flex .text-container {
   display: flex;
-  align-items: center;
+
   justify-content: flex-start;
   text-align: LEFT;
   margin-bottom: 20px;
@@ -3102,16 +3103,6 @@ amp-sidebar {
         ></amp-img>
       </a>
     </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3364,7 +3355,7 @@ amp-sidebar {
       
   
 
-        <header class="gallery-component-hero clearfix">
+        <header class="gallery-component-hero">
 
 
 
@@ -3373,46 +3364,27 @@ amp-sidebar {
 
 
               
-              <amp-img src="img/hero9.jpeg" layout="responsive" width="644" height="429"   class="hero-video" 
-              style="object-fit: cover;
-              height: 854px;
-              width: 480px;
-             
-              top: 0;
-              left: 0;"
               
-              
-              ></amp-img>
          
-
-
-             
-                
                 <div class="title-container" >
                   
                     
                       <h1 >
-                   live Loud, Live Bold, Bass culture beyond just a sound
+                Web Stories
                       </h1>
                     
-                      <div class="richtext paragraph paragraph--p1">
+                      <div class="pt2">
                         <p><span>live life through music - a rhythm of expression and creativity. Make your own moves...</span></p>
                       </div>
         
             </div>
             
           
-        
-         
-      
-
-
-
         </div>
 
 
 
-<div class="section-overlay"></div>
+
 
         </header>
 
@@ -3430,114 +3402,50 @@ amp-sidebar {
   
                     <div>  
                        <h6 >
-                        Welcome to Bass Scene Magazine
+                        Why Web Stories Matter
                        </h6>
                        
                      <p>
                     
                       
-                      At Bass Scene, we showcase the best in music, culture, <span class="highlight">tech, </span> and art—all in an easy-to-digest format. Our mission? To inspire, empower, and push creative boundaries.
-      
+                        Web Stories bring significant advantages to businesses. First, they
+                        improve your visibility on Google Search, helping you reach new
+                        audiences. The format is familiar, like the stories we see on Instagram
+                        or Facebook, so users find it easy to engage with. Since Web Stories
+                        are optimized for SEO, they’ll improve your rankings, leading to more
+                        organic traffic.
+                        <br> <br>
+                        
+                        Plus, unlike typical social media stories, they don’t
+                        expire, and you keep 100% of the ad revenue generated from them.
+
+                        <br>    <br>    <br>
                       </p>
-                       <p >
-                        Fueled by passion and years of industry experience, we’ve crafted a magazine that’s accessible and effortless to explore. With Google Web Stories, each issue fits perfectly in the palm of your hand—on any device.
-
                      
-                       </p>
-                   
-                       <p >
-                
-                        
-                        Best of all? It’s completely free. No subscriptions, just pure enjoyment. We deliever through:
-
-                    <br>
-                   
-                       </p>
                  
-                  
-                       <div class="dnd-row flex flex-between">
-                           <div class="dnd-column">
-                                       
-                          
-                           <div class="heading-container">
-                             
-                     
-                        <svg xmlns="http://www.w3.org/2000/svg" height="58px" viewBox="0 -960 960 960" width="58px" fill="black"><path d="m363-390 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
-                             
-                           </div>
-                           
-                    
-                           
-                           <div class="paragraph-container">
-                           
-                           <p >
-                            <strong>  Reviews  </strong>
-                          <br>
-                            Hottest new music reviews</p>
-                           </div>
-                             </div>
-                   
 
 
-       
-                   
-                             <div class="dnd-column">
-                                       
+                      <div class="button-container" style="align-items: center;
+                      justify-content: flex-start; display: flex;">
                           
-                               <div class="heading-container">
-                                 
-                                <svg xmlns="http://www.w3.org/2000/svg" height="58px" viewBox="0 -960 960 960" width="58px" fill="black"><path d="m152-145-23-7q-32-14-43.5-48t6.5-67l60-136v258Zm186 78q-34 0-58-24t-24-58v-207l92 262q2 8 6 14t10 13h-26Zm188-24q-21 9-44-4t-33-36L258-650q-10-23 2-45t37-32l318-115q23-8 45 4t32 36l191 513q7 25-3 49t-35 33L526-91Zm-82-495q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm63 437 318-116-191-519-318 115 191 520ZM316-669l318-115-318 115Z"/></svg>
-                                
-                                 
-                               </div>
-                               
-                        
-                               
-                               <div class="paragraph-container">
-                               
-                               <p >
-                                
-                                <strong> Street Wear   </strong><br>
+                            <a style="padding: 0.875rem 2.5rem; line-height: 100%; font-weight: 900; text-decoration: none;
+                           letter-spacing: 0.48px;
+                            text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #b62939;" class="button button--primary button--pill button--md font-family-normal" href="https://hyperisland.com/en/contact?hsLang=en">
+                          CHECK OUR STORY
                               
-                              Latest fashion and gadgets
-                              
-                              
-                              </p>
-                               </div>
-                                 </div>
-                   
-                   
-                                 <div class="dnd-column">
-                                       
+                            </a>
                           
-                                   <div class="heading-container">
-
-                                   
-                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="58px" viewBox="0 -960 960 960" width="58px" fill="black"><path d="M80-160v-90h80v-490q0-24.75 17.63-42.38Q195.25-800 220-800h620v60H220v490h240v90H80Zm470 0q-12.75 0-21.37-8.63Q520-177.25 520-190v-460q0-12.75 8.63-21.38Q537.25-680 550-680h300q12.75 0 21.38 8.62Q880-662.75 880-650v460q0 12.75-8.62 21.37Q862.75-160 850-160H550Zm30-90h240v-370H580v370Zm0 0h240-240Z"/></svg>
-                                     
-                                   </div>
-                                   
-                            
-                                   
-                                   <div class="paragraph-container">
-                                   
-                                   <p ><strong> Tech Tips</strong>
-                                    <br>
-                                  
-                                  Production help and hacks</p>
-                                   </div>
-                                 
-                                     </div>
-                   
-                        
-                   
-                   
-                   
-                   
-                                   </div>
+                          </div>
+                          <a href=" " style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600;
+  display: block;"> 
+                            We have created a story example for you that promotes and signposts potential visitors to
+Pori by way of the Pori Jazz Festival it is best to view on a device. </a>
                    
                            </div>
+
+
+
+                           
                    
                    </div>
                             
@@ -3550,18 +3458,16 @@ amp-sidebar {
 
               <div class="img-container col-12 md-col-6">
            
-                <amp-video autoplay
-                width="854px"
-                height="488px"
+                <amp-youtube
+                data-videoid="PEezkSEvMHU"
                 layout="responsive"
-                poster="/static/inline-examples/images/kitten-playing.png"
-              >
-               
-                <source src="vids/hero2.mp4"
-                  type="video/mp4" />
-               
-              </amp-video> 
- <div><p style="color: #999; margin-top: 20px; text-align:center;"> Artist Focus: all your favourite artist see what they are up to</p></div>
+                width="560"
+                height="315"
+              ></amp-youtube>
+
+              
+
+ <div><p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories On Google Discover </p></div>
   </div>
   
   
@@ -3648,25 +3554,35 @@ amp-sidebar {
                       row-gap: 1.25rem;">
                         <h4 class="h4" style="font-size: 1rem;
                         text-transform: uppercase;
-                        line-height: 110%;">publishing</h4>
+                        line-height: 110%;">Client Benefits</h4>
                         <div class="richtext paragraph paragraph--p2">
-                          <p>We have been providing publishing assistance to other studios to help them release their games to the market – from influencer marketing to social media to managing online store presence.</p>
+                         
+                         
+                         
+                         
+                         
+                            <p>
+                            Our platform boosts your visibility by making your content
+                            discoverable on Google, not just on social media. It also
+                            improves engagement with an interactive, familiar story format.
+                            <br>
+                            Your content stays online as long as you want, and you keep
+                            100% of ad revenue. With fast loading times, it’s perfect for
+                            today’s mobile-first audience.
+
+
+                          </p>
+                        
+                        
+                        
+                        
                         </div>
                       </div>
                       
                       
                         <div class="card__footer">
                           
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/diploma-programs?hsLang=en">
-                            <span class="link--underline link--bold">Diploma Programs</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
+  
                         </div>
                       
                     </div>
@@ -3675,9 +3591,15 @@ amp-sidebar {
                   <div class="grid__item">
                     <div class="card card--textbox">
                       <div class="card__body">
-                        <h4 class="h4">SEO</h4>
+                        <h4 class="h4">   Custom-Built Stories </h4>
                         <div class="richtext paragraph paragraph--p2">
-                          <p>We are excellent at getting people found in the main search engines for their local services.<strong> </strong><span>Study online while working or full-time onsite.</span></p>
+                            
+<p>What sets us apart is our ability to custom-build stories to fit any brief.
+    With years of experience in art, design, video filming, editing, and
+    graphic design, we even offer original music composition if required.
+    While other platforms let you build your own stories, they tend to be
+    slower. Since we code our stories from scratch, they're fully optimized,
+    up-to-date, and lightning-fast. </p>
                         </div>
                       </div>
                       
@@ -3685,15 +3607,7 @@ amp-sidebar {
                         <div class="card__footer">
                           
                           
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/master-degree?hsLang=en">
-                            <span class="link--underline link--bold">Master's Degree Programs</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
+         
                         </div>
                       
                     </div>
@@ -3702,39 +3616,20 @@ amp-sidebar {
                   <div class="grid__item">
                     <div class="card card--textbox">
                       <div class="card__body">
-                        <h4 class="h4">SOUND DESIGN</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div color="#f2a3c2">
-            <p>Get a digital-first mindset with our range of onsite and online courses. Apply new tools and methods directly to your workplace for real-time results and valued insights.</p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/courses?hsLang=en">
-                            <span class="link--underline link--bold">Courses</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">GRAPHIC DESIGN</h4>
+                        <h4 class="h4">Unique Selling Proposition</h4>
                         <div class="richtext paragraph paragraph--p2">
                           <div >
-            <p><span>Stay ahead in a rapidly evolving digital and business landscape. Discover how our Upskill Courses can shape your growth and drive meaningful change.</span></p>
+            <p>
+                
+                
+                We combine the best of both worlds—the familiarity of social
+media stories with the SEO strength of Google. We're experts
+in AMP technology, ensuring your content is fast and
+responsive. Whether you're promoting music, events, or
+products, our platform integrates seamlessly with your digital
+ecosystem, helping you stay ahead with innovative content.
+            
+            </p>
             </div>
                         </div>
                       </div>
@@ -3747,67 +3642,17 @@ amp-sidebar {
             
                           
                           
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/upskill-courses?hsLang=en">
-                            <span class="link--underline link--bold">Upskill Courses (Part-time)</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
+                        
                         </div>
                       
                     </div>
                   </div>
                 
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">VIDEO EDITING</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div color="#b9a9d2">
-            <p>A hand-on consultative approach that focuses on unlocking the full potential of your people and your organization.</p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/business-solutions?hsLang=en">
-                            <span class="link--underline link--bold">Corporate Training</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
+
                 
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">PARTNER WITH OUR STUDENTS</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <p><span>Receive innovative and creative solutions from our students who will approach your business challenge from a fresh and diverse perspective.</span></p>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/partnerships?hsLang=en">
-                            <span class="link--underline link--bold">Learning Partnerships</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
+ 
+                
+         
                 
               </div>
          
@@ -3825,19 +3670,14 @@ amp-sidebar {
             <div class="img-container col-12 md-col-6" style="margin-bottom: 20px;">
 
 
-    <amp-video autoplay
-    width="854px"
-    height="488px"
-    layout="responsive"
-    poster="/static/inline-examples/images/kitten-playing.png"
-  >
-   
-    <source src="vids/values.mp4"
-      type="video/mp4" />
-   
-  </amp-video> 
-  
-</div>
+                <amp-img src="../img/search-results.webp" 
+                width="1000"
+                height="612"
+                layout="responsive" 
+                ></amp-img>
+                <div><p style="color: #999; margin-top: 20px; text-align:center;"> Web Stories show up in a variety of Search results.</p></div>
+
+            </div>
 
 
 
@@ -3845,7 +3685,9 @@ amp-sidebar {
 
  <div>  
     <h6 >
-      Our 4 core values
+
+        Key Features
+     
     </h6>
     
   <p>
@@ -3855,35 +3697,18 @@ amp-sidebar {
 
 
 
-  <h4>Inspiration</h4>
 
 
 
-  <p>At Bass Scene, we ignite curiosity and encourage bold thinking. Through music, culture, and art, we aim to spark fresh ideas and motivate our readers to explore new creative frontiers.</p>
-   
+    
+<p>Our platform is fully optimized for both mobile and desktop users, ensuring a smooth experience. We integrate with other platforms, such as YouTube, Instagram, Facebook, and Spotify, so your stories can easily link to your existing content. The design is highly customizable, allowing you to tailor it to your brand, and the stories are searchable on Google—driving more traffic over time. </p>
 
-<h4>Empowerment</h4>
-
-<p>We believe in the power of creativity to transform lives. Our content is designed to empower individuals, giving them the tools and confidence to break boundaries and shape their own paths.</p>
-
-
-<h4>Creativity</h4>
-
-<p>Creativity drives everything we do. From the stories we tell to the innovative web format we use, Bass Scene is all about embracing and celebrating the art of creation in all its forms.</p>
+   <p>We pride ourselves on being 20%
+    technology and 80% creative—that’s the key to our success.</p>
 
 
+<div class="dnd-row flex flex-between">
 
-<h4>Accessibility</h4>
-
-
-<p>We make high-quality content available to everyone. With our free, easy-to-navigate magazine in a mobile-friendly format, enjoying culture, music, and technology is just a swipe away.</p>
-
-
-
-
-    <div class="dnd-row flex flex-between">
-       
-        fhfg
 
 
                 </div>
@@ -3910,7 +3735,10 @@ amp-sidebar {
 
 
 
-<section  class="video-section" >
+<section  class="video-section" style="background-image: linear-gradient(rgba(243, 240, 237, 1), rgba(243, 240, 237, 1)); 
+background-position: left top;
+  background-size: auto;
+  background-repeat: no-repeat;" >
 
 
 <div class="section-video-background" >
@@ -3963,7 +3791,7 @@ left: 0;
         
         <div class="paragraph-container flex"  style="align-items: center;
         justify-content: flex-start;
-        margin-bottom: 20px;">
+        margin-bottom: 40px;">
         
             <p style="color: black;">Unlock your potential and find the perfect course or program for you or your company with the help of one of our team.</p>
          

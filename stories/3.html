@@ -19,7 +19,7 @@ limitations under the License.
 <html ⚡="">
   <head>
     <meta charset="utf-8" />
-    <title>Index AMP</title>
+    <title>Gallery Template</title>
     <link
       rel="canonical"
       href="https://www.ampstart.com/templates/gallery-inner.amp"
@@ -27,16 +27,15 @@ limitations under the License.
     <meta name="viewport" content="width=device-width" />
     <meta name="amp-google-client-id-api" content="googleanalytics" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+
 
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
-    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
 
 
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
@@ -116,7 +115,14 @@ limitations under the License.
       async=""
     ></script>
 
-    
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400"
+      rel="stylesheet"
+    />
 
 
 
@@ -1191,7 +1197,9 @@ limitations under the License.
       body {
         background: #fff;
         color: #4a4a4a;
-        font-family: "Roboto Condensed", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial,
+          sans-serif;
         min-width: 315px;
         overflow-x: hidden;
         font-smooth: always;
@@ -1369,10 +1377,8 @@ limitations under the License.
       }
       body {
         color: #000;
-        font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-
-  font-style: normal;
+        font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI,
+          Roboto, sans-serif;
         line-height: 1.6;
       }
       .gallery-base-content {
@@ -1404,7 +1410,9 @@ limitations under the License.
         mix-blend-mode: difference;
         -webkit-font-smoothing: antialiased;
       }
-     
+      .ampstart-headerbar {
+        z-index: 1;
+      }
       .gallery-base-callout {
         margin: 0 0 3.5rem;
         font-size: 1.25rem;
@@ -1730,13 +1738,12 @@ limitations under the License.
       .gallery-component-hero-heading {
         line-height: 1.2;
         margin-top: 2.5rem;
-        font-size: 8.75rem;
+        font-size: 2.375rem;
         letter-spacing: -0.05rem;
-        text-transform: uppercase;
+       
         line-height: 100%;
         margin-bottom: 1.25rem;
         font-weight:800;
-        line-height: 80%;
       }
 
       @media (max-width: 767px) {
@@ -1753,7 +1760,7 @@ limitations under the License.
         margin-top: 13rem;
       }
       .gallery-component-hero-carousel {
-        margin-bottom: 1rem;
+        margin-bottom:0;
       }
       .gallery-component-hero-carousel .amp-scrollable-carousel-slide img {
         -o-object-fit: cover;
@@ -1894,28 +1901,17 @@ limitations under the License.
        
       }
 
-    
+
 
 /**header--xen**/
 .ampstart-headerbar {
     border-top: solid 3px black;
-  
- 
-  padding: 2rem 0;
+    border-bottom: solid 3px black;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   z-index: 1000;
   position: relative;
 }
-
-
-
-      @media screen and (max-width: 767px) {
-        .ampstart-headerbar {
-          padding: 0.75rem 0;
-      
-      }
-}
-
-
 
 
 .logo_wrapper {
@@ -2125,94 +2121,6 @@ limitations under the License.
 
 <style amp-custom="xen">
 
-/*** Video-header ***/
-
-header .title-container
-{
-
-  text-align: LEFT;
-                margin-bottom: 20px; position: absolute;
-top: 10%;
-padding-left: 40px; 
-padding-right: 40px; 
-padding-top: 100px;
-padding-bottom: 100px;
- z-index: 7;
- width: 100%;
-  word-wrap: break-word;
-  color: pink;
-}
-
-
-@media (max-width: 767px) {
-  header .title-container
-{
-
-  padding-left: 20px;
-  padding-right: 20px;
-}
-}
-
-
-
-
-
-
-header .title-container h1
-{
-
- 
-  font-size: 8.75rem;
-  text-transform: uppercase;
-  line-height: 80%;
-  font-weight: 800;
-}
-
-@media (max-width: 767px) {
-  header .title-container h1
-{
-
-  color: pink;
-  font-size: 4.25rem;
-}
-}
-
-
-.gallery-component-hero {
-
-background-image: url('httpsg://hyperisland.com/hubfs/Content%20Developer.webp');
-        background-position: center center;
-        background-size: cover ;
-        background-repeat: no-repeat;
-        position: relative; border-bottom: min(0.82vw, 14px) solid #000;
-
-}
-
-
-
-.wrapper_video {
-  position: relative;
-  width: 100%;
-  background-color: #000;
-}
-
-.wrapper_video::after {
-
-
-  
-  border-bottom: min(0.82vw, 14px) solid #000;
-}
-
-amp-video {
-
-  border: 3px solid #000000;
-  background: black;
-}
-
-
-
-
-/*** Video-header--end ***/
 
   .gallery-component-hero-subheading {
         margin: 0;
@@ -2761,295 +2669,7 @@ footer a {
   }
 }
 
-/*** Cards-base-section ***/
 
-.cards-base-section {  
-
-padding-top: 100px;
-      padding-bottom: 100px;
-      padding-left: 40px ;
-      padding-right: 40px ; border-top: solid 0.188rem black; border-bottom: solid 0.188rem black;
-    }
-
-
-    @media (max-width: 768px) {
-        .cards-base-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-    }
-
-.card__body .h4 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  line-height: 110%;
-  font-weight: bold;
-}
-
-.card__body {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.25rem;
-}
-
-.card.card--textbox {
- background-color: white;
-  row-gap: 1.25rem;
-  padding: 2.188rem 1.563rem;
-  height: 100%;
-  justify-content: space-between;
-}
-
-@media (min-width: 768px) {
-.grid {
-
- display: grid;
-              grid-template-columns: repeat(2,1fr);
-              grid-column-gap: 20px;
-              grid-row-gap: 20px;
-}
-}  
-
-
-@media (max-width: 767px) {
-.grid__item:not(:last-child) {
-    margin-bottom: 0.625rem;
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  border: solid 0.188rem black;
-  background-color: var(--color-white);
-}
-
-
-.richtext.h2 {
-  font-size: 3rem;
-  line-height: 100%;
-  font-weight: 400;
-  text-align: CENTER;
-}
-
-@media (max-width: 767px) {
-    .richtext.h2 {
-    font-size: 2.375rem;
-  }
-}
-
-/*** Cards-base-section--end ***/
-
-
-
-/*** img-right-section ***/
-
-.imgtext-section .flex.flex-wrap {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
- 
-  justify-content: space-between;
-}
-
-@media (max-width: 767px) {
-  .imgtext-section .flex.flex-wrap {
-    padding-top: 60px ;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.flex .text-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: LEFT;
-  margin-bottom: 20px;
-}
-
-.text-container h4 {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-
-.highlight{ 
-position: relative;
-  display: inline-block;
-line-height: 110%;
-}
-
-.highlight::before {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    display: inline-block;
-    width: 100%;
-    height: 0.625rem;
-    background-color: green;
-  
-    left: 0.625rem;
-  }
-
-
-
-.heading-container:first-child {
-    font-size: 40px;
-    font-weight: 700;
-  width: 100%;
-  word-wrap: break-word;
-  text-align: center;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-    .heading-container:first-child {
-   font-size: 1.875rem;
-}
-}
-
-
-.paragraph-container p {
-    text-align: center;
-  color: #999999;
-  line-height: 140%;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-    .paragraph-container p {
-font-size: 0.875rem;
-}
-}
-
-
-
-.text-container h6 {
-  font-size: 2.5rem;
-  line-height: 100%;
-  margin-bottom: 20px;
-  text-transform: none;
-  font-weight: 700;
-}
-
-.text-container div {
-    width: 100%;
-    word-wrap: break-word;
-}
-
-
-
-
-.dnd-row {
-  margin-top: 50px;
-}
-
-/*** img-right-section--end ***/
-
-/*** video-section ***/
-
-.section-overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: black;
-  opacity: 0.4;
-  z-index: 0;
-}
-
-
-
-.video-section {  
-position: relative; padding-top: 100px;
-padding-bottom: 100px;
-padding-left: 40px ;
-padding-right: 40px ;
-border-top: solid 0.188rem black;
-}
-
-.section-video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.section-video-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section--cta-image {
-max-width: 53.75rem ;
-      margin-left: auto ;
-      margin-right: auto ;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      column-gap: 8rem;
-      display: flex; z-index: 5;
-      position: relative;
-    }
-
-
-
-    @media (max-width: 767px) {
-        .section--cta-image {
-
-      column-gap: 0;
-  
-    }
-}
-
-    .heading-container .h2, h2 {
-color:white;
-  font-size: 2.375rem;
-  font-weight: 800;
-  text-align: LEFT;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
-@media (max-width: 767px) {
-    
-  .heading-container .h2, h2 {
-
-  font-size: 2.375rem;
-
-}
-}
-
-
-.video-section .heading-container .h2, h2 {
-  color: black;
- 
-}
-
-.video-section .paragraph-container p {
-  text-align: left;
-
-}
-
-/*** video-section--end ***/
 /*** Footer--end ***/
 
 
@@ -3058,21 +2678,14 @@ color:white;
   background-color: #f3f0ed;
 }
 
-
-amp-sidebar {
-
-  max-width: 95vw;
-}
-
 </style>
 
   </head>
   <body>
     <!-- Start Navbar -->
     <header
-      class="ampstart-headerbar  flex justify-start items-center top-0 left-0 right-0 pl2 pr4" >
-
-
+      class="ampstart-headerbar  flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
+    >
       <div
         role="button"
         aria-label="open sidebar"
@@ -3082,20 +2695,18 @@ amp-sidebar {
       >
 
       <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>       
-      
+      </div>
 
-    
-    
-    </div>
-
-    <div class="logo_wrapper ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap  top-0  pt2 pr3" >
+    <div class="logo_wrapper ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap  top-0  pt2 pr3"
+   >
      
+
 
 
       <a class="logo" href="#">
         
       
-        <amp-img src="img/logo_top.svg" class="contain " style="    object-fit: contain;"   
+        <amp-img src="../img/logo_top.svg" class="contain " style="    object-fit: contain;"   
         width="725px"
         height="79px"
         layout="fill" 
@@ -3151,7 +2762,7 @@ amp-sidebar {
               <amp-img class="logo__img"    width="225px"
               height="59px" style="  flex-basis: 0;
               flex-grow: 1;
-            " src="img/logo_top.svg" alt="Hyper Island logo">
+            " src="../img/logo_top.svg" alt="Hyper Island logo">
              
             </amp-img>
     
@@ -3364,652 +2975,412 @@ amp-sidebar {
       
   
 
-        <header class="gallery-component-hero clearfix">
 
-
-
-          <div class="section-image-background " style=" position: relative;
-  width: 100%;">
-
-
-              
-              <amp-img src="img/hero9.jpeg" layout="responsive" width="644" height="429"   class="hero-video" 
-              style="object-fit: cover;
-              height: 854px;
-              width: 480px;
-             
-              top: 0;
-              left: 0;"
-              
-              
-              ></amp-img>
-         
-
-
-             
-                
-                <div class="title-container" >
-                  
-                    
-                      <h1 >
-                   live Loud, Live Bold, Bass culture beyond just a sound
-                      </h1>
-                    
-                      <div class="richtext paragraph paragraph--p1">
-                        <p><span>live life through music - a rhythm of expression and creativity. Make your own moves...</span></p>
-                      </div>
-        
-            </div>
-            
-          
-        
-         
-      
-
-
-
-        </div>
-
-
-
-<div class="section-overlay"></div>
-
-        </header>
-
-
-    
-
-        <section class="imgtext-section" >
+      <div class="post-hero">
+        <div class="container">
+          <div class="post-hero__content">
        
-            <div class="flex flex-wrap " >
-        
     
-
-
-                <div class="text-container col-12 md-col-5" >
-  
-                    <div>  
-                       <h6 >
-                        Welcome to Bass Scene Magazine
-                       </h6>
-                       
-                     <p>
-                    
-                      
-                      At Bass Scene, we showcase the best in music, culture, <span class="highlight">tech, </span> and art—all in an easy-to-digest format. Our mission? To inspire, empower, and push creative boundaries.
-      
-                      </p>
-                       <p >
-                        Fueled by passion and years of industry experience, we’ve crafted a magazine that’s accessible and effortless to explore. With Google Web Stories, each issue fits perfectly in the palm of your hand—on any device.
-
-                     
-                       </p>
-                   
-                       <p >
-                
-                        
-                        Best of all? It’s completely free. No subscriptions, just pure enjoyment. We deliever through:
-
-                    <br>
-                   
-                       </p>
-                 
-                  
-                       <div class="dnd-row flex flex-between">
-                           <div class="dnd-column">
-                                       
-                          
-                           <div class="heading-container">
-                             
-                     
-                        <svg xmlns="http://www.w3.org/2000/svg" height="58px" viewBox="0 -960 960 960" width="58px" fill="black"><path d="m363-390 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
-                             
-                           </div>
-                           
-                    
-                           
-                           <div class="paragraph-container">
-                           
-                           <p >
-                            <strong>  Reviews  </strong>
-                          <br>
-                            Hottest new music reviews</p>
-                           </div>
-                             </div>
-                   
-
-
-       
-                   
-                             <div class="dnd-column">
-                                       
-                          
-                               <div class="heading-container">
-                                 
-                                <svg xmlns="http://www.w3.org/2000/svg" height="58px" viewBox="0 -960 960 960" width="58px" fill="black"><path d="m152-145-23-7q-32-14-43.5-48t6.5-67l60-136v258Zm186 78q-34 0-58-24t-24-58v-207l92 262q2 8 6 14t10 13h-26Zm188-24q-21 9-44-4t-33-36L258-650q-10-23 2-45t37-32l318-115q23-8 45 4t32 36l191 513q7 25-3 49t-35 33L526-91Zm-82-495q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm63 437 318-116-191-519-318 115 191 520ZM316-669l318-115-318 115Z"/></svg>
-                                
-                                 
-                               </div>
-                               
-                        
-                               
-                               <div class="paragraph-container">
-                               
-                               <p >
-                                
-                                <strong> Street Wear   </strong><br>
-                              
-                              Latest fashion and gadgets
-                              
-                              
-                              </p>
-                               </div>
-                                 </div>
-                   
-                   
-                                 <div class="dnd-column">
-                                       
-                          
-                                   <div class="heading-container">
-
-                                   
-                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="58px" viewBox="0 -960 960 960" width="58px" fill="black"><path d="M80-160v-90h80v-490q0-24.75 17.63-42.38Q195.25-800 220-800h620v60H220v490h240v90H80Zm470 0q-12.75 0-21.37-8.63Q520-177.25 520-190v-460q0-12.75 8.63-21.38Q537.25-680 550-680h300q12.75 0 21.38 8.62Q880-662.75 880-650v460q0 12.75-8.62 21.37Q862.75-160 850-160H550Zm30-90h240v-370H580v370Zm0 0h240-240Z"/></svg>
-                                     
-                                   </div>
-                                   
-                            
-                                   
-                                   <div class="paragraph-container">
-                                   
-                                   <p ><strong> Tech Tips</strong>
-                                    <br>
-                                  
-                                  Production help and hacks</p>
-                                   </div>
-                                 
-                                     </div>
-                   
-                        
-                   
-                   
-                   
-                   
-                                   </div>
-                   
-                           </div>
-                   
-                   </div>
-                            
-
-
-
-
-
-
-
-              <div class="img-container col-12 md-col-6">
+            <div class="post-hero__info" style="display: flex;
+  align-items: center; column-gap: 0.625rem; margin-bottom: 0.313rem;">
+              
            
-                <amp-video autoplay
-                width="854px"
-                height="488px"
-                layout="responsive"
-                poster="/static/inline-examples/images/kitten-playing.png"
-              >
-               
-                <source src="vids/hero2.mp4"
-                  type="video/mp4" />
-               
-              </amp-video> 
- <div><p style="color: #999; margin-top: 20px; text-align:center;"> Artist Focus: all your favourite artist see what they are up to</p></div>
-  </div>
-  
-  
-  
-
-  
-  
-        </section>
-
-    
-      
-
-      <section class="cards-base-section"  style="position: relative;
-      width: 100%;
-    ">
-
-
-     
-            <div class="width-wrapper" style="max-width: 53.75rem;
-            margin-left: auto ;
-            margin-right: auto; ">
-            
-
-  
-          
-          
-            
-
-
-            
-<div class="section-image-background">
-
-    
-
-  <div class="section-image-wrapper">
-
-    
-    <amp-img src="img/hands-bg.jpeg" layout="responsive" width="644" height="429" 
-    style="object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;"
-    
-    
-    ></amp-img>
-
-  </div>
-</div>
-            
-            
-            
-            
-                <div class="section-overlay"></div>
-            
-  
-            <div style="z-index: 5;
-            position: relative;">  
-            
-            <div class="heading-container" style="display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: CENTER;
-            margin-bottom: 30px;" >
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
               
-                <div class="richtext h2" >
-                  Our Solution
-                </div>
-              
+
+              <span class="icon material-symbols-outlined">Technology</span>
             </div>
-            
+    
+            <div class="post-hero__title">
+              <h1>
+                <span>Looking for a new marketing channel?   </span></h1>
+            </div>
+    
  
-            
-        
-            
-            <div class="grid-textbox-container">
-              <div class="grid" >
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body" style="display: flex;
-                      flex-direction: column;
-                      row-gap: 1.25rem;">
-                        <h4 class="h4" style="font-size: 1rem;
-                        text-transform: uppercase;
-                        line-height: 110%;">publishing</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <p>We have been providing publishing assistance to other studios to help them release their games to the market – from influencer marketing to social media to managing online store presence.</p>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/diploma-programs?hsLang=en">
-                            <span class="link--underline link--bold">Diploma Programs</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">SEO</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <p>We are excellent at getting people found in the main search engines for their local services.<strong> </strong><span>Study online while working or full-time onsite.</span></p>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/master-degree?hsLang=en">
-                            <span class="link--underline link--bold">Master's Degree Programs</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">SOUND DESIGN</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div color="#f2a3c2">
-            <p>Get a digital-first mindset with our range of onsite and online courses. Apply new tools and methods directly to your workplace for real-time results and valued insights.</p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/courses?hsLang=en">
-                            <span class="link--underline link--bold">Courses</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">GRAPHIC DESIGN</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div >
-            <p><span>Stay ahead in a rapidly evolving digital and business landscape. Discover how our Upskill Courses can shape your growth and drive meaningful change.</span></p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/programs/upskill-courses?hsLang=en">
-                            <span class="link--underline link--bold">Upskill Courses (Part-time)</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">VIDEO EDITING</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <div color="#b9a9d2">
-            <p>A hand-on consultative approach that focuses on unlocking the full potential of your people and your organization.</p>
-            </div>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/business-solutions?hsLang=en">
-                            <span class="link--underline link--bold">Corporate Training</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-                  <div class="grid__item">
-                    <div class="card card--textbox">
-                      <div class="card__body">
-                        <h4 class="h4">PARTNER WITH OUR STUDENTS</h4>
-                        <div class="richtext paragraph paragraph--p2">
-                          <p><span>Receive innovative and creative solutions from our students who will approach your business challenge from a fresh and diverse perspective.</span></p>
-                        </div>
-                      </div>
-                      
-                      
-                        <div class="card__footer">
-                          
-                          
-                          
-            
-                          
-                          
-                          
-                          <a class="link link--l2" href="https://hyperisland.com/en/partnerships?hsLang=en">
-                            <span class="link--underline link--bold">Learning Partnerships</span>
-                            <span class="icon material-symbols-rounded">arrow_right_alt</span>
-                          </a>
-                        </div>
-                      
-                    </div>
-                  </div>
-                
-              </div>
-         
-            </div>
-   
-      </section>
-
-
-
-      <section class="imgtext-section" >
-       
-          <div class="flex flex-wrap " >
-      
-  
-            <div class="img-container col-12 md-col-6" style="margin-bottom: 20px;">
-
-
-    <amp-video autoplay
-    width="854px"
-    height="488px"
-    layout="responsive"
-    poster="/static/inline-examples/images/kitten-playing.png"
-  >
-   
-    <source src="vids/values.mp4"
-      type="video/mp4" />
-   
-  </amp-video> 
-  
-</div>
-
-
-
-<div class="text-container col-12 md-col-5"  style="">
-
- <div>  
-    <h6 >
-      Our 4 core values
-    </h6>
-    
-  <p>
-    
-
-  </p>
-
-
-
-  <h4>Inspiration</h4>
-
-
-
-  <p>At Bass Scene, we ignite curiosity and encourage bold thinking. Through music, culture, and art, we aim to spark fresh ideas and motivate our readers to explore new creative frontiers.</p>
-   
-
-<h4>Empowerment</h4>
-
-<p>We believe in the power of creativity to transform lives. Our content is designed to empower individuals, giving them the tools and confidence to break boundaries and shape their own paths.</p>
-
-
-<h4>Creativity</h4>
-
-<p>Creativity drives everything we do. From the stories we tell to the innovative web format we use, Bass Scene is all about embracing and celebrating the art of creation in all its forms.</p>
-
-
-
-<h4>Accessibility</h4>
-
-
-<p>We make high-quality content available to everyone. With our free, easy-to-navigate magazine in a mobile-friendly format, enjoying culture, music, and technology is just a swipe away.</p>
-
-
-
-
-    <div class="dnd-row flex flex-between">
-       
-        fhfg
-
-
-                </div>
-
-        </div>
-
-</div>
-         
-
-
-      </section>
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-<section  class="video-section" >
-
-
-<div class="section-video-background" >
-
-    
-
-  <div class="section-video-wrapper" >
-
-    
-  
-    <video playsinline="" autoplay="" muted="" loop="" style="object-fit: cover;
-height: 100%;
-width: 100%;
-position: absolute;
-top: 0;
-left: 0;
-">
-  <source src="vids/pink-bg.mp4" type="video/mp4">  Your browser does not support the video tag.
-</video>
-  </div>
-</div>
-
-
-
-
-
-      <div class=" section--cta-image " >
-       
-         
-        
-    
-      
-        
-        
-
-        <div class="left-container"> 
-        
-        <div class="heading-container" >
           
-            
-              <h2 class="h2">
-                Got questions?
-              </h2>
-            
-          
+ 
         </div>
-        
 
-     
-        
-        <div class="paragraph-container flex"  style="align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 20px;">
-        
-            <p style="color: black;">Unlock your potential and find the perfect course or program for you or your company with the help of one of our team.</p>
-         
+        <div class="post-hero__image">
+          <amp-img src="../img/heros/GoogleAMP.png" width="1241" height="576" data-hero  layout="responsive" alt=""></amp-img>
         </div>
-        
-
-        
-     
-        
-        
-        <div class="button-container" style="align-items: center;
-        justify-content: flex-start; display: flex;">
-            
-              <a style="padding: 0.875rem 2.5rem; line-height: 100%; font-weight: 900; text-decoration: none;
-             letter-spacing: 0.48px;
-              text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #99ded7;" class="button button--primary button--pill button--md font-family-normal" href="https://hyperisland.com/en/contact?hsLang=en">
-               CONTACT US
-                
-              </a>
-            
-            </div>
-        
-
+      </div>
     </div>
+
+
     
+
+      <section class="gallery-base-section gallery-base-rich-text" style="margin: 0 auto;
+  padding: 0 2.5rem;">
+        <div class="flex flex-wrap mx-auto" style=" max-inline-size: calc(12.5rem*6);
+  margin: 3.75rem auto 0;">
+        
+            <div class="col-12 gallery-base-container mx-auto" style="margin-top:0;">
+        
+              <div class="title-article right-0 z1">
+                <div class="gallery-component-hero-subheading">
+                
+                  Visual storytelling for the open web
+                </div>
+                <hr>
+              <h1 class="gallery-component-hero-heading">
   
+               What is Web Stories By Google?
+              </h1>
+              
+             
+            </div>
+            </div>
+
+
+            <div class="row-fluid gallery-base-container mx-auto " style="flex-wrap: nowrap; display: flex;
+           
+           flex-direction: column; margin-top: 0;"> 
+
+            <div class="col-12 md-col-12 " style="margin-bottom: 1.5rem;">
+
+              <p>
+                Since Google announced the arrival of web stories in google search, a lot of opportunities were opened up to them.
+
+              </p>
+                <p class="gallery-base-invert relative z1 mb2">
+                  Many famous brands are using and experiemnting with this new format at the moment: Washington Post, BBS, CNN, Mashable, People, Guardian.
+
+             
+                  
+              
+                </p>
+        
+                <p class="gallery-base-invert relative z1 mb2">
+                  It is not a coincidence that the first adapters of web stories are big media companies. Web stories can revolutionize the way news and journalism can be presented online.
+  
+                </p>
+
+                <p class="gallery-base-invert relative z1 mb2">
+                  In today's fast-paced digital landscape, attention spans are shorter than ever and Web Stories content is designed to capture the viewer's attention quickly with short and easy-to-digest information. 
+                  
+                 
+                </p>
+
+                <p class="gallery-base-invert relative z1 mb2">
+                    Instead of simply listing facts web stories allow to integrate information naturally. However, the main thing about web stories is that they can play a leading role in SEO. Unlike closed ecosystems or platforms web stories appear on search engines and and can be found anywhere on the Internet. 
+                   
+                  </p>
+
+                 
+                 
+  
+            </div>
+
+
+            <div class="col-12 md-col-4">
+
+
+                <div  class="carousel-wrapper gallery-component-hero-carousel">  
+                  <amp-carousel  layout="responsive" height="400" width="205" type="slides" >
+      <div class="slide">
+        <amp-img src="../img/stories/story-bbc.jpg" layout="responsive" width="385" height="641" alt="BBC "></amp-img>
+        <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3"> BBC  </amp-fit-text>
+      </div>
+    
+      <div class="slide">
+        <amp-img src="../img/stories/story-cnn.jpg" layout="responsive" width="385" height="641" alt="CNN "></amp-img>
+        <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3"> CNN 
+      </div>
+    
+      <div class="slide">
+        <amp-img src="../img/stories/story-wpost.jpg" layout="responsive" width="385" height="641" alt="The Washington Post "></amp-img>
+        <amp-fit-text layout="responsive" width="385" height="20" class="mt1 center h5 mt1 px3" style="font-size: 0.875rem;
+      line-height: 1.125rem;">
+          The Washington Post 
+        </amp-fit-text>
+      </div>
+    </amp-carousel>
+    </div>
+
+
+
+
+    
+
+  </div>
+
+
+
+        </div>
+
+
+   
+
+
+
+
+        <div class="col-12 md-col-12 gallery-base-container mx-auto" style="margin-top:0;">
+
+            <p>&nbsp;</p>
+
+          <p>
+            Web stories occupy a dedicated block, called Carousel on Google Discover (SERP). They can also be referenced directly in google image. It is a gigantic traffic that opens up to them. And this demonstrates Google's desire to widely distribute this format. 
+          </p>
+
+
+
+            <p class="gallery-base-invert relative z1 mb2">
+                Currently, over 2,000 websites have published their web stories that have been indexed by Google. 
+         
+              
+          
+            </p>
+    
+            <figure class="ampstart-image-with-caption m0 relative mb4 pt2 mt1" >  
+     
+                <amp-img
+                         width="1694"
+                         height="978"
+                         layout="responsive"
+                         noloading=""
+                         src="../img/stories/stories-carousel.png"
+                         
+                         alt="logo" 
+                       ></amp-img>
+                       <figcaption class="h5 mt1 px3 pt1"> Top Stories Carousel — Google Search Results </figcaption>
+                
+                      </figure>
+        
+
+            
+
+        </div>
+
+
+
+
+
+        </div>
+      </section>
+
+    
+      
+
+
+
+
+      <section class="gallery-base-section gallery-base-rich-text"
+      >
+       
+          <div class="gallery-base-container mx-auto">
+
+
+            <amp-accordion expand-single-section  class="xen-accordion">
+  <section>
+    <h2>What is the technology behind web stories?
+    </h2>
+    <div> 
+      
+
+      <p class="pb3">The technology of web stories is supported by Google and is based on the AMP Framework. AMP technology has gained its fame as a solution that allows you to make websites as fast as possible. Search engines reward fast sites. The faster the site, the higher its ranking on Google.
+        Google search results contain much more than just a list of links. They are made from different panels (SERP): snippets, carousels, knowledge graphs, cards etc.
+        </p>
+
+<ul> 
+
+<figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3 mt1" >  
+ 
+<amp-img
+       width="709"
+       height="501"
+       layout="responsive"
+       noloading=""
+       src="../img/stories/serp.png"
+      
+     
+     ></amp-img>
+     <figcaption class="h5 mt1 px3 pt1">  SERP Panels: Knowledge Graph, Cards, Carousel
+    </figcaption>
+
+    </figure>
+
+  </ul>
+
+    <p class="pt3">  
+Whenever mobile search results include AMP pages, Google starts loading resources for these pages  before you visit them and by the time you choose a page to visit, if this page is AMP, then it's already loaded and shows instantly. But if the page is non-AMP, then it starts to load only when you visit it. As you can imagine, there is a striking speed difference between AMP and non-AMP pages.As a result, the web pages that get most clicks from SERP panels, particularly news Panels are  AMP pages.
+        </p>
+
+             <p class="pb3"> Being a part of AMP technology web stories  can also be pre-cached and therefore due to their speed prioritized by Google.
+        </p>
+    
+      
+      
+      
+      </div>
+   
+  </section>
+  <section>
+    <h2>The key differences between web stories and social media stories
+    </h2>
+    <div>
+      <ul class="pb3" >
+            <li>
+              1 ) Web stories appear directly on Google search results. They can be indexed and can be found. While social media stories can only be available to the users of the network that allow them to create stories.
+
+            </li>
+              
+              <li>
+                2) There is no expiration date for web stories. Only the owners of web stories decide how long they will last and be stored. Instagram, for example, has a limit: the duration of stories is 60 seconds and their lifespan is only 24 hours.
+
+              </li>
+              
+              <li>
+                3) Links and CTA buttons can be used in web stories. On Instagram, including links is only available to the users who have more than ten thousand subscribers.
+
+              </li>
+              
+            <li>
+              4) Unlike social media stories, when you include ads in your Web Stories, 100% of ads revenue goes to you.
+
+            
+            </li>
+            
+            
+              </ul>
+    </div>
+  </section>
+  <section>
+    <h2>How does AMP work?
+    </h2>
+    <div>
+
+      <p>There are currently three approaches to work with the AMP technology:</p>
+
+      <ul class="pb3">
+        <li> <b>1)	Automatic Approach  </b> <br>
+
+          Many website builders offer automatic AMP conversions to their clients. The disadvantage of this approach is that, automatic conversion in order to improve SEO performance can easily break things. For example, a photo gallery might not work correctly or the AMP version of a page might not have a comments section.
+          </li>
+
+          <li>    <b>     2) Coding AMP components </b> <br>
+
+            The easiest way to code all AMP features correctly is to use the AMP component catalog. From small things to complex ones like web stories, AMP built-in components are the building blocks for AMP pages.
+            
+            The page can be made entirely from the components or only partially. Here is a real-world example:
+
+            <figure class="ampstart-image-with-caption m0 relative mb4 pt3 pb3  mt1" >  
+   
+              <amp-img
+                     width="877"
+                     height="466"
+                     layout="responsive"
+                     noloading=""
+                     src="../img/stories/ebay.png"
+                    
+                     alt="logo" 
+                   ></amp-img>
+                   <figcaption class="h5 mt1 px3 pt1">  SERP Panels: Knowledge Graph, Cards, Carousel
+                  </figcaption>
+              
+                  </figure>
+            </li>
+
+            <li><b> 3)	Duplicating Approach </b> <br>
+
+              Not all website builders allow automatic AMP conversion, and even if they do, not everyone wants to solve possible design problems. To strengthen the core content pages  particularly important  for SEO are often duplicated in AMP. So, the search traffic becomes particularly relevant to the best that the site has to offer.
+              
+              This technique can be classified as a best practice.
+              </li>
+      </ul>
+
+</div>
+</section>
+</amp-accordion>
+
+       <p>To work with web-stories, the following skills and experience are required:
+      </p> 
+          
+      <ul class="list-article">
+        <li class="list-item">
+          <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
+       
+          <span class="paragraph--p2"> AMP technology skills</span>
+        
+         
+
+
+        </li>
+
+        <li class="list-item">
+          <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
+       
+          <span class="paragraph--p2">  Video editing skills</span>
+         
+         </li>
+
+         <li class="list-item"> 
+          <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
+       
+          
+          <span class="paragraph--p2">  Experience in graphic and motion design</span>
+          
+         
+    </li>
+
+    <li class="list-item"> 
+      <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
+        
+      <span class="paragraph--p2">  Modern English Web copywriting</span>
+     
+    </li>
+
+    <li class="list-item">
+      <span class="paragraph--p2">  
+
+        <span class="icon material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>
+      </span>
+        <span class="paragraph--p2">     Knowledge of the niche industry</span>
+
+   
+    
+    </li>
+      </ul>
+
+      <p>Do you want to be the first in your niche? Let us know…we are good at creating things 😊
+      </p>
+        </div>
+
+      </section>
+
+
 
       
-        <div class="image-container" style="align-items: center;
-        justify-content: flex-start;
-        max-width: 100%;
-        display: flex;">
-        
-            
-            
-          
-          
-            <img class="image" src="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png" alt="HI_Icon_Team-4" loading="lazy" width="300" height="174" style="max-width: 100%; height: auto;" srcset="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=150&amp;height=87&amp;name=HI_Icon_Team-4.png 150w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png 300w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=450&amp;height=261&amp;name=HI_Icon_Team-4.png 450w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=600&amp;height=348&amp;name=HI_Icon_Team-4.png 600w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=750&amp;height=435&amp;name=HI_Icon_Team-4.png 750w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=900&amp;height=522&amp;name=HI_Icon_Team-4.png 900w" sizes="(max-width: 300px) 100vw, 300px">
-          
-        
+
+
+
+
+
+
+      
+
+    <section class="left-0 right-0 z1 gallery-base-container mx-auto" style="padding-bottom: 3.75rem;">
+      <div class="post-body__author" style="align-items: flex-end;
+      column-gap: 1rem;
+      display: flex; margin-top: 2.5rem;">
+        <img class="post-body__author-image" src="img/logo_square.svg" alt="Hyper Island" style= "
+        height: 120px;
+        width: 120px;">
+        <div class="post-body__author-content" style="display: flex;
+        flex-direction: column;
+        justify-content: space-around;">
+          <span class="post-body__author-title">Yodeejay</span>
+          <span class="post-body__author-name">Shape Your Future</span>
         </div>
-        
-        </div>
-   
-    </section>
-   
+      </div>
+
+      <div class="post-body__published" style="background-color: #f3f0ed;
+      color: #616060;
+      margin-top: 2.5rem;
+      padding: 0.938rem 2rem;">
+        <b>Article updated on:</b> 06 May 2024
+      </div>
+      </section>
 
 
       <footer class="footer">
@@ -4037,7 +3408,7 @@ left: 0;
             <div class="footer__column footer__column--contents">
      
               <div class="wrapper_footer_logo" style="width: 170px; margin-bottom: 1rem;" >
-                <amp-img src="img/logo_footer.png" class="contain footer-logo " layout="responsive"   width="720"
+                <amp-img src="../img/logo_footer.png" class="contain footer-logo " layout="responsive"   width="720"
                 height="177"   ></amp-img>
             
               </div>
