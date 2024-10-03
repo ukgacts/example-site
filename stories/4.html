@@ -2916,6 +2916,16 @@ line-height: 110%;
 }
 }
 
+.paragraph-container {
+
+    align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+
+
+}
+
+
 
 .paragraph-container p {
     text-align: center;
@@ -3014,6 +3024,9 @@ max-width: 53.75rem ;
 
     @media (max-width: 767px) {
         .section--cta-image {
+            flex-wrap: wrap;
+    row-gap: 1.875rem;
+    width: 100%;
 
       column-gap: 0;
   
@@ -3021,7 +3034,7 @@ max-width: 53.75rem ;
 }
 
     .heading-container .h2, h2 {
-color:white;
+
   font-size: 2.375rem;
   font-weight: 800;
   text-align: LEFT;
@@ -3051,6 +3064,27 @@ color:white;
 }
 
 /*** video-section--end ***/
+
+/* sections */
+
+
+.section-wrapper {
+    background-image: linear-gradient(rgba(243, 240, 237, 1), rgba(243, 240, 237, 1)); 
+background-position: left top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-top: solid 0.188rem black;
+}
+
+
+
+/* sections--end */
+
 /*** Footer--end ***/
 
 
@@ -3370,11 +3404,16 @@ amp-sidebar {
                   
                     
                       <h1 >
-                Web Stories
+                Tell Me something 
                       </h1>
                     
                       <div class="pt2">
-                        <p><span>live life through music - a rhythm of expression and creativity. Make your own moves...</span></p>
+                        <p><span>
+                            
+                            We specialize in  looped videos, and boomerangs,
+                            We specialize in reels video editing services,  this content allows for simple but clever execution.
+                            in copywriting is social media, web stories
+                        </span></p>
                       </div>
         
             </div>
@@ -3425,21 +3464,7 @@ amp-sidebar {
                  
 
 
-                      <div class="button-container" style="align-items: center;
-                      justify-content: flex-start; display: flex;">
-                          
-                            <a style="padding: 0.875rem 2.5rem; line-height: 100%; font-weight: 900; text-decoration: none;
-                           letter-spacing: 0.48px;
-                            text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #b62939;" class="button button--primary button--pill button--md font-family-normal" href="https://hyperisland.com/en/contact?hsLang=en">
-                          CHECK OUR STORY
-                              
-                            </a>
-                          
-                          </div>
-                          <a href=" " style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600;
-  display: block;"> 
-                            We have created a story example for you that promotes and signposts potential visitors to
-Pori by way of the Pori Jazz Festival it is best to view on a device. </a>
+                     
                    
                            </div>
 
@@ -3481,7 +3506,11 @@ Pori by way of the Pori Jazz Festival it is best to view on a device. </a>
       
 
       <section class="cards-base-section"  style="position: relative;
-      width: 100%;
+      width: 100%; background-image: url('https://hyperisland.com/hubfs/HI_Energizer_OrangeGradient_1920x1080_01-2.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
     ">
 
 
@@ -3520,9 +3549,7 @@ Pori by way of the Pori Jazz Festival it is best to view on a device. </a>
 </div>
             
             
-            
-            
-                <div class="section-overlay"></div>
+
             
   
             <div style="z-index: 5;
@@ -3703,10 +3730,25 @@ ecosystem, helping you stay ahead with innovative content.
     
 <p>Our platform is fully optimized for both mobile and desktop users, ensuring a smooth experience. We integrate with other platforms, such as YouTube, Instagram, Facebook, and Spotify, so your stories can easily link to your existing content. The design is highly customizable, allowing you to tailor it to your brand, and the stories are searchable on Google—driving more traffic over time. </p>
 
-   <p>We pride ourselves on being 20%
-    technology and 80% creative—that’s the key to our success.</p>
+   <p>We pride ourselves on being <strong>20%
+    technology and 80% creative </strong> —that’s the key to our success.</p>
 
 
+    <div class="button-container" style="align-items: center;
+    justify-content: flex-start; display: flex;">
+        
+          <a style="padding: 0.875rem 2.5rem; line-height: 100%; font-weight: 900; text-decoration: none;
+         letter-spacing: 0.48px;
+          text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #ff7300;" class="button button--primary button--pill button--md font-family-normal" href="https://hyperisland.com/en/contact?hsLang=en">
+        CHECK OUR STORY
+            
+          </a>
+        
+        </div>
+        <a href=" " style="padding-top: 1.875rem; font-size: 1.25rem; line-height: 100%; font-weight: 600;
+display: block;"> 
+          We have created a story example for you that promotes and signposts potential visitors to
+Pori by way of the Pori Jazz Festival it is best to view on a device. </a>
 <div class="dnd-row flex flex-between">
 
 
@@ -3735,45 +3777,13 @@ ecosystem, helping you stay ahead with innovative content.
 
 
 
-<section  class="video-section" style="background-image: linear-gradient(rgba(243, 240, 237, 1), rgba(243, 240, 237, 1)); 
-background-position: left top;
-  background-size: auto;
-  background-repeat: no-repeat;" >
-
-
-<div class="section-video-background" >
-
-    
-
-  <div class="section-video-wrapper" >
-
-    
-  
-    <video playsinline="" autoplay="" muted="" loop="" style="object-fit: cover;
-height: 100%;
-width: 100%;
-position: absolute;
-top: 0;
-left: 0;
-">
-  <source src="vids/pink-bg.mp4" type="video/mp4">  Your browser does not support the video tag.
-</video>
-  </div>
-</div>
+<section  class="section-wrapper"  >
 
 
 
-
-
-      <div class=" section--cta-image " >
+      <div class="section--cta-image" >
        
          
-        
-    
-      
-        
-        
-
         <div class="left-container"> 
         
         <div class="heading-container" >
@@ -3789,9 +3799,7 @@ left: 0;
 
      
         
-        <div class="paragraph-container flex"  style="align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 40px;">
+        <div class="paragraph-container flex"  >
         
             <p style="color: black;">Contact us and get free counseling! </p>
          
@@ -3807,7 +3815,7 @@ left: 0;
             
               <a style="padding: 0.875rem 2.5rem; line-height: 100%; font-weight: 900; text-decoration: none;
              letter-spacing: 0.48px;
-              text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #99ded7;" class="button button--primary button--pill button--md font-family-normal" href="https://hyperisland.com/en/contact?hsLang=en">
+              text-transform: uppercas; border-radius: 4rem; border: solid 0.188rem black;  background: #ff7300;" class="button button--primary button--pill button--md font-family-normal" href="https://hyperisland.com/en/contact?hsLang=en">
                BOOK A CALL
                 
               </a>
@@ -3818,18 +3826,25 @@ left: 0;
     </div>
     
   
-
-      
-        <div class="image-container" style="align-items: center;
-        justify-content: flex-start;
-        max-width: 100%;
-        display: flex;">
+        <div class="fixed-height-container " style="    position: relative;
+        width: 250px;
+        height: 250px;
+   ">
         
             
-            
-          
-          
-            <img class="image" src="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png" alt="HI_Icon_Team-4" loading="lazy" width="300" height="174" style="max-width: 100%; height: auto;" srcset="https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=150&amp;height=87&amp;name=HI_Icon_Team-4.png 150w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=300&amp;height=174&amp;name=HI_Icon_Team-4.png 300w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=450&amp;height=261&amp;name=HI_Icon_Team-4.png 450w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=600&amp;height=348&amp;name=HI_Icon_Team-4.png 600w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=750&amp;height=435&amp;name=HI_Icon_Team-4.png 750w, https://hyperisland.com/hs-fs/hubfs/HI_Icon_Team-4.png?width=900&amp;height=522&amp;name=HI_Icon_Team-4.png 900w" sizes="(max-width: 300px) 100vw, 300px">
+         
+            <amp-img src="../img/dan.png" class="cover" layout="responsive"   width="250px"
+            height="250px"   ></amp-img>
+
+
+            <div class="card__person" style="margin-top: 0.938rem;">
+                <h5 style="font-size: 0.875rem;
+                letter-spacing: 0.7px;
+                line-height: 100%;
+                text-transform: uppercase; font-weight: 800;">Daniel Holmes</h5>
+                <p class="text-small" style="font-size: 0.75rem;
+  line-height: 140%;">Head of Content </p>
+              </div>
           
         
         </div>
