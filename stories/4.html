@@ -3033,11 +3033,97 @@ limitations under the License.
     }
 
 
-    .slide-wrapper {
-      width: 53rem;
-      background: pink;
-      overflow: hidden;
+    @media (min-width: 768px) {
+      .carousel-container {
+      width: 53.75rem;
+     
     }
+
+    }
+
+    .carousel-wrapper {
+    
+      border: solid 0.188rem black;
+     
+    }
+
+
+    @media (min-width: 768px) {
+      .carousel-wrapper {
+      width: 53.75rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 8rem;
+    
+     
+    }
+
+    }
+.carousel-wrapper .img-container {
+
+
+  margin: 0;
+  flex:1;
+
+
+}
+
+
+@media (max-width: 768px) {
+  .carousel-wrapper .img-container {
+
+
+
+display: flex;
+justify-content: center;
+
+}
+}
+
+
+@media (max-width: 768px) {
+  .carousel-wrapper .img-container amp-img{
+
+max-height:90px;
+width:90px;
+
+}
+
+    }
+
+.carousel-wrapper .text-container {
+  flex: 1;
+
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+    .slide-container {
+   
+            border: 2px solid blueviolet;
+            margin: 10px;
+            flex-direction: column;
+            flex: 2;
+
+    }
+
+    @media (min-width: 768px) {
+
+      .slide-container {
+    
+        
+
+    }
+
+
+    }
+
 
 
 
@@ -4048,78 +4134,74 @@ display: block;">
       </div>
 
       <div class="carousel-container gallery-component-hero-carousel carousel-second">
-        <amp-carousel height="350px" layout="fixed-height" type="slides" controls>
-          <div class="slide-wrapper" style="display:flex; ">
 
-            <div  style="flex: 1;
-            border: 2px solid blueviolet;
-            margin: 10px;"> 
+        
+        <amp-carousel height="350px" layout="fixed-height" type="slides" controls>
+          <div class="carousel-wrapper" >
+
+            <div  class="img-container" > 
             <amp-img src="../img/dan.png" class="cover" layout="responsive" width="250px" height="250px"
             
             
             ></amp-img>
 
-            <div class="card__person" style="margin-top: 0.938rem;">
-              <h5 style="font-size: 0.875rem;
-                  letter-spacing: 0.7px;
-                  line-height: 100%;
-                  text-transform: uppercase; font-weight: 800;">Daniel Holmes</h5>
-              <p class="text-small" style="font-size: 0.75rem;
-    line-height: 140%;">Head of Content </p>
-            </div>
+  
            
            </div>
-            <div style="flex: 2;
-            border: 2px solid blueviolet;
-            margin: 10px;">
+            <div class="text-container">
+
+   
               <p>
     
                 Since graduating, I have consistently run my own businesses. My ventures include founding and managing a
                 successful record label, working as a music producer and DJ, and conducting worldwide tours.
                 Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
-                developed into profitable enterprises.
-                I am committed to continuous learning and am open to acquiring additional training or education to gain
-                a deeper understanding of specific markets. If further expertise is needed to advance my business
-                objectives, I am enthusiastic about expanding my knowledge and skill set accordingly.
+                Additionally, I have launched other businesses that started as hobbies or passions, which I successfully
+                
               </p>
+
+              <div class="card__person" style="margin-top: 0.938rem;">
+                <h5 style="font-size: 0.875rem;
+                    letter-spacing: 0.7px;
+                    line-height: 100%;
+                    text-transform: uppercase; font-weight: 800;">Daniel Holmes</h5>
+                <p class="text-small" style="font-size: 0.75rem;
+      line-height: 140%;">Head of Content </p>
+              </div>
     
             </div>
     
           </div>
 
-          <div class="slide-wrapper" style="display:flex; ">
+          <div class="carousel-wrapper" >
      
            
-            <div style="flex: 2;
-            border: 2px solid blueviolet;
-            margin: 10px;">
-              <p>
-    
-                My main skills are all around  UX design, web architecture and front-end technologies.
 
-                Documenting web-design best practices, and figuring out interesting ways to replicate them digitally is something I am passionate about. 
-                My professional experience includes:
 
-                Building and managing websites 
-                Creating and designing  AMP features
-             
-                Taking care of image and video responsivenesss and compression.
-
-                <br> <br>
-            
-
-              
-              </p>
-    
-            </div>
-
-            <div  style="flex: 1;
-            border: 2px solid blueviolet;
-            margin: 10px;"> 
+            <div  class="img-container"> 
             <amp-img src="../img/me/89.png" class="cover" layout="responsive" width="250px" height="250px"
            
             
             ></amp-img>
+
+   
+          </div>
+
+          <div class="text-container" >
+
+
+            <p style="margin-bottom: 0.938rem;">
+  
+              My main skills are all around  UX design, web architecture and front-end technologies.
+
+              To me, web stories are more than just a technological advancement; they embody something greater. When I shared the idea og web story technology with Dan, and he pointed out their potential to change how music is showcased online, I became genuinely passionate about Tell me something project.
+             
+             
+             
+          
+
+            
+            </p>
 
             <div class="card__person" style="margin-top: 0.938rem;">
               <h5 style="font-size: 0.875rem;
@@ -4129,6 +4211,7 @@ display: block;">
               <p class="text-small" style="font-size: 0.75rem;
     line-height: 140%;">UX/UI Designer </p>
             </div>
+  
           </div>
     
           </div>
